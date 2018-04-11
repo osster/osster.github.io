@@ -5097,7 +5097,7 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .h1,
-.slider__list__item__label, .h2, .slidesetBar__title, .promoBar__content__label, .h3, .h4, .h5, .h6 {
+.slider__list__item__label, .h2, .slidesetBar__title, .promoBar__content__label, .footerMap__title, .h3, .hotLinksBar__label, .h4, .h5, .h6 {
   font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
   font-weight: bold; }
@@ -5106,30 +5106,40 @@ h1,
 .h1,
 .slider__list__item__label {
   font-size: 2.3rem;
-  line-height: 3.45rem; }
+  line-height: 3.45rem;
+  padding: 2rem 0 0; }
 
-h2, .h2, .slidesetBar__title, .promoBar__content__label {
+h2, .h2, .slidesetBar__title, .promoBar__content__label, .footerMap__title {
   font-size: 1.5rem;
-  line-height: 2.25rem; }
+  line-height: 2.25rem;
+  padding: 1.5rem 0 0; }
 
-h3, .h3 {
+h3, .h3, .hotLinksBar__label {
   font-size: 1.17rem;
-  line-height: 1.755rem; }
+  line-height: 1.755rem;
+  padding: 1rem 0 0; }
 
 h4, .h4 {
   font-size: 1rem;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  padding: 0.5rem 0 0; }
 
 .large, .phoneList__item__phone, .mainNav__item a, .subNavBar a, .promoBar__content__text {
   font-size: 1.17rem; }
 
-.small, .btn, .phoneList__item__label, .slidesetBar__list__item__label {
+.small, .btn, .phoneList__item__label, .slidesetBar__list__item__label, .followBar__label {
   font-size: 0.83rem; }
 
 svg {
   fill: none;
   stroke: #000;
   stroke-width: 1px; }
+
+.cs-hidden {
+  opacity: 0 !important; }
+
+.customBg {
+  background-color: #F0F0F0; }
 
 .subNavBar__item svg, .slidesetBar__list__item__img, .promoBar__img {
   opacity: 1;
@@ -5138,9 +5148,6 @@ svg {
     opacity: 0.8;
     -webkit-transform: scale(1.05);
             transform: scale(1.05); }
-
-.cs-hidden {
-  opacity: 0 !important; }
 
 header {
   color: #AAAAAA;
@@ -5170,7 +5177,8 @@ header {
     header.slim .mainNav {
       opacity: 0;
       height: 0;
-      margin: 0; }
+      margin: 0;
+      padding: 0; }
     header.slim .locationPicker, header.slim .phoneList {
       font-size: 0.8rem !important; }
       header.slim .locationPicker a, header.slim .phoneList a {
@@ -5178,8 +5186,16 @@ header {
     header.slim .phoneList__item {
       padding-top: 0;
       padding-bottom: 0; }
-    header.slim .headerBottom {
-      height: 0; }
+
+main #mainBrands .slidesetBar {
+  margin: 2rem 0 !important; }
+  main #mainBrands .slidesetBar__list__item {
+    height: 42px !important;
+    margin: 0 1rem; }
+    main #mainBrands .slidesetBar__list__item__img {
+      height: 42px;
+      width: 100%;
+      object-fit: contain; }
 
 footer {
   background-color: #494949;
@@ -5219,8 +5235,6 @@ footer {
       transition: all 0.3s ease-in-out; }
     .locationPicker__label__address {
       transition: all 0.3s ease-in-out; }
-  .locationPicker:hover .locationPicker__label__city {
-    border-bottom: 1px solid #AAAAAA !important; }
   .locationPicker__list {
     background-color: #FFFFFF;
     position: absolute;
@@ -5402,7 +5416,7 @@ footer {
       padding-right: 1rem; }
 
 .slidesetBar {
-  margin: 4rem 0; }
+  margin: 4rem 0 2rem; }
   .slidesetBar__wrap {
     position: relative; }
   .slidesetBar__title {
@@ -5435,7 +5449,8 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+      z-index: 0; }
       .slidesetBar__list__nav__prev, .slidesetBar__list__nav__next {
         position: relative;
         cursor: pointer; }
@@ -5473,9 +5488,70 @@ footer {
     margin: 1rem 0; }
 
 .promoTextBar {
-  color: #AAAAAA; }
+  color: #606060; }
   .promoTextBar__label {
     font-weight: 200; }
+
+.followBar__label {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row;
+      flex-flow: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
+  .followBar__label img {
+    margin-right: 2rem; }
+
+.followBar__form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row;
+      flex-flow: row;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%; }
+  .followBar__form form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .followBar__form form > * {
+      margin-left: 2rem;
+      height: 35px; }
+  .followBar__form input[type="text"], .followBar__form input[type="email"], .followBar__form input[type="tel"] {
+    padding: 0.5rem 1rem;
+    width: 300px; }
+  .followBar__form .btn {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem; }
+
+.hotLinksBar__label {
+  display: block;
+  text-align: center;
+  font-weight: 200;
+  padding: 1rem 0 2rem; }
+
+.hotLinksBar__img {
+  width: 100%;
+  object-fit: contain; }
+
+.footerMap {
+  background-color: #FFFFFF;
+  color: #606060;
+  padding-bottom: 0; }
+  .footerMap__title {
+    text-align: center; }
+  .footerMap__container {
+    height: 840px;
+    position: relative; }
+    .footerMap__container__list {
+      position: absolute;
+      left: calc(25%);
+      width: 320px; }
 
 /*!
  * animate.css -http://daneden.me/animate
