@@ -5145,10 +5145,41 @@ svg {
 header {
   color: #AAAAAA;
   background-color: rgba(240, 240, 240, 0.9);
-  padding: 2rem 0 1rem; }
+  padding: 2rem 0 1rem;
+  height: auto;
+  transition: all 0.6s ease-in-out; }
   header.fixed {
     position: fixed;
     z-index: 10; }
+  header .logo {
+    transition: all 0.6s ease-in-out; }
+    header .logo img {
+      transition: all 0.6s ease-in-out; }
+  header .mainNav {
+    transition: all 0.3s ease-in-out; }
+  header .locationPicker, header .phoneList {
+    transition: all 0.6s ease-in-out; }
+    header .locationPicker a, header .phoneList a {
+      transition: all 0.6s ease-in-out; }
+  header.slim {
+    padding: 0.75rem 0; }
+    header.slim .logo {
+      height: 50px; }
+      header.slim .logo img {
+        object-fit: contain; }
+    header.slim .mainNav {
+      opacity: 0;
+      height: 0;
+      margin: 0; }
+    header.slim .locationPicker, header.slim .phoneList {
+      font-size: 0.8rem !important; }
+      header.slim .locationPicker a, header.slim .phoneList a {
+        font-size: 0.8rem !important; }
+    header.slim .phoneList__item {
+      padding-top: 0;
+      padding-bottom: 0; }
+    header.slim .headerBottom {
+      height: 0; }
 
 footer {
   background-color: #494949;
@@ -5157,7 +5188,8 @@ footer {
 .logo {
   height: 65px; }
   .logo img {
-    object-fit: cover; }
+    max-height: 100%;
+    object-fit: contain; }
 
 .btn {
   display: inline-block;
@@ -5216,7 +5248,7 @@ footer {
         color: #FFFFFF; }
   .locationPicker.show .locationPicker__list {
     display: block;
-    opacity: 1; }
+    opacity: 0.95; }
   .locationPicker:hover .locationPicker__label {
     color: #606060; }
     .locationPicker:hover .locationPicker__label__city {
@@ -5261,12 +5293,15 @@ footer {
   font-family: "Source Sans Pro", sans-serif;
   padding: 0.5rem 0rem;
   margin: 2rem 0;
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  opacity: 1;
+  top: 0; }
   .mainNav__item {
     list-style: none;
     text-transform: uppercase;
@@ -8027,5 +8062,11 @@ footer {
       opacity: 0.5; }
       .wr-scroll-bar.pull .btn-rect:hover {
         opacity: 1; }
+      .wr-scroll-bar.pull .btn-rect.menu {
+        top: 20px; }
+      .wr-scroll-bar.pull .btn-rect.search {
+        top: 95px; }
+      .wr-scroll-bar.pull .btn-rect.call {
+        top: 140px; }
   .wr-scroll-bar.pull .scroll-bar {
     right: 0; }
