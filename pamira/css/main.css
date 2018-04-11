@@ -5203,7 +5203,9 @@ footer {
   cursor: pointer;
   transition: all 0.3s ease-in-out; }
   .btn:hover {
-    background-color: #890004; }
+    background-color: #890004;
+    -webkit-transform: scaleX(1.025);
+            transform: scaleX(1.025); }
 
 .locationPicker {
   padding: 0 0 0.25rem 24px;
