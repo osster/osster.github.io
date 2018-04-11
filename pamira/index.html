@@ -194,6 +194,17 @@
             </g>
         </g>
     </symbol>
+    <
+    <symbol id="slider_prev" xmlns="http://www.w3.org/2000/svg" viewBox="-2264.873 4428.012 20.672 28">
+        <path class="a" d="M14,20.672,0,4.744,4.17,0,14,11.183,23.83,0,28,4.744Z"
+              transform="translate(-2244.201 4428.012) rotate(90)"/>
+    </symbol>
+    <symbol id="slider_next" xmlns="http://www.w3.org/2000/svg" viewBox="-912.297 4430 18.17 28">
+        <g transform="translate(-1678.297 3642)">
+            <path class="a" d="M14,18.17,0,4.17,4.17,0,14,9.83,23.83,0,28,4.17Z"
+                  transform="translate(766 816) rotate(-90)"/>
+        </g>
+    </symbol>
 </svg>
 </body>
 
@@ -333,7 +344,7 @@
 
     <section class="sliderBar">
         <div id="mainSlider" class="slider">
-            <ul class="slider__list">
+            <ul class="slider__list cs-hidden">
                 <li class="slider__list__item">
                     <img class="slider__list__item__pic" src="img/slides/mainSlide.png"
                          srcset="img/slides/mainSlide@2x.png 2x" alt="Slide 1"/>
@@ -458,14 +469,309 @@
         </div>
     </section>
 
-    <section class="promoBar">
+    <section class="promoBar mb-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7"></div>
-                <div class="col-lg-5">
-                    <div class="h1">Самый большой выбор кухонной техники</div>
-                    <p class="large">Товары различных брендов на любой вкус и бюджет.</p>
-                    <button>посмотреть все предложения</button>
+                <div class="col-lg-7">
+                    <img class="w-100 promoBar__img" src="img/promo_1.jpg" alt="Promo 1">
+                </div>
+                <div class="col-lg-5 text-center promoBar__content">
+                    <div class="promoBar__content__label">Самый большой выбор кухонной техники</div>
+                    <p class="promoBar__content__text">Товары различных брендов на любой вкус и бюджет.</p>
+                    <a class="btn promoBar__content__btn">посмотреть все предложения</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="infoBar my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center">
+                    <div class="h3">
+                        РАБОТАЕМ С 1998 ГОДА
+                    </div>
+                    <p>
+                        Памира на сегодняшний день является одной из ведущих компаний на рынке бытовой и встраиваемой
+                        техники Ростова-на-Дону, Ставропольского края и Воронежа. Вот уже без малого 20 лет мы
+                        осуществляем оптовые поставки кухонной техники, а также имеем собственные розничные магазины в
+                        Ростове-на-Дону и Воронеже.
+                    </p>
+                    <p>
+                        Профессиональная консультация, индивидуальный подход.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="h3">
+                        РАДОСТЬ ОТ ПОКУПОК ДЛИТСЯ ВЕЧНО
+                    </div>
+                    <p>
+                        Послегарантийное обслуживание бытовой техники должно производиться авторизованными сервисными
+                        центрами. Это означает, что по необходимости вы можете принести к нам в магазин свою технику
+                        оплатить обслуживание или ремонт, после чего Мы сами отвёзём товар к авторизированному
+                        сервисному центру и привезём обратно в магазин, где вы сможете его забрать.
+                    </p>
+                    <p>
+                        Транспортировку из дома и обратно крупногабаритной техники, если вы не против, мы возьмём на
+                        себя
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slidesetBar" id="mainSlideset">
+        <div class="container">
+            <div class="slidesetBar__title my-5">НАРОДНЫЙ ВЫБОР</div>
+
+            <div class="slidesetBar__wrap">
+                <div class="slidesetBar__list__nav">
+                    <a class="slidesetBar__list__nav__prev">
+                        <svg width="28" height="20">
+                            <use xlink:href="#slider_prev"></use>
+                        </svg>
+                    </a>
+                    <a class="slidesetBar__list__nav__next">
+                        <svg width="28" height="20">
+                            <use xlink:href="#slider_next"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="slidesetBar__list cs-hidden">
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/slideset/hsb_610_white.png"
+                                 srcset="img/hsb_610_white@2x.png 2x" alt="Духовой шкаф Midea MO23000GW"/>
+                            <span class="slidesetBar__list__item__label">Духовой шкаф Midea MO23000GW</span>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/slideset/hsb_610_white.png"
+                                 srcset="img/hsb_610_white@2x.png 2x" alt="Духовой шкаф Midea MO23000GW"/>
+                            <span class="slidesetBar__list__item__label">Духовой шкаф Midea MO23000GW</span>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/slideset/hsb_610_white.png"
+                                 srcset="img/hsb_610_white@2x.png 2x" alt="Духовой шкаф Midea MO23000GW"/>
+                            <span class="slidesetBar__list__item__label">Духовой шкаф Midea MO23000GW</span>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/slideset/hsb_610_white.png"
+                                 srcset="img/hsb_610_white@2x.png 2x" alt="Духовой шкаф Midea MO23000GW"/>
+                            <span class="slidesetBar__list__item__label">Духовой шкаф Midea MO23000GW</span>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/slideset/hsb_610_white.png"
+                                 srcset="img/hsb_610_white@2x.png 2x" alt="Духовой шкаф Midea MO23000GW"/>
+                            <span class="slidesetBar__list__item__label">Духовой шкаф Midea MO23000GW</span>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/slideset/hsb_610_white.png"
+                                 srcset="img/hsb_610_white@2x.png 2x" alt="Духовой шкаф Midea MO23000GW"/>
+                            <span class="slidesetBar__list__item__label">Духовой шкаф Midea MO23000GW</span>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/slideset/hsb_610_white.png"
+                                 srcset="img/hsb_610_white@2x.png 2x" alt="Духовой шкаф Midea MO23000GW"/>
+                            <span class="slidesetBar__list__item__label">Духовой шкаф Midea MO23000GW</span>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/slideset/hsb_610_white.png"
+                                 srcset="img/hsb_610_white@2x.png 2x" alt="Духовой шкаф Midea MO23000GW"/>
+                            <span class="slidesetBar__list__item__label">Духовой шкаф Midea MO23000GW</span>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/slideset/hsb_610_white.png"
+                                 srcset="img/hsb_610_white@2x.png 2x" alt="Духовой шкаф Midea MO23000GW"/>
+                            <span class="slidesetBar__list__item__label">Духовой шкаф Midea MO23000GW</span>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/slideset/hsb_610_white.png"
+                                 srcset="img/hsb_610_white@2x.png 2x" alt="Духовой шкаф Midea MO23000GW"/>
+                            <span class="slidesetBar__list__item__label">Духовой шкаф Midea MO23000GW</span>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/slideset/hsb_610_white.png"
+                                 srcset="img/hsb_610_white@2x.png 2x" alt="Духовой шкаф Midea MO23000GW"/>
+                            <span class="slidesetBar__list__item__label">Духовой шкаф Midea MO23000GW</span>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/slideset/hsb_610_white.png"
+                                 srcset="img/hsb_610_white@2x.png 2x" alt="Духовой шкаф Midea MO23000GW"/>
+                            <span class="slidesetBar__list__item__label">Духовой шкаф Midea MO23000GW</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center my-4">
+                <a href="#" class="btn slidesetBar__more">ПЕРЕЙТИ В КАТАЛОГ</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="promoBar mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 text-center promoBar__content">
+                    <div class="promoBar__content__label">Вся техника подключена</div>
+                    <p class="promoBar__content__text">Можно включить и проверить в действии.</p>
+                    <a class="btn promoBar__content__link">перейти в каталог</a>
+                </div>
+                <div class="col-lg-7">
+                    <img class="w-100 promoBar__img" src="img/promo_2.jpg" alt="Promo 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slidesetBar" id="mainBrands">
+        <div class="container">
+            <div class="slidesetBar__wrap">
+                <div class="slidesetBar__list__nav">
+                    <a class="slidesetBar__list__nav__prev">
+                        <svg width="28" height="20">
+                            <use xlink:href="#slider_prev"></use>
+                        </svg>
+                    </a>
+                    <a class="slidesetBar__list__nav__next">
+                        <svg width="28" height="20">
+                            <use xlink:href="#slider_next"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="slidesetBar__list cs-hidden">
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/brands/kuppersbusch.jpg"
+                                 alt="Brand kuppersbusch"/>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/brands/faber1.jpg" alt="Brand faber"/>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/brands/falmec.jpg" alt="Brand falmec"/>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/brands/franke.jpg" alt="Brand franke"/>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/brands/gorenje.jpg" alt="Brand gorenje"/>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/brands/insinkerator.jpg"
+                                 alt="Brand insinkerator"/>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/brands/kitchen_aid.jpg"
+                                 alt="Brand kitchen_aid"/>
+                        </a>
+                    </div>
+                    <div class="slidesetBar__list__item">
+                        <a href="#">
+                            <img class="slidesetBar__list__item__img" src="img/brands/teka.jpg" alt="Brand teka"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promoBar mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <img class="promoBar__img w-100" src="img/promo_3.jpg" alt="Promo 3">
+                </div>
+                <div class="col-lg-5 text-center promoBar__content">
+                    <div class="promoBar__content__label">Готовим для вас</div>
+                    <p class="promoBar__content__text large">Индивидуальный мастер-класс с вовлечением Вас в процесс (по
+                        желанию)</p>
+                    <a class="btn promoBar__content__link">подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promoTextBar my-5">
+        <div class="content text-center">
+            <div class="promoTextBar__label h3">Активная кухня</div>
+            <p>хозяйка может почувствовать себя на своей кухне, понять что нужно, а что нет.
+            </p>
+            <p>На активной кухне подключены все существующие кухонные приборы.</p>
+        </div>
+    </section>
+
+    <section class="followBar my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="img/icons/Icon_Mail.svg" width="48"/> Подпишитесь! Новинки, скидки, предложения,
+                    мероприятия!
+                </div>
+                <div class="col-lg-6">
+                    <form>
+                        <input type="email" placeholder="Введите e-mail">
+                        <a class="btn">Подписаться</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hotLinksBar my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="hotLinksBar__label">АКЦИИ</div>
+                    <a href="#">
+                        <img class="hotLinksBar__img" src="img/Hot_Actions.jpg"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="hotLinksBar__label">ПОЛЕЗНЫЕ СОВЕТЫ</div>
+                    <a href="#">
+                        <img class="hotLinksBar__img" src="img/Hot_Tales.jpg"/>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="hotLinksBar__label">РАСПРОДАЖИ</div>
+                    <a href="#">
+                        <img class="hotLinksBar__img" src="img/Hot_Sales.jpg"/>
+                    </a>
                 </div>
             </div>
         </div>
@@ -480,6 +786,7 @@
             <p>p - Оффициальный сайт ПАМИРА.</p>
             <p class="large">.large - Оффициальный сайт ПАМИРА.</p>
             <p class="small">.small - Оффициальный сайт ПАМИРА.</p>
+            <a class="btn">Кнопка</a>
         </div>
     </section>
 
@@ -487,6 +794,9 @@
 
 <footer>
     <section class="footerMap">
+        <div class="footerMap__title">
+            Где нас найти?
+        </div>
         <div class="footerMap__container">
             <img src="img/Map.png" style="width: 100%; max-height: 840px; object-fit: cover;"/>
         </div>

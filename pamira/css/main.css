@@ -5097,7 +5097,7 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .h1,
-.slider__list__item__label, .h2, .h3, .h4, .h5, .h6 {
+.slider__list__item__label, .h2, .slidesetBar__title, .promoBar__content__label, .h3, .h4, .h5, .h6 {
   font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
   font-weight: bold; }
@@ -5108,7 +5108,7 @@ h1,
   font-size: 2.3rem;
   line-height: 3.45rem; }
 
-h2, .h2 {
+h2, .h2, .slidesetBar__title, .promoBar__content__label {
   font-size: 1.5rem;
   line-height: 2.25rem; }
 
@@ -5120,16 +5120,27 @@ h4, .h4 {
   font-size: 1rem;
   line-height: 1.5rem; }
 
-.large, .phoneList__item__phone, .mainNav__item a, .subNavBar a {
+.large, .phoneList__item__phone, .mainNav__item a, .subNavBar a, .promoBar__content__text {
   font-size: 1.17rem; }
 
-.small, .phoneList__item__label {
+.small, .btn, .phoneList__item__label, .slidesetBar__list__item__label {
   font-size: 0.83rem; }
 
 svg {
   fill: none;
   stroke: #000;
   stroke-width: 1px; }
+
+.subNavBar__item svg, .slidesetBar__list__item__img, .promoBar__img {
+  opacity: 1;
+  transition: all 0.6s ease-in-out; }
+  .subNavBar__item svg:hover, .slidesetBar__list__item__img:hover, .promoBar__img:hover {
+    opacity: 0.8;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+
+.cs-hidden {
+  opacity: 0 !important; }
 
 header {
   color: #AAAAAA;
@@ -5148,6 +5159,20 @@ footer {
   .logo img {
     object-fit: cover; }
 
+.btn {
+  display: inline-block;
+  padding: 0.5rem 3rem;
+  border: none;
+  background-color: #BF000C;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; }
+  .btn:hover {
+    background-color: #890004; }
+
 .locationPicker {
   padding: 0 0 0.25rem 24px;
   position: relative; }
@@ -5157,9 +5182,9 @@ footer {
       border-bottom: 1px dashed #AAAAAA;
       display: inline;
       cursor: pointer;
-      transition: all "0.3s" ease-in-out; }
+      transition: all 0.3s ease-in-out; }
     .locationPicker__label__address {
-      transition: all "0.3s" ease-in-out; }
+      transition: all 0.3s ease-in-out; }
   .locationPicker:hover .locationPicker__label__city {
     border-bottom: 1px solid #AAAAAA !important; }
   .locationPicker__list {
@@ -5174,7 +5199,7 @@ footer {
     margin: 0.25rem 0 0 1.5rem;
     border: 1px solid #95989A;
     z-index: 10;
-    transition: all "0.3s" ease-in-out; }
+    transition: all 0.3s ease-in-out; }
     .locationPicker__list__item {
       cursor: pointer;
       list-style: none;
@@ -5221,7 +5246,7 @@ footer {
       color: #AAAAAA;
       cursor: pointer;
       text-decoration: none;
-      transition: all "0.3s" ease-in-out; }
+      transition: all 0.3s ease-in-out; }
     .phoneList__item:hover .phoneList__item__phone {
       color: #606060;
       border-bottom: 1px dashed #606060; }
@@ -5245,7 +5270,7 @@ footer {
   .mainNav__item {
     list-style: none;
     text-transform: uppercase;
-    transition: all "0.3s" ease-in-out; }
+    transition: all 0.3s ease-in-out; }
     .mainNav__item a {
       color: #95989A;
       text-decoration: none; }
@@ -5272,7 +5297,9 @@ footer {
   overflow: hidden; }
   .slider__list {
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    opacity: 1;
+    transition: all 0.6s ease-in-out; }
     .slider__list__item {
       width: 100vw;
       list-style: none;
@@ -5336,6 +5363,82 @@ footer {
         justify-content: flex-start; }
     .subNavBar__s2 .subNavBar__item__icon {
       padding-right: 1rem; }
+
+.slidesetBar {
+  margin: 4rem 0; }
+  .slidesetBar__wrap {
+    position: relative; }
+  .slidesetBar__title {
+    text-align: center; }
+  .slidesetBar__list {
+    opacity: 1;
+    transition: all 0.6s ease-in-out; }
+    .slidesetBar__list__item a {
+      text-decoration: none !important; }
+    .slidesetBar__list__item__img {
+      width: 100%; }
+    .slidesetBar__list__item__label {
+      transition: all 0.3s ease-in-out;
+      color: #AAAAAA;
+      text-align: center;
+      display: inline-block; }
+    .slidesetBar__list__item:hover .slidesetBar__list__item__label {
+      color: #606060; }
+    .slidesetBar__list__nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: center;
+          align-items: center; }
+      .slidesetBar__list__nav__prev, .slidesetBar__list__nav__next {
+        position: relative;
+        cursor: pointer; }
+        .slidesetBar__list__nav__prev svg, .slidesetBar__list__nav__next svg {
+          fill: #890004;
+          stroke: #890004;
+          transition: all 0.3s ease-in-out; }
+        .slidesetBar__list__nav__prev:hover svg, .slidesetBar__list__nav__next:hover svg {
+          fill: #BF000C;
+          stroke: #BF000C; }
+      .slidesetBar__list__nav__prev {
+        left: -48px; }
+      .slidesetBar__list__nav__next {
+        right: -48px; }
+  .slidesetBar__more {
+    margin: 2rem 0; }
+  .slidesetBar .lSPager, .slidesetBar .lSAction {
+    display: none; }
+
+.promoBar__content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .promoBar__content__label {
+    margin: 1rem 0; }
+  .promoBar__content__text {
+    margin: 1rem 2rem;
+    color: #AAAAAA; }
+  .promoBar__content__link {
+    margin: 1rem 0; }
+
+.promoTextBar {
+  color: #AAAAAA; }
+  .promoTextBar__label {
+    font-weight: 200; }
 
 /*!
  * animate.css -http://daneden.me/animate
@@ -7870,7 +7973,9 @@ footer {
       position: absolute;
       background-color: #F0F0F0;
       color: #606060 !important;
-      border: 1px solid #AAAAAA; }
+      border: 1px solid #AAAAAA;
+      opacity: 1;
+      transition: all 0.4s ease-in-out; }
       .wr-scroll-bar .scroll-bar .btn-rect img {
         width: 30px;
         height: 30px;
@@ -7918,5 +8023,9 @@ footer {
           background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii03MjIuNDQxIDEyNzYuOTQ4IDUxLjA5MSA0My41MTIiPjxkZWZzPjxzdHlsZT4uYSwuY3tmaWxsOm5vbmU7fS5he3N0cm9rZTojMDAwO3N0cm9rZS13aWR0aDoycHg7fS5ie3N0cm9rZTpub25lO308L3N0eWxlPjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjUzMyAyNzApIj48cGF0aCBjbGFzcz0iYSIgZD0iTS00MDcuNjc4LDE4MTMuMzZhMTIuNjMyLDEyLjYzMiwwLDAsMCwuNzU5LTMuODE3LDMyLjc0MSwzMi43NDEsMCwwLDEsMS45NDYtMTIuN2MzLjM3OS02LjIyNiw5Ljg3Ni0xMC45LDE5Ljc2NS0xMC45LDYuOTI0LDAsMTAuNjcxLDEuMDQ1LDEyLjg2MiwyLjM3NiwxMC4xNzksNS4yMjMsMTAuODM1LDE3LjAyLDYuMTY1LDIzLjksMCwwLTUuNDg5LDguNTItMjEuOTA2LDYuODU1LTEuMzE1LS4wNTItNS41LS40NS02LjQ2Mi0uNTUyYTIwLjI1OCwyMC4yNTgsMCwwLDAtNC4zNzQtLjFsLS4xNTMuMDE3Yy0yLjE5NS4yMjktNS45LDIuODM1LTUuOSwyLjgzNWwtNi42MzYsNC42NywzLjkzMS0xMi41ODhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMjI0IC03NzgpIi8+PGcgY2xhc3M9ImEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4MjguMDE0IDEwMjEuODY2KSI+PGVsbGlwc2UgY2xhc3M9ImIiIGN4PSIyLjQ3MSIgY3k9IjIuNDcxIiByeD0iMi40NzEiIHJ5PSIyLjQ3MSIvPjxlbGxpcHNlIGNsYXNzPSJjIiBjeD0iMi40NzEiIGN5PSIyLjQ3MSIgcng9IjEuNDcxIiByeT0iMS40NzEiLz48L2c+PGcgY2xhc3M9ImEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4MzcuMjU0IDEwMjEuODY2KSI+PGVsbGlwc2UgY2xhc3M9ImIiIGN4PSIyLjQ3MSIgY3k9IjIuNDcxIiByeD0iMi40NzEiIHJ5PSIyLjQ3MSIvPjxlbGxpcHNlIGNsYXNzPSJjIiBjeD0iMi40NzEiIGN5PSIyLjQ3MSIgcng9IjEuNDcxIiByeT0iMS40NzEiLz48L2c+PGcgY2xhc3M9ImEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4NDYuNDk0IDEwMjEuODY2KSI+PGVsbGlwc2UgY2xhc3M9ImIiIGN4PSIyLjQ3MSIgY3k9IjIuNDcxIiByeD0iMi40NzEiIHJ5PSIyLjQ3MSIvPjxlbGxpcHNlIGNsYXNzPSJjIiBjeD0iMi40NzEiIGN5PSIyLjQ3MSIgcng9IjEuNDcxIiByeT0iMS40NzEiLz48L2c+PC9nPjwvc3ZnPg==); }
   .wr-scroll-bar.pull {
     right: 2%; }
+    .wr-scroll-bar.pull .btn-rect {
+      opacity: 0.5; }
+      .wr-scroll-bar.pull .btn-rect:hover {
+        opacity: 1; }
   .wr-scroll-bar.pull .scroll-bar {
     right: 0; }
