@@ -5088,6 +5088,14 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-end, body.swal2-no-backdrop .sw
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
+.subNavBar__item svg, .slidesetBar__list__item__img, .promoBar__img, .hotLinksBar__img, .wr-scroll-bar .scroll-bar .btn-rect {
+  opacity: 1;
+  transition: all 0.6s ease-in-out; }
+  .subNavBar__item svg:hover, .slidesetBar__list__item__img:hover, .promoBar__img:hover, .hotLinksBar__img:hover, .wr-scroll-bar .scroll-bar .btn-rect:hover {
+    opacity: 0.8;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+
 body {
   font-size: 16px;
   line-height: 24px;
@@ -5097,7 +5105,7 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .h1,
-.slider__list__item__label, .h2, .slidesetBar__title, .promoBar__content__label, .footerMap__title, .h3, .hotLinksBar__label, .h4, .h5, .h6 {
+.slider__list__item__label, .h2, .slidesetBar__title, .promoBar__content__label, .footerMap__title, .h3, .hotLinksBar__label, .listgroup__item__label, .footerTop__title, .h4, .footerTop__content__subtitle, .h5, .h6 {
   font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
   font-weight: bold; }
@@ -5114,20 +5122,20 @@ h2, .h2, .slidesetBar__title, .promoBar__content__label, .footerMap__title {
   line-height: 2.25rem;
   padding: 1.5rem 0 0; }
 
-h3, .h3, .hotLinksBar__label {
+h3, .h3, .hotLinksBar__label, .listgroup__item__label, .footerTop__title {
   font-size: 1.17rem;
   line-height: 1.755rem;
   padding: 1rem 0 0; }
 
-h4, .h4 {
+h4, .h4, .footerTop__content__subtitle {
   font-size: 1rem;
   line-height: 1.5rem;
   padding: 0.5rem 0 0; }
 
-.large, .phoneList__item__phone, .mainNav__item a, .subNavBar a, .promoBar__content__text {
+.large, .phoneList__item__phone, .mainNav__item a, .subNavBar a, .promoBar__content__text, .promoTextBar {
   font-size: 1.17rem; }
 
-.small, .btn, .phoneList__item__label, .slidesetBar__list__item__label, .followBar__label {
+.small, .btn, .phoneList__item__label, .slidesetBar__list__item__label, .followBar__label, .listgroup__item__text, .footerMenu__item a {
   font-size: 0.83rem; }
 
 svg {
@@ -5140,14 +5148,6 @@ svg {
 
 .customBg {
   background-color: #F0F0F0; }
-
-.subNavBar__item svg, .slidesetBar__list__item__img, .promoBar__img {
-  opacity: 1;
-  transition: all 0.6s ease-in-out; }
-  .subNavBar__item svg:hover, .slidesetBar__list__item__img:hover, .promoBar__img:hover {
-    opacity: 0.8;
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05); }
 
 header {
   color: #AAAAAA;
@@ -5550,8 +5550,109 @@ footer {
     position: relative; }
     .footerMap__container__list {
       position: absolute;
-      left: calc(25%);
+      left: 0;
       width: 320px; }
+
+.listgroup {
+  padding: 3rem 0; }
+  .listgroup__item {
+    background-color: #FFFFFF; }
+    .listgroup__item__label {
+      background-color: #95989A;
+      color: #FFFFFF;
+      width: 100%;
+      text-align: center;
+      padding: 0.5rem 2rem;
+      cursor: pointer;
+      transition: all 0.3s ease; }
+    .listgroup__item__text {
+      transition: all 0.3s ease;
+      height: 0;
+      background-color: #FFFFFF;
+      color: #606060;
+      overflow: hidden;
+      padding: 0rem 2rem; }
+      .listgroup__item__text a {
+        font-weight: bold;
+        color: #95989A;
+        text-decoration: none;
+        border-bottom: 1px dashed; }
+    .listgroup__item.active .listgroup__item__label, .listgroup__item:hover .listgroup__item__label {
+      background-color: #606060; }
+    .listgroup__item.active .listgroup__item__text {
+      height: 610px;
+      padding: 0.5rem 2rem; }
+
+.footerTop__title {
+  display: block;
+  text-align: center;
+  font-weight: 200;
+  padding: 5rem 0 0; }
+
+.footerTop__content {
+  padding: 2rem 0; }
+  .footerTop__content__subtitle {
+    display: block;
+    font-weight: 200;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 1rem 0 2rem;
+    transition: all 0.3s ease; }
+    .footerTop__content__subtitle:hover {
+      color: #AAAAAA;
+      text-decoration: underline; }
+
+.footerBottom {
+  color: #FFFFFF;
+  padding: 0 0 4rem; }
+  .footerBottom a {
+    color: #FFFFFF;
+    text-decoration: none; }
+    .footerBottom a:hover {
+      color: #AAAAAA;
+      text-decoration: underline; }
+
+.footerMenu {
+  padding: 0 0 1rem;
+  margin: 0; }
+  .footerMenu__item {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .footerMenu__item a {
+      text-decoration: none;
+      color: #FFFFFF;
+      transition: all 0.3s ease; }
+      .footerMenu__item a:hover {
+        color: #AAAAAA;
+        text-decoration: underline; }
+
+.footerCopy {
+  background-color: #606060;
+  padding: 0.05rem 0; }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; } }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px; }
+    .container.wide {
+      max-width: 1200px; } }
+
+.container {
+  max-width: 1200px; }
+  .container.wide {
+    max-width: 1560px; }
 
 /*!
  * animate.css -http://daneden.me/animate
