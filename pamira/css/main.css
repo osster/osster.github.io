@@ -1930,6 +1930,8 @@ footer {
   padding: 0.5rem 0rem;
   margin: 2rem 0;
   position: relative;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
   -ms-flex-pack: justify;
