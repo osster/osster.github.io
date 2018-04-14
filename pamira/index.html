@@ -5,14 +5,17 @@
     <title>PAMIRA - PROTOTYPE ALFA VERSION</title>
 
     <!-- styles -->
-    <!-- <link rel="stylesheet" href="css/critical.css" as="style"/> -->
+    <link rel="stylesheet" href="css/critical.css" as="style"/> <!---->
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
 <!--[if lt IE 10]>
 <p class="browsehappy">Вы используете <strong>УСТАРЕВШИЙ Internet Explorer</strong> браузер. Пожалуйста, <a
         href="http://browsehappy.com/">обновите ваш Браузер</a> чтобы увидеть больше возможностей на сайтах!</p>
 <![endif]-->
-
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
     <symbol id="aksessuary" xmlns="http://www.w3.org/2000/svg" viewBox="-3011 396.175 67.467 51">
@@ -206,8 +209,6 @@
         </g>
     </symbol>
 </svg>
-</body>
-
 
 <div class="overlay-nav-bar">
     <section class="scroll-bar">
@@ -238,8 +239,7 @@
             <a href="#" title=""></a>
         </div>
     </section>
-</div>
-
+</div><!-- /overlay-nav-bar -->
 
 <header class="w-100 fixed">
 
@@ -274,7 +274,10 @@
                     0: {
                         name: 'Ростов-на-Дону',
                         addr: 'ул. Красноармейская, 63-90',
-                        phones: [{p: '+7 (863) 302-03-04', l: 'розница'}, {p: '+7 (919) 888-6-777', l: 'розница'}, {p: '+7 (863) 302-00-22', l: 'опт'}]
+                        phones: [{p: '+7 (863) 302-03-04', l: 'розница'}, {
+                            p: '+7 (919) 888-6-777',
+                            l: 'розница'
+                        }, {p: '+7 (863) 302-00-22', l: 'опт'}]
                     },
                     1: {
                         name: 'Воронеж',
@@ -318,7 +321,6 @@
     </div>
 
 </header>
-
 
 <main>
 
@@ -612,15 +614,15 @@
     </section>
 
 
-    <section class="promoBar mb-0 customBg">
-        <div class="container">
+    <section class="promoBar mb-0">
+        <div class="container customBg">
             <div class="row">
                 <div class="col-lg-5 text-center promoBar__content">
                     <div class="promoBar__content__label">Вся техника подключена</div>
                     <p class="promoBar__content__text">Можно включить и проверить в действии.</p>
                     <a class="btn promoBar__content__link">перейти в каталог</a>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7 px-0">
                     <img class="w-100 promoBar__img" src="img/Promo_2.jpg" alt="Promo 2">
                 </div>
             </div>
@@ -695,10 +697,10 @@
         </div>
     </section>
 
-    <section class="promoBar mb-5 customBg">
-        <div class="container">
+    <section class="promoBar mb-5">
+        <div class="container customBg">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-7 px-0">
                     <img class="promoBar__img w-100" src="img/Promo_3.jpg" alt="Promo 3">
                 </div>
                 <div class="col-lg-5 text-center promoBar__content">
@@ -1029,6 +1031,10 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="btn btn-gray">Оплата на сайте Visa, MasterCard, МИР</div>
+                        <a class="btn btn-gray">Cтать Партнёром</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1066,6 +1072,15 @@
     </section>
 </footer>
 
+
+<div id="pageLoader" class="pageload-overlay"
+     data-opening="M 40 -21.875 C 11.356078 -21.875 -11.875 1.3560784 -11.875 30 C -11.875 58.643922 11.356078 81.875 40 81.875 C 68.643922 81.875 91.875 58.643922 91.875 30 C 91.875 1.3560784 68.643922 -21.875 40 -21.875 Z">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60"
+         preserveAspectRatio="xMidYMid slice">
+        <path d="M40,30 c 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 Z"/>
+    </svg>
+</div><!-- /pageload-overlay -->
+
 <!-- styles -->
 <link rel="stylesheet" href="css/main.css" as="style"/>
 
@@ -1074,69 +1089,20 @@
 
 <script>
     (function () {
+        var pageLoader = new SVGLoader(document.getElementById('pageLoader'), {speedIn: 300, easingIn: mina.easeinout});
+
+        $(document).on('click', 'a', function () {
+            pageLoader.show();
+            setTimeout(function () {
+                pageLoader.hide();
+            }, 2000);
+            //return false;
+        });
+
 //        $(window).load(function () {
-//            var activeSlide = 0;
-//            var totalSlides = 0;
-//            var $slider = $(".slider-bar .slider");
-//            var $container = $(".slider-bar .slider__content");
-//            var $slides = $(".slider-bar .slider__content > .slide");
-//            var $nav = $(".slider-bar .slider__nav ul");
-//
-//            var sliderWidth = $slider.width();
-//            var containerWidth = sliderWidth * $slides.length;
-//
-//            totalSlides = $slides.length;
-//
-//            $container.css('width', containerWidth);
-//            $slides.css('width', sliderWidth);
-//
-//            $nav.html('');
-//
-//            var goToSlide = function (_ActiveSlide) {
-//                activeSlide = _ActiveSlide;
-//                var slide = $slides[activeSlide];
-//                $container.css('left', -slide.offsetLeft);
-//                $nav.find('a.page.active').removeClass('active');
-//                $(navLinks[activeSlide]).addClass('active');
-//                //console.log('slide.offsetLeft', slide.offsetLeft);
-//            };
-//
-//            if (totalSlides > 0) {
-//                $nav.append('<li><a class="prev" href="#" title="Previous"></a></li>');
-//                for (var i=0;i<$slides.length; i++) {
-//                    $nav.append('<li><a class="page" href="#" data-slide="' + i + '" title="Slide ' + i + '"></a></li>');
-//                }
-//                $nav.append('<li><a class="next" href="#" title="Next"></a></li>');
-//
-//                var navLinks = $nav.find('a.page');
-//                var navPrev = $nav.find('a.prev');
-//                var navNext = $nav.find('a.next');
-//
-//                $(navLinks[activeSlide]).addClass('active');
-//                $container.css('left', 0);
-//
-//                navLinks.on('click', function () {
-//                    activeSlide = $(this).data('slide');
-//                    goToSlide(activeSlide);
-//                    return false;
-//                });
-//
-//                navPrev.on('click', function () {
-//                    activeSlide = (activeSlide == 0) ? totalSlides-1 : activeSlide-1;
-//                    goToSlide(activeSlide);
-//                    return false;
-//                });
-//
-//                navNext.on('click', function () {
-//                    activeSlide = (activeSlide == totalSlides-1) ? 0 : activeSlide+1;
-//                    goToSlide(activeSlide);
-//                    return false;
-//                });
-//
-//                $(window).on('resize', function () {
-//                    goToSlide(activeSlide);
-//                });
-//            }
+//            setTimeout(function () {
+//                pageLoader.hide();
+//            }, 2000);
 //        });
     })();
 </script>
