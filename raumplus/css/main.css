@@ -11287,6 +11287,12 @@ img:focus,
 button:focus {
   outline: none; }
 
+.svg-fill {
+  fill: #000000; }
+
+.svg-stroke {
+  stroke: #000000; }
+
 header {
   text-align: center; }
   @media (max-width: 767.98px) {
@@ -11338,6 +11344,8 @@ header {
     header .search:hover {
       -webkit-transform: rotate(-15deg) scale(1.15);
               transform: rotate(-15deg) scale(1.15); }
+    header .search svg {
+      padding: 2px; }
   header .menu-icon {
     width: 28px;
     height: 18px;
@@ -11353,7 +11361,7 @@ main {
   main .slider-bar {
     position: relative; }
     main .slider-bar .gradient-box {
-      background-image: radial-gradient(ellipse at 75% top, white 10%, transparent 60%, transparent 100%);
+      background-image: radial-gradient(ellipse at 75% top, #ffffff 10%, transparent 60%, transparent 100%);
       position: absolute;
       top: 0;
       right: 0;
@@ -12827,14 +12835,28 @@ footer {
 .tm-night {
   background-color: #000000 !important;
   color: #ffffff; }
+  .tm-night .svg-fill {
+    fill: #ffffff !important; }
+  .tm-night .svg-stroke {
+    stroke: #ffffff !important; }
+  .tm-night header .logo svg {
+    fill: #ffffff; }
+  .tm-night header .phone, .tm-night header .email {
+    color: #ffffff; }
+    .tm-night header .phone:after, .tm-night header .email:after {
+      background-color: #ffffff; }
   .tm-night main .slider .slide .txt-bar {
     background-color: #3f3f3f; }
   .tm-night main .catalog-bar__navbar__menu ul li:hover a {
     color: #3f3f3f; }
   .tm-night main .catalog-bar__navbar__menu ul li .active {
     color: #3f3f3f; }
+  .tm-night main .slider-bar .gradient-box {
+    background-image: radial-gradient(ellipse at 75% top, #3f3f3f 10%, transparent 60%, transparent 100%); }
   .tm-night .button {
     color: #ffffff; }
     .tm-night .button > span {
       background-color: #3f3f3f;
       border: solid 1px #262626; }
+  .tm-night .nav-float {
+    background-color: #3f3f3f; }
