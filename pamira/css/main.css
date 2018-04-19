@@ -1403,20 +1403,20 @@ h4, .h4, .footerTop__content__subtitle {
   line-height: 40px; }
   @media only screen and (max-width: 576px) {
     .large, .mainNav__item a, .promoBar__content__text, .promoTextBar {
-      font-size: 13px; } }
+      font-size: 15px; } }
   @media only screen and (max-width: 576px) {
     .large, .mainNav__item a, .promoBar__content__text, .promoTextBar {
-      line-height: 26px; } }
+      line-height: 30px; } }
 
 .small, .btn, .phoneList__item__label, .slidesetBar__list__item__label, .slidesetBar__list__item__price, .followBar__label, .listgroup__item__text, .footerMenu__item a {
   font-size: 14px;
   line-height: 28px; }
   @media only screen and (max-width: 576px) {
     .small, .btn, .phoneList__item__label, .slidesetBar__list__item__label, .slidesetBar__list__item__price, .followBar__label, .listgroup__item__text, .footerMenu__item a {
-      font-size: 11.9px; } }
+      font-size: 12.6px; } }
   @media only screen and (max-width: 576px) {
     .small, .btn, .phoneList__item__label, .slidesetBar__list__item__label, .slidesetBar__list__item__price, .followBar__label, .listgroup__item__text, .footerMenu__item a {
-      line-height: 23.8px; } }
+      line-height: 25.2px; } }
 
 svg {
   fill: none;
