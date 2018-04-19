@@ -2132,15 +2132,35 @@ footer {
   .footerMap__title {
     text-align: center; }
   .footerMap__container {
-    height: 840px;
-    position: relative; }
+    position: relative;
+    height: 840px; }
+    @media only screen and (max-width: 576px) {
+      .footerMap__container {
+        height: auto; } }
+    @media only screen and (max-width: 576px) {
+      .footerMap__container .container {
+        padding: 0; } }
     .footerMap__container__list {
-      position: absolute;
       left: 0;
+      position: absolute;
       width: 320px; }
+      @media only screen and (max-width: 576px) {
+        .footerMap__container__list {
+          position: relative; } }
+      @media only screen and (max-width: 576px) {
+        .footerMap__container__list {
+          width: 100%; } }
+  .footerMap__embed {
+    height: 840px; }
+    @media only screen and (max-width: 576px) {
+      .footerMap__embed {
+        height: 320px; } }
 
 .listgroup {
-  padding: 3rem 0; }
+  padding: padding; }
+  @media only screen and (max-width: 576px) {
+    .listgroup {
+      padding: 0; } }
   .listgroup__item {
     background-color: #FFFFFF; }
     .listgroup__item__label {
@@ -2160,7 +2180,7 @@ footer {
       padding: 0rem 2rem; }
       .listgroup__item__text a {
         font-weight: bold;
-        color: #95989A;
+        color: #95989A !important;
         text-decoration: none;
         border-bottom: 1px dashed; }
     .listgroup__item.active .listgroup__item__label, .listgroup__item:hover .listgroup__item__label {
@@ -2168,6 +2188,9 @@ footer {
     .listgroup__item.active .listgroup__item__text {
       height: 610px;
       padding: 0.5rem 2rem; }
+      @media only screen and (max-width: 576px) {
+        .listgroup__item.active .listgroup__item__text {
+          height: auto; } }
 
 .footerTop__title {
   display: block;
