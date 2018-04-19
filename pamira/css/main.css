@@ -1337,42 +1337,86 @@ body {
   margin: 0;
   padding: 0; }
 
-h1, h2, h3, h4, h5, h6,
-.h1,
-.sliderBar .slider__list__item__label, .h2, .footerMap__title, .h3, .hotLinksBar__label, .listgroup__item__label, .footerTop__title, .h4, .footerTop__content__subtitle, .h5, .h6 {
+h1, .h1, .sliderBar .slider__list__item__label, h2, .h2, .footerMap__title, .slidesetBar__title, .promoBar__content__label, .promoTextBar__label, .hotLinksBar__label, h3, .h3, .listgroup__item__label, .footerTop__title, h4, .h4, .footerTop__content__subtitle, h5, h6, .h5, .h6 {
   font-family: "Segoe UI", sans-serif;
   text-transform: uppercase;
   font-weight: bold; }
 
-h1,
-.h1,
-.sliderBar .slider__list__item__label {
+h1, .h1, .sliderBar .slider__list__item__label {
   font-size: 36.8px;
-  line-height: 55.2px;
+  line-height: 64.4px;
   padding: 2rem 0 0; }
+  @media only screen and (max-width: 576px) {
+    h1, .h1, .sliderBar .slider__list__item__label {
+      font-size: 23.92px; } }
+  @media only screen and (max-width: 576px) {
+    h1, .h1, .sliderBar .slider__list__item__label {
+      line-height: 41.86px; } }
+  @media only screen and (max-width: 576px) {
+    h1, .h1, .sliderBar .slider__list__item__label {
+      padding: 1rem 0 0; } }
 
-h2, .h2, .footerMap__title {
+h2, .h2, .footerMap__title, .slidesetBar__title, .promoBar__content__label, .promoTextBar__label, .hotLinksBar__label {
   font-size: 25.6px;
-  line-height: 38.4px;
+  line-height: 44.8px;
   padding: 1.5rem 0 0; }
+  @media only screen and (max-width: 576px) {
+    h2, .h2, .footerMap__title, .slidesetBar__title, .promoBar__content__label, .promoTextBar__label, .hotLinksBar__label {
+      font-size: 16.64px; } }
+  @media only screen and (max-width: 576px) {
+    h2, .h2, .footerMap__title, .slidesetBar__title, .promoBar__content__label, .promoTextBar__label, .hotLinksBar__label {
+      line-height: 29.12px; } }
+  @media only screen and (max-width: 576px) {
+    h2, .h2, .footerMap__title, .slidesetBar__title, .promoBar__content__label, .promoTextBar__label, .hotLinksBar__label {
+      padding: 0.75rem 0 0; } }
 
-h3, .h3, .hotLinksBar__label, .listgroup__item__label, .footerTop__title {
+h3, .h3, .listgroup__item__label, .footerTop__title {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 35px;
   padding: 1rem 0 0; }
+  @media only screen and (max-width: 576px) {
+    h3, .h3, .listgroup__item__label, .footerTop__title {
+      font-size: 13px; } }
+  @media only screen and (max-width: 576px) {
+    h3, .h3, .listgroup__item__label, .footerTop__title {
+      line-height: 22.75px; } }
+  @media only screen and (max-width: 576px) {
+    h3, .h3, .listgroup__item__label, .footerTop__title {
+      padding: 0.5rem 0 0; } }
 
 h4, .h4, .footerTop__content__subtitle {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 18px;
+  line-height: 31.5px;
   padding: 0.5rem 0 0; }
+  @media only screen and (max-width: 576px) {
+    h4, .h4, .footerTop__content__subtitle {
+      font-size: 11.7px; } }
+  @media only screen and (max-width: 576px) {
+    h4, .h4, .footerTop__content__subtitle {
+      line-height: 20.475px; } }
+  @media only screen and (max-width: 576px) {
+    h4, .h4, .footerTop__content__subtitle {
+      padding: 0.25rem 0 0; } }
 
-.large, .mainNav__item a, .promoBar__content__text {
+.large, .mainNav__item a, .promoBar__content__text, .promoTextBar {
   font-size: 20px;
-  line-height: 30px; }
+  line-height: 40px; }
+  @media only screen and (max-width: 576px) {
+    .large, .mainNav__item a, .promoBar__content__text, .promoTextBar {
+      font-size: 13px; } }
+  @media only screen and (max-width: 576px) {
+    .large, .mainNav__item a, .promoBar__content__text, .promoTextBar {
+      line-height: 26px; } }
 
-.small, .btn, .phoneList__item__label, .slidesetBar__list__item__label, .followBar__label, .listgroup__item__text, .footerMenu__item a {
+.small, .btn, .phoneList__item__label, .slidesetBar__list__item__label, .slidesetBar__list__item__price, .followBar__label, .listgroup__item__text, .footerMenu__item a {
   font-size: 14px;
-  line-height: 21px; }
+  line-height: 28px; }
+  @media only screen and (max-width: 576px) {
+    .small, .btn, .phoneList__item__label, .slidesetBar__list__item__label, .slidesetBar__list__item__price, .followBar__label, .listgroup__item__text, .footerMenu__item a {
+      font-size: 11.9px; } }
+  @media only screen and (max-width: 576px) {
+    .small, .btn, .phoneList__item__label, .slidesetBar__list__item__label, .slidesetBar__list__item__price, .followBar__label, .listgroup__item__text, .footerMenu__item a {
+      line-height: 23.8px; } }
 
 svg {
   fill: none;
@@ -1783,15 +1827,8 @@ footer {
   .slidesetBar__title {
     text-align: center;
     text-transform: uppercase;
-    font-size: 25.6px;
-    line-height: 38.4px;
+    font-family: "Segoe UI", sans-serif;
     margin: 1rem 0; }
-    @media only screen and (max-width: 576px) {
-      .slidesetBar__title {
-        font-size: 16px; } }
-    @media only screen and (max-width: 576px) {
-      .slidesetBar__title {
-        line-height: 24px; } }
     @media only screen and (max-width: 576px) {
       .slidesetBar__title {
         margin: 1rem 2rem; } }
@@ -1806,7 +1843,12 @@ footer {
       transition: all 0.3s ease-in-out;
       color: #AAAAAA;
       text-align: center;
-      display: inline-block; }
+      display: block; }
+    .slidesetBar__list__item__price {
+      color: #BF000C;
+      text-align: center;
+      display: block;
+      margin-top: 0.25rem; }
     .slidesetBar__list__item:hover .slidesetBar__list__item__label {
       color: #606060; }
     .slidesetBar__list__nav {
@@ -1957,18 +1999,12 @@ footer {
         align-items: center; }
     .promoBar__content__label {
       text-transform: uppercase;
-      font-size: 25.6px;
-      line-height: 38.4px;
+      font-family: "Segoe UI", sans-serif;
+      font-weight: 400;
       margin: 1rem 0; }
       @media only screen and (max-width: 576px) {
         .promoBar__content__label {
-          font-size: 16px; } }
-      @media only screen and (max-width: 576px) {
-        .promoBar__content__label {
-          line-height: 24px; } }
-      @media only screen and (max-width: 576px) {
-        .promoBar__content__label {
-          margin: 1rem 2rem; } }
+          margin: 1rem 0; } }
     .promoBar__content__text {
       margin: 1rem 2rem;
       color: #AAAAAA;
@@ -1989,33 +2025,15 @@ footer {
           display: none; } }
 
 .promoTextBar {
-  color: #606060;
-  font-size: 20px;
-  line-height: 30px; }
+  color: #606060; }
   @media only screen and (max-width: 576px) {
     .promoTextBar {
       background-color: #F0F0F0; } }
-  @media only screen and (max-width: 576px) {
-    .promoTextBar {
-      font-size: 16px; } }
-  @media only screen and (max-width: 576px) {
-    .promoTextBar {
-      line-height: 24px; } }
   .promoTextBar__label {
-    font-weight: 200;
     text-transform: uppercase;
-    font-size: 25.6px;
-    line-height: 25.6px;
-    margin: 1.5rem 0; }
-    @media only screen and (max-width: 576px) {
-      .promoTextBar__label {
-        font-size: 16px; } }
-    @media only screen and (max-width: 576px) {
-      .promoTextBar__label {
-        line-height: 24px; } }
-    @media only screen and (max-width: 576px) {
-      .promoTextBar__label {
-        margin: 0rem 0 1rem; } }
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 400;
+    margin-bottom: 1rem; }
   @media only screen and (max-width: 576px) {
     .promoTextBar p {
       margin: 0; } }
@@ -2093,10 +2111,10 @@ footer {
     .hotLinksBar {
       margin: 0.5rem !important; } }
   .hotLinksBar__label {
-    display: block;
     text-align: center;
-    font-weight: 200;
-    padding: 1rem 0 2rem;
+    text-transform: uppercase;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 400;
     padding: 1rem 0 2rem; }
     @media only screen and (max-width: 576px) {
       .hotLinksBar__label {
