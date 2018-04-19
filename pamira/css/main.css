@@ -1337,6 +1337,22 @@ body {
   margin: 0;
   padding: 0; }
 
+textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  border-radius: 0;
+  -webkit-appearance: none;
+  background-color: #fff;
+  color: #000;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 1em;
+  height: 1em;
+  vertical-align: middle;
+  border: 1px solid; }
+
 h1, .h1, .sliderBar .slider__list__item__label, h2, .h2, .footerMap__title, .slidesetBar__title, .promoBar__content__label, .promoTextBar__label, .hotLinksBar__label, h3, .h3, .footerTop__title, h4, .h4, .footerTop__content__subtitle a, h5, h6, .h5, .h6 {
   font-family: "Segoe UI", sans-serif;
   text-transform: uppercase;
@@ -2100,10 +2116,14 @@ footer {
   .followBar__form .btn {
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
-    text-align: center; }
+    text-align: center;
+    line-height: 23.8px; }
     @media only screen and (max-width: 576px) {
       .followBar__form .btn {
         margin-top: 0.5rem; } }
+    @media only screen and (max-width: 576px) {
+      .followBar__form .btn {
+        line-height: 28px; } }
 
 .hotLinksBar {
   margin: 3rem !important; }
