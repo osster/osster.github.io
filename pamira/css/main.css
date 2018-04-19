@@ -1322,10 +1322,10 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-end, body.swal2-no-backdrop .sw
   font-weight: normal;
   font-style: normal; }
 
-.subNavBar__item svg, .slidesetBar__list__item__img, .promoBar__img, .overlay-nav-bar .scroll-bar .btn-rect {
+.slidesetBar__list__item__img, .subNavBar__item svg, .promoBar__img, .overlay-nav-bar .scroll-bar .btn-rect {
   opacity: 1;
   transition: all 0.6s ease-in-out; }
-  .subNavBar__item svg:hover, .slidesetBar__list__item__img:hover, .promoBar__img:hover, .overlay-nav-bar .scroll-bar .btn-rect:hover {
+  .slidesetBar__list__item__img:hover, .subNavBar__item svg:hover, .promoBar__img:hover, .overlay-nav-bar .scroll-bar .btn-rect:hover {
     opacity: 0.8;
     -webkit-transform: scale(1.05);
             transform: scale(1.05); }
@@ -1366,7 +1366,7 @@ h4, .h4, .footerTop__content__subtitle {
   line-height: 1.5rem;
   padding: 0.5rem 0 0; }
 
-.large, .mainNav__item a, .promoBar__content__text, .promoTextBar {
+.large, .mainNav__item a, .promoBar__content__text {
   font-size: 20px;
   line-height: 30px; }
 
@@ -1379,11 +1379,11 @@ svg {
   stroke: #000;
   stroke-width: 1px; }
 
-.cs-hidden {
-  opacity: 0 !important; }
-
 .customBg {
   background-color: #F0F0F0; }
+  @media only screen and (max-width: 576px) {
+    .customBg {
+      background-color: transparent; } }
 
 header {
   color: #AAAAAA;
@@ -1773,6 +1773,83 @@ footer {
             .sliderBar .slider__list__item__label {
               color: #AAAAAA; } }
 
+.slidesetBar {
+  margin: 4rem 0 2rem; }
+  @media only screen and (max-width: 576px) {
+    .slidesetBar {
+      margin: 2rem 0; } }
+  .slidesetBar__wrap {
+    position: relative; }
+  .slidesetBar__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25.6px;
+    line-height: 38.4px;
+    margin: 1rem 0; }
+    @media only screen and (max-width: 576px) {
+      .slidesetBar__title {
+        font-size: 16px; } }
+    @media only screen and (max-width: 576px) {
+      .slidesetBar__title {
+        line-height: 24px; } }
+    @media only screen and (max-width: 576px) {
+      .slidesetBar__title {
+        margin: 1rem 2rem; } }
+  .slidesetBar__list {
+    opacity: 1;
+    transition: all 0.6s ease-in-out; }
+    .slidesetBar__list__item a {
+      text-decoration: none !important; }
+    .slidesetBar__list__item__img {
+      width: 100%; }
+    .slidesetBar__list__item__label {
+      transition: all 0.3s ease-in-out;
+      color: #AAAAAA;
+      text-align: center;
+      display: inline-block; }
+    .slidesetBar__list__item:hover .slidesetBar__list__item__label {
+      color: #606060; }
+    .slidesetBar__list__nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: center;
+          align-items: center;
+      z-index: 0;
+      display: -ms-flexbox;
+      display: flex; }
+      @media only screen and (max-width: 576px) {
+        .slidesetBar__list__nav {
+          display: none; } }
+      .slidesetBar__list__nav__prev, .slidesetBar__list__nav__next {
+        position: relative;
+        cursor: pointer; }
+        .slidesetBar__list__nav__prev svg, .slidesetBar__list__nav__next svg {
+          fill: #890004;
+          stroke: #890004;
+          transition: all 0.3s ease-in-out; }
+        .slidesetBar__list__nav__prev:hover svg, .slidesetBar__list__nav__next:hover svg {
+          fill: #BF000C;
+          stroke: #BF000C; }
+      .slidesetBar__list__nav__prev {
+        left: -48px; }
+      .slidesetBar__list__nav__next {
+        right: -48px; }
+  .slidesetBar__more {
+    margin: 2rem 0; }
+    @media only screen and (max-width: 576px) {
+      .slidesetBar__more {
+        margin: 0; } }
+  .slidesetBar .lSPager, .slidesetBar .lSAction {
+    margin-top: 0.75rem; }
+
 .subNavBar {
   font-family: "Segoe UI", sans-serif !important;
   text-decoration: none;
@@ -1853,80 +1930,6 @@ footer {
     .subNavBar__s2 .subNavBar__item__icon {
       padding-right: 1rem; }
 
-.slidesetBar {
-  margin: 4rem 0 2rem; }
-  @media only screen and (max-width: 576px) {
-    .slidesetBar {
-      margin: 2rem 0; } }
-  .slidesetBar__wrap {
-    position: relative; }
-  .slidesetBar__title {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 25.6px;
-    line-height: 38.4px;
-    margin: 1rem 0; }
-    @media only screen and (max-width: 576px) {
-      .slidesetBar__title {
-        font-size: 16px; } }
-    @media only screen and (max-width: 576px) {
-      .slidesetBar__title {
-        line-height: 24px; } }
-    @media only screen and (max-width: 576px) {
-      .slidesetBar__title {
-        margin: 1rem 2rem; } }
-  .slidesetBar__list {
-    opacity: 1;
-    transition: all 0.6s ease-in-out; }
-    .slidesetBar__list__item a {
-      text-decoration: none !important; }
-    .slidesetBar__list__item__img {
-      width: 100%; }
-    .slidesetBar__list__item__label {
-      transition: all 0.3s ease-in-out;
-      color: #AAAAAA;
-      text-align: center;
-      display: inline-block; }
-    .slidesetBar__list__item:hover .slidesetBar__list__item__label {
-      color: #606060; }
-    .slidesetBar__list__nav {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 5;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      -ms-flex-align: center;
-          align-items: center;
-      z-index: 0; }
-      .slidesetBar__list__nav__prev, .slidesetBar__list__nav__next {
-        position: relative;
-        cursor: pointer; }
-        .slidesetBar__list__nav__prev svg, .slidesetBar__list__nav__next svg {
-          fill: #890004;
-          stroke: #890004;
-          transition: all 0.3s ease-in-out; }
-        .slidesetBar__list__nav__prev:hover svg, .slidesetBar__list__nav__next:hover svg {
-          fill: #BF000C;
-          stroke: #BF000C; }
-      .slidesetBar__list__nav__prev {
-        left: -48px; }
-      .slidesetBar__list__nav__next {
-        right: -48px; }
-  .slidesetBar__more {
-    margin: 2rem 0; }
-    @media only screen and (max-width: 576px) {
-      .slidesetBar__more {
-        margin: 0; } }
-  .slidesetBar .lSPager, .slidesetBar .lSAction {
-    margin-top: 0.75rem; }
-
 .promoBar {
   margin: 0 0 3rem; }
   @media only screen and (max-width: 576px) {
@@ -1986,9 +1989,23 @@ footer {
           display: none; } }
 
 .promoTextBar {
-  color: #606060; }
+  color: #606060;
+  font-size: 20px;
+  line-height: 30px; }
+  @media only screen and (max-width: 576px) {
+    .promoTextBar {
+      font-size: 16px; } }
+  @media only screen and (max-width: 576px) {
+    .promoTextBar {
+      line-height: 24px; } }
   .promoTextBar__label {
     font-weight: 200; }
+    @media only screen and (max-width: 576px) {
+      .promoTextBar__label {
+        margin-bottom: 1rem; } }
+  @media only screen and (max-width: 576px) {
+    .promoTextBar p {
+      margin: 0; } }
 
 .infoBar {
   display: block; }
@@ -2022,10 +2039,19 @@ footer {
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-pack: justify;
-        justify-content: space-between; }
+        justify-content: space-between;
+    -ms-flex-flow: row;
+        flex-flow: row; }
+    @media only screen and (max-width: 576px) {
+      .followBar__form form {
+        -ms-flex-flow: column;
+            flex-flow: column; } }
     .followBar__form form > * {
-      margin-left: 2rem;
-      height: 35px; }
+      height: 35px;
+      margin-left: 2rem; }
+      @media only screen and (max-width: 576px) {
+        .followBar__form form > * {
+          margin-left: 0rem; } }
   .followBar__form input[type="text"], .followBar__form input[type="email"], .followBar__form input[type="tel"] {
     padding: 0.5rem 1rem;
     width: 300px; }
@@ -7820,7 +7846,6 @@ a.text-dark:hover, a.text-dark:focus {
   right: 10px; }
 
 .cS-hidden {
-  height: 1px;
   opacity: 0;
   filter: alpha(opacity=0);
   overflow: hidden; }
