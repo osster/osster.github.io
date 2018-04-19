@@ -1337,7 +1337,7 @@ body {
   margin: 0;
   padding: 0; }
 
-h1, .h1, .sliderBar .slider__list__item__label, h2, .h2, .footerMap__title, .slidesetBar__title, .promoBar__content__label, .promoTextBar__label, .hotLinksBar__label, h3, .h3, .listgroup__item__label, .footerTop__title, h4, .h4, .footerTop__content__subtitle a, h5, h6, .h5, .h6 {
+h1, .h1, .sliderBar .slider__list__item__label, h2, .h2, .footerMap__title, .slidesetBar__title, .promoBar__content__label, .promoTextBar__label, .hotLinksBar__label, h3, .h3, .footerTop__title, h4, .h4, .footerTop__content__subtitle a, h5, h6, .h5, .h6 {
   font-family: "Segoe UI", sans-serif;
   text-transform: uppercase;
   font-weight: bold; }
@@ -1370,18 +1370,18 @@ h2, .h2, .footerMap__title, .slidesetBar__title, .promoBar__content__label, .pro
     h2, .h2, .footerMap__title, .slidesetBar__title, .promoBar__content__label, .promoTextBar__label, .hotLinksBar__label {
       padding: 0.75rem 0 0; } }
 
-h3, .h3, .listgroup__item__label, .footerTop__title {
+h3, .h3, .footerTop__title {
   font-size: 20px;
   line-height: 35px;
   padding: 1rem 0 0; }
   @media only screen and (max-width: 576px) {
-    h3, .h3, .listgroup__item__label, .footerTop__title {
+    h3, .h3, .footerTop__title {
       font-size: 13px; } }
   @media only screen and (max-width: 576px) {
-    h3, .h3, .listgroup__item__label, .footerTop__title {
+    h3, .h3, .footerTop__title {
       line-height: 22.75px; } }
   @media only screen and (max-width: 576px) {
-    h3, .h3, .listgroup__item__label, .footerTop__title {
+    h3, .h3, .footerTop__title {
       padding: 0.5rem 0 0; } }
 
 h4, .h4, .footerTop__content__subtitle a {
@@ -1398,14 +1398,14 @@ h4, .h4, .footerTop__content__subtitle a {
     h4, .h4, .footerTop__content__subtitle a {
       padding: 0.25rem 0 0; } }
 
-.large, .mainNav__item a, .promoBar__content__text, .promoTextBar {
+.large, .mainNav__item a, .promoBar__content__text, .promoTextBar, .listgroup__item__label {
   font-size: 20px;
   line-height: 40px; }
   @media only screen and (max-width: 576px) {
-    .large, .mainNav__item a, .promoBar__content__text, .promoTextBar {
+    .large, .mainNav__item a, .promoBar__content__text, .promoTextBar, .listgroup__item__label {
       font-size: 15px; } }
   @media only screen and (max-width: 576px) {
-    .large, .mainNav__item a, .promoBar__content__text, .promoTextBar {
+    .large, .mainNav__item a, .promoBar__content__text, .promoTextBar, .listgroup__item__label {
       line-height: 30px; } }
 
 .small, .btn, .phoneList__item__label, .slidesetBar__list__item__label, .slidesetBar__list__item__price, .followBar__label, .listgroup__item__text, .footerMenu__item a {
@@ -2157,7 +2157,7 @@ footer {
         height: 320px; } }
 
 .listgroup {
-  padding: padding; }
+  padding: 4rem 0 0; }
   @media only screen and (max-width: 576px) {
     .listgroup {
       padding: 0; } }
@@ -2173,13 +2173,11 @@ footer {
       position: relative;
       transition: all 0.3s ease; }
       .listgroup__item__label:after {
-        display: none;
+        display: block;
         position: absolute;
         content: '';
         height: 20px;
         width: 20px;
-        right: 0.5rem;
-        top: 10px;
         background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yNjU3LjA2NiA1NjEgMTUgMjMuMTE1Ij4NCiAgPGRlZnM+DQogICAgPHN0eWxlPg0KICAgICAgLmNscy0xIHsNCiAgICAgICAgZmlsbDogI2JmMDAwYzsNCiAgICAgIH0NCiAgICA8L3N0eWxlPg0KICA8L2RlZnM+DQogIDxwYXRoIGlkPSJQYXRoXzEiIGRhdGEtbmFtZT0iUGF0aCAxIiBjbGFzcz0iY2xzLTEiIGQ9Ik0xMS41NTcsMTUsMCwzLjQ0MywzLjQ0MywwbDguMTE1LDguMTE1TDE5LjY3MiwwbDMuNDQzLDMuNDQzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI2NTcuMDY2IDU4NC4xMTUpIHJvdGF0ZSgtOTApIi8+DQo8L3N2Zz4NCg==);
         background-size: contain;
         background-position: center;
@@ -2188,21 +2186,25 @@ footer {
                 transform: rotate(90deg);
         cursor: pointer;
         pointer-events: all;
-        transition: all 0.3s ease; }
+        transition: all 0.3s ease;
+        top: 20px;
+        right: 1rem; }
         @media only screen and (max-width: 576px) {
           .listgroup__item__label:after {
-            display: block; } }
+            top: 10px; } }
+        @media only screen and (max-width: 576px) {
+          .listgroup__item__label:after {
+            right: 0.5rem; } }
     .listgroup__item.active .listgroup__item__label:after {
       -webkit-transform: rotate(-90deg);
               transform: rotate(-90deg); }
     .listgroup__item__text {
       transition: all 0.3s ease;
-      height: 0;
       background-color: #FFFFFF;
       color: #606060;
       overflow: hidden;
       padding: 0rem 2rem;
-      max-height: 610; }
+      max-height: 0px; }
       @media only screen and (max-width: 576px) {
         .listgroup__item__text {
           max-height: 0px; } }
@@ -2214,8 +2216,8 @@ footer {
     .listgroup__item.active .listgroup__item__label, .listgroup__item:hover .listgroup__item__label {
       background-color: #606060; }
     .listgroup__item.active .listgroup__item__text {
-      height: 610px;
-      max-height: 610;
+      height: auto;
+      max-height: 610px;
       padding: 0.5rem 2rem; }
       @media only screen and (max-width: 576px) {
         .listgroup__item.active .listgroup__item__text {
