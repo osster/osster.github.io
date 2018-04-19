@@ -1,12 +1,32 @@
-<svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.75 24.5">
-    <title>ic-email</title>
-    <path d="M12.1,12.78a3.6,3.6,0,0,1-2.67-1.19L3.23,4.8A0.5,0.5,0,0,1,4,4.12l6.21,6.79a2.64,2.64,0,0,0,3.87,0l6.2-6.78a0.5,0.5,0,0,1,.74.67l-6.2,6.78A3.6,3.6,0,0,1,12.1,12.78Z"/>
-    <path d="M3.6,16a0.5,0.5,0,0,1-.34-0.87l5.46-5a0.5,0.5,0,0,1,.67.74l-5.46,5A0.5,0.5,0,0,1,3.6,16Z"/>
-    <path d="M18.5,14a0.5,0.5,0,0,1-.34-0.13l-3.35-3.06a0.5,0.5,0,1,1,.67-0.74l3.35,3.06A0.5,0.5,0,0,1,18.5,14Z"/>
-    <path d="M20.63,23.75a5.5,5.5,0,1,1,5.5-5.5,0.5,0.5,0,0,1-1,0,4.5,4.5,0,1,0-1.37,3.23,0.5,0.5,0,1,1,.7.72A5.47,5.47,0,0,1,20.63,23.75Z"/>
-    <path d="M20.63,20.75a2.5,2.5,0,1,1,2.5-2.5A2.5,2.5,0,0,1,20.63,20.75Zm0-4a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,20.63,16.75Z"/>
-    <path d="M15.38,18.75H2.6a2.27,2.27,0,0,1-2.22-2.5v-13A2.27,2.27,0,0,1,2.6.75h19a2.76,2.76,0,0,1,2.78,2.5v10.5a0.5,0.5,0,0,1-1,0V3.25a1.78,1.78,0,0,0-1.78-1.5H2.6a1.31,1.31,0,0,0-1.22,1.5v13a1.31,1.31,0,0,0,1.22,1.5H15.38A0.5,0.5,0,0,1,15.38,18.75Z"/>
-    <path d="M24.1,20.25a2,2,0,0,1-2-2,0.5,0.5,0,0,1,1,0,1,1,0,0,0,2,0,0.5,0.5,0,0,1,1,0A2,2,0,0,1,24.1,20.25Z"/>
-    <div xmlns="" id="divScriptsUsed" style="display: none"/>
-    <script xmlns="" id="globalVarsDetection" src="moz-extension://4ce8c5be-f761-4ca2-b66b-42f9635c7424/js/wrs_env.js"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2882 3185.258 57.521 40.077">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #aaa;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Icon_Mail" transform="translate(25 -2392.742)">
+    <g id="Rectangle_907" data-name="Rectangle 907" class="cls-1" transform="translate(-2907 5578)">
+      <rect class="cls-3" width="57.447" height="40" rx="2"/>
+      <rect class="cls-4" x="1" y="1" width="55.447" height="38" rx="1"/>
+    </g>
+    <line id="Line_111" data-name="Line 111" class="cls-2" x2="28.511" y2="28.511" transform="translate(-2905.787 5579.213)"/>
+    <line id="Line_112" data-name="Line 112" class="cls-2" x1="28.085" y2="28.511" transform="translate(-2878.276 5579.638)"/>
+    <line id="Line_113" data-name="Line 113" class="cls-2" y1="18.12" x2="19.862" transform="translate(-2905.362 5598.242)"/>
+    <line id="Line_114" data-name="Line 114" class="cls-2" x1="19.149" y1="18.723" transform="translate(-2869.766 5598.638)"/>
+  </g>
 </svg>

@@ -1513,7 +1513,7 @@ footer {
   padding: 0.5rem 3rem; }
   @media only screen and (max-width: 576px) {
     .btn {
-      padding: 0.5rem 2rem; } }
+      padding: 0.5rem 1.5rem; } }
   .btn:hover {
     background-color: #890004;
     -webkit-transform: scaleX(1.025);
@@ -1994,15 +1994,28 @@ footer {
   line-height: 30px; }
   @media only screen and (max-width: 576px) {
     .promoTextBar {
+      background-color: #F0F0F0; } }
+  @media only screen and (max-width: 576px) {
+    .promoTextBar {
       font-size: 16px; } }
   @media only screen and (max-width: 576px) {
     .promoTextBar {
       line-height: 24px; } }
   .promoTextBar__label {
-    font-weight: 200; }
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 25.6px;
+    line-height: 25.6px;
+    margin: 1.5rem 0; }
     @media only screen and (max-width: 576px) {
       .promoTextBar__label {
-        margin-bottom: 1rem; } }
+        font-size: 16px; } }
+    @media only screen and (max-width: 576px) {
+      .promoTextBar__label {
+        line-height: 24px; } }
+    @media only screen and (max-width: 576px) {
+      .promoTextBar__label {
+        margin: 0rem 0 1rem; } }
   @media only screen and (max-width: 576px) {
     .promoTextBar p {
       margin: 0; } }
@@ -2021,9 +2034,16 @@ footer {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: start;
-      justify-content: flex-start; }
-  .followBar__label img {
+      justify-content: flex-start;
+  margin: 0; }
+  @media only screen and (max-width: 576px) {
+    .followBar__label {
+      margin: 0 1.5rem 1rem; } }
+  .followBar__label svg {
     margin-right: 2rem; }
+    @media only screen and (max-width: 576px) {
+      .followBar__label svg {
+        margin-right: 1rem; } }
 
 .followBar__form {
   display: -ms-flexbox;
@@ -2040,6 +2060,7 @@ footer {
         align-items: center;
     -ms-flex-pack: justify;
         justify-content: space-between;
+    width: 100%;
     -ms-flex-flow: row;
         flex-flow: row; }
     @media only screen and (max-width: 576px) {
@@ -2052,12 +2073,19 @@ footer {
       @media only screen and (max-width: 576px) {
         .followBar__form form > * {
           margin-left: 0rem; } }
+      @media only screen and (max-width: 576px) {
+        .followBar__form form > * {
+          width: 100% !important; } }
   .followBar__form input[type="text"], .followBar__form input[type="email"], .followBar__form input[type="tel"] {
     padding: 0.5rem 1rem;
     width: 300px; }
   .followBar__form .btn {
     padding-top: 0.3rem;
-    padding-bottom: 0.3rem; }
+    padding-bottom: 0.3rem;
+    text-align: center; }
+    @media only screen and (max-width: 576px) {
+      .followBar__form .btn {
+        margin-top: 0.5rem; } }
 
 .hotLinksBar {
   margin: 3rem !important; }
