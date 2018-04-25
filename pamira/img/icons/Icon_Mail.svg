@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2882 3185.258 57.521 40.077">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 40">
   <defs>
     <style>
       .cls-1 {
@@ -19,14 +19,14 @@
       }
     </style>
   </defs>
-  <g id="Icon_Mail" transform="translate(25 -2392.742)">
+  <g id="Icon_Mail" transform="translate(2907 -5578)">
     <g id="Rectangle_907" data-name="Rectangle 907" class="cls-1" transform="translate(-2907 5578)">
-      <rect class="cls-3" width="57.447" height="40" rx="2"/>
-      <rect class="cls-4" x="1" y="1" width="55.447" height="38" rx="1"/>
+      <rect class="cls-3" width="58" height="40" rx="2"/>
+      <rect class="cls-4" x="1" y="1" width="56" height="38" rx="1"/>
     </g>
-    <line id="Line_111" data-name="Line 111" class="cls-2" x2="28.511" y2="28.511" transform="translate(-2905.787 5579.213)"/>
+    <path id="Path_319" data-name="Path 319" class="cls-2" d="M0,0,11.137,11.137,28.511,28.511" transform="translate(-2905.787 5579.213)"/>
     <line id="Line_112" data-name="Line 112" class="cls-2" x1="28.085" y2="28.511" transform="translate(-2878.276 5579.638)"/>
     <line id="Line_113" data-name="Line 113" class="cls-2" y1="18.12" x2="19.862" transform="translate(-2905.362 5598.242)"/>
-    <line id="Line_114" data-name="Line 114" class="cls-2" x1="19.149" y1="18.723" transform="translate(-2869.766 5598.638)"/>
+    <line id="Line_114" data-name="Line 114" class="cls-2" x1="18" y1="18" transform="translate(-2868.5 5598.242)"/>
   </g>
 </svg>
