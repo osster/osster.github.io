@@ -12106,7 +12106,7 @@ a.text-dark:focus {
   }
 
   header .container {
-    background: #F0F0F0;
+    background: rgba(240, 240, 240, 0.7);
   }
 
   header .container {
