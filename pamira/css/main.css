@@ -4365,7 +4365,6 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
 }
 
 .generalNav__level1 {
-  padding: 0.5rem 0;
   width: 580px;
 }
 
@@ -5361,6 +5360,12 @@ footer {
   min-height: 152px;
   text-align: left;
   color: #606060;
+}
+
+.sliderBar .lSSlideOuter .lSPager.lSpg {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
 }
 
 .slidesetBar {
