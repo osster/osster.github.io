@@ -233,7 +233,8 @@
             </g>
             <path class="a" d="M-613.669,1367.018c-.277-6.057-.443-17.208,0-22.191s7.691-4.827,7.691-4.827h22.428"
                   transform="translate(613.943 -1317.018)"/>
-            <path class="a" d="M-579,1341s4.6.357,4.822,3.106,0,23.913,0,23.913" transform="translate(609.079 -1318.018)"/>
+            <path class="a" d="M-579,1341s4.6.357,4.822,3.106,0,23.913,0,23.913"
+                  transform="translate(609.079 -1318.018)"/>
             <path class="a" d="M-503.379,1340.218" transform="translate(533.049 -1318)"/>
             <path class="a" d="M-532.154,1618.534v26.284h20.717v-26.8" transform="translate(539.206 -1595)"/>
         </g>
@@ -328,9 +329,15 @@
             <span class="pushNav__filter__label__value">Ростов-на-Дону</span>
         </div>
         <ul class="pushNav__filter__dropdown">
-            <li onclick="$('.pushNav__filter__dropdown').removeClass('show'); $('.pushNav__filter__label__value').text($(this).text()); return false;">Ростов-на-Дону</li>
-            <li onclick="$('.pushNav__filter__dropdown').removeClass('show'); $('.pushNav__filter__label__value').text($(this).text()); return false;">Воронеж</li>
-            <li onclick="$('.pushNav__filter__dropdown').removeClass('show'); $('.pushNav__filter__label__value').text($(this).text()); return false;">Ставрополь</li>
+            <li onclick="$('.pushNav__filter__dropdown').removeClass('show'); $('.pushNav__filter__label__value').text($(this).text()); return false;">
+                Ростов-на-Дону
+            </li>
+            <li onclick="$('.pushNav__filter__dropdown').removeClass('show'); $('.pushNav__filter__label__value').text($(this).text()); return false;">
+                Воронеж
+            </li>
+            <li onclick="$('.pushNav__filter__dropdown').removeClass('show'); $('.pushNav__filter__label__value').text($(this).text()); return false;">
+                Ставрополь
+            </li>
         </ul>
     </section>
     <section class="pushNav__content">
@@ -629,7 +636,15 @@
                         <div class="slider__list__item__label">Специальные цены на набор из трех предметов SMEG 1</div>
                     </li>
                     <li class="slider__list__item">
-                        <img class="slider__list__item__pic" src="img/slides/slide-1.jpg" alt="Slide 2"/>
+                        <img class="slider__list__item__pic" src="img/slides/slide-2.jpg" alt="Slide 2"/>
+                        <div class="slider__list__item__label">Специальные цены на набор из трех предметов SMEG 2</div>
+                    </li>
+                    <li class="slider__list__item">
+                        <img class="slider__list__item__pic" src="img/slides/slide-3.jpg" alt="Slide 3"/>
+                        <div class="slider__list__item__label">Специальные цены на набор из трех предметов SMEG 2</div>
+                    </li>
+                    <li class="slider__list__item">
+                        <img class="slider__list__item__pic" src="img/slides/slide-4.jpg" alt="Slide 4"/>
                         <div class="slider__list__item__label">Специальные цены на набор из трех предметов SMEG 2</div>
                     </li>
                 </ul>
@@ -784,9 +799,9 @@
             </div>
         </section>
 
-        <section class="promoBar">
+        <section class="promoBar customBg py-5">
             <div class="container">
-                <div class="row">
+                <div class="row c-right">
                     <div class="col-lg-7">
                         <img class="w-100 promoBar__img" src="img/Promo_1.jpg" alt="Promo 1">
                     </div>
@@ -796,43 +811,57 @@
                         <a class="btn promoBar__content__btn">посмотреть все предложения</a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="infoBar my-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 pr-3 text-left">
-                        <div class="h3">
-                            РАБОТАЕМ С 1998 ГОДА
+                <div class="row mt-4">
+                    <div class="col-lg-4">
+                        <div class="card promo-1">
+                            <a href="#">
+                                <img class="card-img-top promoBar__img" src="img/Promo_1_sub_1.png" alt="Promo 1 sub 1">
+                            </a>
+                            <div class="card-body mx-5 mb-3">
+                                <div class="card-title text-center">Работаем с 1998 года</div>
+                                <p class="card-text">
+                                    Памира на сегодняшний день является одной из ведущих компаний на рынке бытовой и
+                                    встраиваемой техники Ростова-на-Дону, Ставропольского края и Воронежа. Вот уже без
+                                    малого 20 лет мы осуществляем оптовые поставки кухонной техники, а также имеем
+                                    собственные розничные магазины в Ростове-на-Дону и Воронеже.
+                                </p>
+                            </div>
+                            <a href="#" class="card-read-more"></a>
                         </div>
-                        <p>
-                            Памира на сегодняшний день является одной из ведущих компаний на рынке бытовой и
-                            встраиваемой
-                            техники Ростова-на-Дону, Ставропольского края и Воронежа. Вот уже без малого 20 лет мы
-                            осуществляем оптовые поставки кухонной техники, а также имеем собственные розничные магазины
-                            в
-                            Ростове-на-Дону и Воронеже.
-                        </p>
-                        <p>
-                            Профессиональная консультация, индивидуальный подход.
-                        </p>
                     </div>
-                    <div class="col-lg-6 pl-3 text-left">
-                        <div class="h3">
-                            РАДОСТЬ ОТ ПОКУПОК ДЛИТСЯ ВЕЧНО
+                    <div class="col-lg-4">
+                        <div class="card promo-1">
+                            <a href="#">
+                                <img class="card-img-top promoBar__img" src="img/Promo_1_sub_2.png" alt="Promo 1 sub 2">
+                            </a>
+                            <div class="card-body mx-5 mb-3">
+                                <div class="px-3 card-title text-center">Радость от покупок длится вечно</div>
+                                <p class="card-text">
+                                    Послегарантийное обслуживание бытовой техники должно производиться авторизованными
+                                    сервисными центрами. Это означает, что по необходимости вы можете принести к нам в
+                                    магазин свою технику оплатить обслуживание или ремонт, после чего Мы сами отвёзём
+                                    товар к авторизированному сервисному центру и привезём обратно в магазин, где вы
+                                    сможете его забрать.
+                                </p>
+                            </div>
+                            <a href="#" class="card-read-more"></a>
                         </div>
-                        <p>
-                            Послегарантийное обслуживание бытовой техники должно производиться авторизованными
-                            сервисными
-                            центрами. Это означает, что по необходимости вы можете принести к нам в магазин свою технику
-                            оплатить обслуживание или ремонт, после чего Мы сами отвёзём товар к авторизированному
-                            сервисному центру и привезём обратно в магазин, где вы сможете его забрать.
-                        </p>
-                        <p>
-                            Транспортировку из дома и обратно крупногабаритной техники, если вы не против, мы возьмём на
-                            себя
-                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card promo-1">
+                            <a href="#">
+                                <img class="card-img-top promoBar__img" src="img/Promo_1_sub_3.png" alt="Promo 1 sub 3">
+                            </a>
+                            <div class="card-body mx-5 mb-3">
+                                <div class="px-3 card-title text-center">Вам удобно</div>
+                                <p class="card-text">
+                                    Транспортировку из дома и обратно крупногабаритной техники, если вы не против, мы
+                                    возьмём на себя
+                                    Профессиональная консультация, индивидуальный подход.
+                                </p>
+                            </div>
+                            <a href="#" class="card-read-more"></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1029,8 +1058,8 @@
             </div>
         </section>
 
-        <section class="promoBar mb-0">
-            <div class="container customBg">
+        <section class="promoBar customBg py-5">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-5 text-center promoBar__content">
                         <div class="promoBar__content__label">Вся техника подключена</div>
@@ -1039,6 +1068,37 @@
                     </div>
                     <div class="col-lg-7 px-0">
                         <img class="w-100 promoBar__img" src="img/Promo_2.jpg" alt="Promo 2">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-7 pl-0">
+                        <div class="card promo-2">
+                            <a href="#">
+                                <img class="card-img-top promoBar__img" src="img/Promo_2_sub_1.jpg" alt="Promo 1 sub 1">
+                            </a>
+                            <div class="card-body mx-5 mb-3">
+                                <div class="card-title text-center">
+                                    Новая серия оборудования aeg для ухода за бельём
+                                </div>
+                                <p class="card-text">
+                                    Как сохранить внешний вид одежды в течение длительного времени и уменьшить вредное
+                                    воздействие на окружающую среду
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 pr-0">
+                        <div class="card promo-2">
+                            <a href="#">
+                                <img class="card-img-top promoBar__img" src="img/Promo_2_sub_2.jpg" alt="Promo 1 sub 2">
+                            </a>
+                            <div class="card-body mx-5 mb-3">
+                                <div class="px-3 card-title text-center">Новинки 2017/2018 года</div>
+                                <p class="card-text">
+                                    Мы рады представить Вам новинки
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1082,8 +1142,8 @@
             </div>
         </section>
 
-        <section class="promoBar mb-0 mb-lg-5">
-            <div class="container customBg">
+        <section class="promoBar customBg py-5">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-7 px-0">
                         <img class="promoBar__img w-100" src="img/Promo_3.jpg" alt="Promo 3">
@@ -1105,6 +1165,19 @@
 
                 <p>Хозяйка может почувствовать себя на своей кухне, понять что нужно, а что нет.</p>
                 <p>На активной кухне подключены все существующие кухонные приборы.</p>
+            </div>
+        </section>
+        
+        <section class="promoSlider p-0 py-4 py-lg-5">
+            <div class="promoSlider__list cS-hidden">
+                <div class="promoSlider__list__slide">
+                    <img class="promoSlider__list__slide__image" src="img/PromoSlide_1.png">
+                    <div class="promoSlider__list__slide__title">название модели и стоимость?</div>
+                </div>
+                <div class="promoSlider__list__slide">
+                    <img class="promoSlider__list__slide__image" src="img/PromoSlide_1.png">
+                    <div class="promoSlider__list__slide__title">название модели и стоимость?</div>
+                </div>
             </div>
         </section>
 
@@ -1544,9 +1617,6 @@
         });
 
 //        $(window).load(function () {
-//            setTimeout(function () {
-//                pageLoader.hide();
-//            }, 2000);
 //        });
     })();
 </script>
