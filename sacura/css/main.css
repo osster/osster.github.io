@@ -6293,6 +6293,7 @@ header .navbar-head {
   justify-content: space-between;
   background-color: #fefcff;
   height: 85px;
+  border-left: 1px solid lightgrey;
 }
 
 header .navbar-head__menu {
@@ -6378,12 +6379,12 @@ header .navbar-head__basket p {
 .containerForm {
   position: fixed;
   z-index: 40;
-  top: 71px;
+  top: 85px;
   right: 2%;
   opacity: 1;
   transition: all 0.5s ease;
-  -webkit-transform: translateX(110%);
-  transform: translateX(110%);
+  -webkit-transform: translateX(120%);
+  transform: translateX(120%);
 }
 
 .containerForm__form {
@@ -6404,7 +6405,8 @@ header .navbar-head__basket p {
 }
 
 .containerForm form ul li {
-  width: 300px;
+  max-width: 450px;
+  width: 100%;
   height: 85px;
   box-sizing: border-box;
   padding: 20px 60px;
@@ -6412,6 +6414,10 @@ header .navbar-head__basket p {
   font-size: 20px;
   list-style-type: none;
   color: gray;
+}
+
+.containerForm form ul li:last-child {
+  padding: 13px 60px;
 }
 
 .containerForm form ul .products {
@@ -6436,7 +6442,8 @@ header .navbar-head__basket p {
   background-color: orange;
   border: none;
   box-sizing: border-box;
-  padding: 0 10px;
+  margin: auto 0;
+  padding: 10px 20px;
   color: white;
   transition: background-color 0.3s;
 }
@@ -6461,9 +6468,6 @@ header .navbar-head__basket p {
   width: 300px;
   background-color: #fefcff;
   transition: all 0.5s;
-  max-height: calc(100vh - 170px);
-  overflow: hidden;
-  overflow-y: auto;
 }
 
 .menuLeft .nameMenu {
@@ -6497,8 +6501,8 @@ header .navbar-head__basket p {
 }
 
 .menuLeft ul {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -6533,6 +6537,18 @@ header .navbar-head__basket p {
 }
 
 .menuLeft .active {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.menuLeft .active2 {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.sections_lists {
+  display: -ms-flexbox;
+  display: flex;
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
@@ -6540,17 +6556,18 @@ header .navbar-head__basket p {
 .sections_list {
   background-color: #fefcff;
   position: relative;
-  top: 0;
-  height: calc(100vh - 170px);
+  height: calc(100vh - 170px - 85px);
   overflow: hidden;
   overflow-y: auto;
 }
 
 .ingredients_list {
   background-color: #fefcff;
-  position: absolute;
-  top: 86px;
-  height: calc(100vh - 170px);
+  position: relative;
+  transition: all 0.3s;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  height: calc(100vh - 170px - 85px);
   overflow: hidden;
   overflow-y: auto;
 }
@@ -10156,6 +10173,7 @@ main .content .menuRight .slider a img {
     height: 60px;
     left: 60vw;
     width: 40vw;
+    border-left: none;
   }
 
   header .navbar-head__menu {
@@ -10167,7 +10185,7 @@ main .content .menuRight .slider a img {
     /* mobile-all */
     height: 60px;
     max-width: 100vw;
-    border-left: none;
+    border: none;
   }
 
   header .navbar-head__basket p {
@@ -10178,6 +10196,7 @@ main .content .menuRight .slider a img {
   header .navbar-head__basket img {
     /* mobile-all */
     width: 30px;
+    margin-right: 20px;
   }
 
   .containerLogo {
@@ -10219,6 +10238,7 @@ main .content .menuRight .slider a img {
   .containerForm {
     /* mobile-all */
     position: fixed;
+    top: 60px;
     background-color: #fefcff;
     right: 0;
     width: 100%;
@@ -10233,15 +10253,32 @@ main .content .menuRight .slider a img {
     width: 100%;
   }
 
+  .containerForm form ul li {
+    /* mobile-all */
+    position: relative;
+    top: 0;
+    background-color: #fefcff;
+    right: 0;
+    max-width: 100vw;
+    width: 100%;
+    transition: all 0.5s;
+  }
+
+  .containerForm form ul .basketButton {
+    /* mobile-all */
+    padding: 0 10px;
+  }
+
   .menuLeft {
     /* mobile-all */
     position: relative;
+    top: 60px;
     display: block;
     width: 100%;
     border-right: none;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
-    max-height: calc(100vh - 170px);
+    max-height: calc(100vh - 60px);
     overflow: hidden;
     overflow-y: auto;
   }
@@ -10278,14 +10315,11 @@ main .content .menuRight .slider a img {
     width: 250px;
   }
 
-  .showMenu {
-    /* mobile-all */
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-
   .sections_list {
     /* mobile-all */
+    height: calc(100vh - 170px + 282px);
+    overflow: hidden;
+    overflow-y: auto;
   }
 
   .ingredients_list {
