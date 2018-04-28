@@ -13492,28 +13492,30 @@ footer .footer-copy a {
   letter-spacing: normal;
   text-align: center;
   color: #909090;
-  width: 245px;
-  margin-left: 80px;
+  width: 320px;
+  margin-left: 40px;
 }
 
 .about-bar__content__video a {
   color: #909090;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
   text-decoration: none;
+  text-align: left;
   transition: all .3s ease-in-out;
 }
 
 .about-bar__content__video a .btn-play {
-  width: 64px;
-  height: 64px;
+  min-width: 64px;
+  min-height: 64px;
   object-fit: contain;
+  margin-right: 0.5rem;
   fill: #909090;
   stroke: #909090;
   transition: all .3s ease-in-out;
@@ -13521,7 +13523,7 @@ footer .footer-copy a {
 
 .about-bar__content__video:hover a {
   text-decoration: none;
-  color: #000;
+  color: #000000;
 }
 
 .about-bar__content__video:hover a .btn-play {
@@ -13529,7 +13531,12 @@ footer .footer-copy a {
   transform: scale(1.1);
   fill: #000000;
   stroke: #000000;
-  stroke-width: 4px;
+  stroke-width: 2px;
+}
+
+.about-bar__content__video.bottom a {
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .about-bar__content .lSPager {
@@ -14369,6 +14376,10 @@ main .slide {
   background-color: #3f3f3f;
 }
 
+.tm-night main .slider .lSSlideOuter .lSPager.lSpg {
+  background-color: #3f3f3f;
+}
+
 .tm-night main .slideset {
   color: #909090;
 }
@@ -14400,6 +14411,7 @@ main .slide {
 
 .tm-night main .slider-bar .gradient-box {
   background-image: radial-gradient(ellipse at 75% top, #3f3f3f 10%, transparent 60%, transparent 100%);
+  opacity: 0.4;
 }
 
 .tm-night main .offers-bar .offer__title {
@@ -18820,6 +18832,15 @@ main .slide {
 
   .slider {
     content: 'mobile-portrait';
+  }
+
+  .slider .slide img {
+    height: 320px;
+  }
+
+  .slider .slide .container {
+    top: -70px;
+    position: relative;
   }
 
   .counter-bar {
