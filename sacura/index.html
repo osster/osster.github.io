@@ -1,246 +1,473 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rostov-sakura</title>
-    <link rel="stylesheet" type="text/css" href="css/critical.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">-->
-</head>
-<body>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<header>
-        <nav class="navbar-head pos-f-t row justify-content-between p-0 m-0">
-            <div class="navbar-head__menu col-xl-7 col-lg-8 col-md-7 col-sm-7 p-0 m-0">
-                <ul>
-                    <li><a href="#">Акции</a></li>
-                    <li><a href="#">Вакансии</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+
+<aside id="page-nav" class="flying-nav left">
+    <div class="flying-nav__logo">
+        <a href="index.html">
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="81.544 49.954 637.959 697.343">
+                <g id="SACURA">
+                    <path id="Path_1" data-name="Path 1"
+                          d="M385.068,152.551H187.613v126.1H452.656V249.74H571.45v28.911h39.368V211.6H414.594v28.3H227.4V191.3H385.068Z"/>
+                    <path id="Path_2" data-name="Path 2" d="M414.875,152.551v38.268H610.818V152.551Z"/>
+                    <path id="Path_3" data-name="Path 3"
+                          d="M187.613,299.528H226.97V333.32h62.4l38.05-33.792H386.16l-60.973,53.4,38.419,34.3,206.7-.438V367.8l-156.276-.048V299.528h38.948V328.36H570.3V298.425h40.6l-.179,127.882-261.012-.019-60.337-53.373h-62.4v73.562H384.878v97.7H226.97v29.935h-39V504.491h157.1V485.926h-157.1Z"/>
+                    <path id="Path_4" data-name="Path 4" d="M414.233,446.016v38.519H609.7V446.016Z"/>
+                    <path id="Path_5" data-name="Path 5"
+                          d="M414.233,505.049l-.018,69.039h38.679l.005-30.539H570.5l-.006,30.5,38.5-.018,0-68.985Z"/>
+                </g>
+                <g id="ekspress">
+                    <path id="Path_6" data-name="Path 6"
+                          d="M95.755,712.35H142.11v33.071H88.975v-8.994h42.758v-4.981H111.391v-4.982h20.341v-5.258H95.755Z"/>
+                    <path id="Path_7" data-name="Path 7"
+                          d="M169.232,712.35v33.625h10.516V731.031h17.158l17.158,14.944h14.529L205.9,726.464l14.806-14.114H207.7l-10.793,9.686H179.748V712.35Z"/>
+                    <path id="Path_8" data-name="Path 8"
+                          d="M257.348,712.35v34.306H310.26V735.967H267.236v-13.58H310.26V712.35Z"/>
+                    <path id="Path_9" data-name="Path 9"
+                          d="M336.491,712.35V747.3h11.768V721.8h31.383v25.5h11.333V712.35Z"/>
+                    <path id="Path_10" data-name="Path 10"
+                          d="M417.14,712.35h53.3V738.7H427.835v8.513H417.14V729.19h42.739v-6.75H417.14Z"/>
+                    <path id="Path_11" data-name="Path 11"
+                          d="M497.53,712.35v34.176h53.7V736.4h-42.19v-4.449h36.206v-5.83H509.037v-5.063h42.19V712.35Z"/>
+                    <path id="Path_12" data-name="Path 12"
+                          d="M257.348,712.35v34.306H310.26V735.967H267.236v-13.58H310.26V712.35Z"
+                          transform="translate(320)"/>
+                    <path id="Path_13" data-name="Path 13"
+                          d="M257.348,712.35v34.306H310.26V735.967H267.236v-13.58H310.26V712.35Z"
+                          transform="translate(401)"/>
+                </g>
+                <path id="Border"
+                      d="M120.995,89.179,120.834,644.5l558.778-.266-.51-554.7h40.4v593.19H81.544l.369-632.773,637.589.268V89.538Z"/>
+            </svg>
+        </a>
+    </div>
+    <div class="flying-nav__title">
+        <span class="text">Меню доставки</span>
+        <a href="#" class="flying-nav__close close">&times;</a>
+        <a href="#" class="flying-nav__show show"><img src="img/icons/hamburger.svg" width="24px" height="24px"></a>
+    </div>
+    <div class="flying-nav__switcher switcher">
+        <a href="#" data-id="section-1">Меню</a>
+        <a href="#" data-id="section-2">Ингридиенты</a>
+    </div>
+    <div class="flying-nav__lists lists">
+
+        <ul id="section-1" class="flying-nav__lists__list">
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/rolly.png" alt=""><span class="label">Роллы</span></a>
+            </li>
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/hot-rolly.png" alt=""><span class="label">Горячие роллы</span></a>
+            </li>
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/sety.png" alt=""><span class="label">Сеты</span></a>
+            </li>
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/pizza.png" alt=""><span class="label">Пицца</span></a>
+            </li>
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/supy.png" alt=""><span class="label">Супы</span></a>
+            </li>
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/salaty.png" alt=""><span class="label">Салаты</span></a>
+            </li>
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/zakuski.png" alt=""><span class="label">Закуски</span></a>
+            </li>
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/goryachee.png" alt=""><span class="label">Горячее</span></a>
+            </li>
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/desserty.png" alt=""><span class="label">Десерты</span></a>
+            </li>
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/napitki.png" alt=""><span class="label">Напитки</span></a>
+            </li>
+        </ul>
+
+        <ul id="section-2" class="flying-nav__lists__list">
+
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/avocado.png" alt=""><span class="label">Авокадо</span></a>
+            </li>
+
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/vegan.png" alt=""><span class="label">Вегетарианские</span></a>
+            </li>
+
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/losos.png" alt=""><span class="label">Лосось</span></a>
+            </li>
+
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/moluski.png" alt=""><span class="label">Моллюски</span></a>
+            </li>
+
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/miaso.png" alt=""><span class="label">Мясо</span></a>
+            </li>
+
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/ostrie.png" alt=""><span class="label">Острые</span></a>
+            </li>
+
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/ptica.png" alt=""><span class="label">Птица</span></a>
+            </li>
+
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/rakoobraz.png" alt=""><span class="label">Ракообразные</span></a>
+            </li>
+
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/syr.png" alt=""><span class="label">Сыр</span></a>
+            </li>
+
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/tunec.png" alt=""><span class="label">Тунец</span></a>
+            </li>
+
+            <li class="flying-nav__lists__list__item">
+                <a href="#"><img src="img/menu/ugor.png" alt=""><span class="label">Угорь</span></a>
+            </li>
+        </ul>
+    </div>
+</aside>
+<aside id="page-cart" class="flying-nav right">
+    <div class="flying-nav__title">
+        <span>Корзина заказа</span>
+        <a href="#" class="flying-nav__close close">&times;</a>
+    </div>
+    <div class="flying-nav__cart-total">
+        Мой заказ <span class="total-price">1 200 руб</span>
+    </div>
+    <ul class="flying-nav__cart-list">
+        <li class="flying-nav__cart-list__item">
+            <a href="#" class="flying-nav__cart-list__item__label">
+                Суп с курицей
+            </a>
+            <div class="flying-nav__cart-list__item__counter counter">
+                <a class="counter__btn minus" href="#">-</a>
+                <input type="tel" value="10" class="counter__inp">
+                <a class="counter__btn plus" href="#">+</a>
             </div>
-            <div class="navbar-head__basket container-fluid justify-content-center p-0 m-0">
-                <img src="img/cart.svg" width="30" alt="bag rostov sakura">
-                <p class="ml-3">Пустая корзина</p>
+            <div class="flying-nav__cart-list__item__price">
+                120 р
+            </div>
+        </li>
+        <li class="flying-nav__cart-list__item">
+            <a href="#" class="flying-nav__cart-list__item__label">
+                Суп с курицей
+            </a>
+            <div class="flying-nav__cart-list__item__counter counter">
+                <a class="counter__btn minus" href="#">-</a>
+                <input type="tel" value="10" class="counter__inp">
+                <a class="counter__btn plus" href="#">+</a>
+            </div>
+            <div class="flying-nav__cart-list__item__price">
+                120 р
+            </div>
+        </li>
+        <li class="flying-nav__cart-list__item">
+            <a href="#" class="flying-nav__cart-list__item__label">
+                Суп с курицей
+            </a>
+            <div class="flying-nav__cart-list__item__counter counter">
+                <a class="counter__btn minus" href="#">-</a>
+                <input type="tel" value="10" class="counter__inp">
+                <a class="counter__btn plus" href="#">+</a>
+            </div>
+            <div class="flying-nav__cart-list__item__price">
+                120 р
+            </div>
+        </li>
+    </ul>
+    <div class="flying-nav__cart-checkout">
+        <a href="#" class="btn btn-outline-dark">Оформить заказ</a>
+    </div>
+</aside>
+
+<div class="page-wrapper">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="nav-bar__item">
+                    <a href="#">Акции</a>
+                </li>
+                <li class="nav-bar__item">
+                    <a href="#">Вакансии</a>
+                </li>
+                <li class="nav-bar__item">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+
+            <div class="nav-cart">
+                <a href="#" id="trigger-cart"><img src="img/icons/cart.svg" width="24" height="24"> <span
+                        class="nav-cart__total">1 200 руб.</span></a>
             </div>
         </nav>
-
-</header>
-<aside class="containerLogo">
-    <div class="containerLogo__hamburger col-xl-1 col-lg-1 col-md-1 col-sm-2 col-3">
-        <img src="img/hamburger.svg" width="100" alt="logo rostov sakura">
-    </div>
-    <div class="containerLogo__logo col-xl-1 col-lg-1 col-md-1 col-sm-2 col-3 d-flex justify-content-center align-items-center">
-        <a href="#"><img src="img/logo.svg" width="50" alt="logo rostov sakura"></a>
-    </div>
-</aside>
-<aside class="containerForm">
-    <form class="containerForm__form border">
-        <ul>
-            <li class="basket border-bottom">Корзина заказа</li>
-            <li class="myBasket border-bottom">Моя корзина</li>
-            <li class="products"></li>
-            <li class="allproducts border-bottom">Всего</li>
-            <li class="allsum border-bottom">Общая сумма</li>
-            <li>
-                <button class="basketButton">Оформить заказ</button>
-            </li>
-        </ul>
-    </form>
-</aside>
-
-<aside class="menuLeft categories menuLeft_active p-0 m-0 border-right">
-    <div class="nameMenu border-top">
-        <div class="section_btn activeBord">Категории</div>
-        <div class="ingredient_btn">Ингредиенты</div>
-    </div>
-    <div class="sections_lists">
-        <ul class="sections_list active2">
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Роллы</span></a></li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Горячие роллы</span></a>
-            </li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Сеты</span></a></li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Пицца</span></a></li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Супы</span></a></li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Салаты</span></a></li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Закуски</span></a></li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Горячее</span></a></li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Десерты</span></a></li>
-            <li class="border-top border-bottom"><a href="#"><img src="img/menufood.png"
-                                                                  alt="menu rostov sakura"><span>Напитки</span></a></li>
-        </ul>
-        <ul class="ingredients_list">
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Авакадо</span></a></li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Горячие роллы</span></a>
-            </li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Вегетарианские</span></a></li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Лосось</span></a></li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Моллюски</span></a></li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Мясо</span></a></li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Острые</span></a></li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Птица</span></a></li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Ракообразные</span></a></li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Сыр</span></a></li>
-            <li class="border-top"><a href="#"><img src="img/menufood.png"
-                                                    alt="menu rostov sakura"><span>Тунец</span></a></li>
-            <li class="border-top border-bottom"><a href="#"><img src="img/menufood.png"
-                                                                  alt="menu rostov sakura"><span>Угорь</span></a></li>
-        </ul>
-    </div>
-</aside>
-
-<main>
-
-    <section class="content activeFooter container-fluid containerMenu d-flex p-0 m-0">
-        <div class="menuRight container-fluid p-0 m-0">
-            <div class="slider">
-                <a href="#" alt="logo menu"><img src="img/logo.jpg"></a>
-            </div>
-        </div>
-    </section>
-
-    <div class="footer activeFooter border-top">
-        <div class="footer__info">
-            <div class="footer__info__text informationFooter">
-                <div class="footer__info__text__img">
-                    <img src="img/logo.svg" width="30px" alt="logo rostov sakura">
+    </header>
+    <main>
+        <section class="page-slider">
+            <div class="page-slider__list cS-hidden">
+                <div class="page-slider__list__item">
+                    <img src="img/slides/slide-1.jpg">
+                    <span class="page-slider__list__item__label">Самые вкусные суши только у нас</span>
                 </div>
-                <div class="footer__info__text__orders">
-                    <p>Онлайн сервис заказа суши<br>и других блюд в Ростове.</p>
-
-                    <p>Прием заказов: c 10:00 до 4:45 <br>
-                        Телефон: +8 988 946 94 33
-                    </p>
+                <div class="page-slider__list__item">
+                    <img src="img/slides/slide-1.jpg">
+                    <span class="page-slider__list__item__label">-30% в зале</span>
+                </div>
+                <div class="page-slider__list__item">
+                    <img src="img/slides/slide-1.jpg">
+                    <span class="page-slider__list__item__label">-40% на вынос</span>
                 </div>
             </div>
-            <div class="footer__info__menu menuFooter">
-                <p>Ростов Сакура</p>
-                <ul>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Акции</a></li>
-                    <li><a href="#">Вакансии</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+        </section>
+        <section class="page-cards">
+            <div class="page-cards__filter"></div>
+            <div class="page-cards__content">
+                <div class="row">
+
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="img/products/sushi-1.jpg" alt="Sushi 1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#">Абогадо</a></h5>
+                            <p class="card-text"><a href="#">авокадо</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-price">65 руб</span>
+                            <span class="card-counter counter">
+                                <a class="counter__btn minus" href="#">-</a>
+                                <input type="tel" value="0" class="counter__inp">
+                                <a class="counter__btn plus" href="#">+</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="img/products/sushi-1.jpg" alt="Sushi 1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#">Абогадо</a></h5>
+                            <p class="card-text"><a href="#">авокадо</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-price">65 руб</span>
+                            <span class="card-counter counter">
+                                <a class="counter__btn minus" href="#">-</a>
+                                <input type="tel" value="0" class="counter__inp">
+                                <a class="counter__btn plus" href="#">+</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="img/products/sushi-1.jpg" alt="Sushi 1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#">Абогадо</a></h5>
+                            <p class="card-text"><a href="#">авокадо</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-price">65 руб</span>
+                            <span class="card-counter counter">
+                                <a class="counter__btn minus" href="#">-</a>
+                                <input type="tel" value="0" class="counter__inp">
+                                <a class="counter__btn plus" href="#">+</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="img/products/sushi-1.jpg" alt="Sushi 1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#">Абогадо</a></h5>
+                            <p class="card-text"><a href="#">авокадо</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-price">65 руб</span>
+                            <span class="card-counter counter">
+                                <a class="counter__btn minus" href="#">-</a>
+                                <input type="tel" value="0" class="counter__inp">
+                                <a class="counter__btn plus" href="#">+</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="img/products/sushi-1.jpg" alt="Sushi 1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#">Абогадо</a></h5>
+                            <p class="card-text"><a href="#">авокадо</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-price">65 руб</span>
+                            <span class="card-counter counter">
+                                <a class="counter__btn minus" href="#">-</a>
+                                <input type="tel" value="0" class="counter__inp">
+                                <a class="counter__btn plus" href="#">+</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="img/products/sushi-1.jpg" alt="Sushi 1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#">Абогадо</a></h5>
+                            <p class="card-text"><a href="#">авокадо</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-price">65 руб</span>
+                            <span class="card-counter counter">
+                                <a class="counter__btn minus" href="#">-</a>
+                                <input type="tel" value="0" class="counter__inp">
+                                <a class="counter__btn plus" href="#">+</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="img/products/sushi-1.jpg" alt="Sushi 1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#">Абогадо</a></h5>
+                            <p class="card-text"><a href="#">авокадо</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-price">65 руб</span>
+                            <span class="card-counter counter">
+                                <a class="counter__btn minus" href="#">-</a>
+                                <input type="tel" value="0" class="counter__inp">
+                                <a class="counter__btn plus" href="#">+</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="img/products/sushi-1.jpg" alt="Sushi 1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#">Абогадо</a></h5>
+                            <p class="card-text"><a href="#">авокадо</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-price">65 руб</span>
+                            <span class="card-counter counter">
+                                <a class="counter__btn minus" href="#">-</a>
+                                <input type="tel" value="0" class="counter__inp">
+                                <a class="counter__btn plus" href="#">+</a>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <nav class="page-cards__navigation" aria-label="page navigation">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
             </div>
-            <div class="footer__info__delivery deliveryFooter">
-                <p>Доставка</p>
-                <ul>
-                    <li><a href="#">Условия доставки</a></li>
-                    <li><a href="#">Адреса кафе</a></li>
-                </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <p>Доставка суши — онлайн сервис заказа суши и других блюд в Ростове-на-Дону.</p>
+
+                    <p>Прием заказов: c 10:00 до 2:00<br>
+                        Телефон: +7 988 946 94 33</p>
+                </div>
+
+                <div class="col-lg-3">
+                    <p class="footer-main__title">Сакура</p>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__list__item">
+                                <a href="/" class="nav__list__item__link ">
+                                    Акции
+                                </a>
+                            </li>
+                            <li class="nav__list__item">
+                                <a href="/" class="nav__list__item__link ">
+                                    Вакансии
+                                </a>
+                            </li>
+                            <li class="nav__list__item">
+                                <a href="/" class="nav__list__item__link ">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-lg-3">
+                    <p class="footer-main__title">Доставка</p>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__list__item">
+                                <a href="/" class="nav__list__item__link ">
+                                    Условия доставки
+                                </a>
+                            </li>
+                            <li class="nav__list__item">
+                                <a href="/" class="nav__list__item__link ">
+                                    Адреса кафе
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-        <div class="footer__copyright border-top">
-            <div>&copy;2018 городские кафе «Сакура»</div>
-        </div>
-    </div>
-</main>
-<!--[if IE]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<!-- styles -->
-<link rel="stylesheet" href="css/main.css" as="style"/>
+    </footer>
+</div>
 
-<!-- scripts -->
-<script type="text/javascript" src="js/main.js"></script>
+<script src="js/main.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-        crossorigin="anonymous"></script>
-<script src="js/libs.min.js"></script>
-<script src="js/common.js"></script>
-
-
-<script>
-    $(window).on('load', function () {
-
-
-        var $mainLeftCat = $(".sections_list");
-        var $mainLeftIng = $(".ingredients_list");
-        var $section_btn = $(".menuLeft .section_btn");
-        var $ingredient_btn = $(".menuLeft .ingredient_btn");
-        var $menu_btn = $(".containerLogo__hamburger img");
-        var $form_btn = $(".navbar-head__basket");
-
-        var $menuLeft = $(".menuLeft");
-        var $form = $(".containerForm");
-        var $menuFooter = $(".menuRight .footer .menuFooter");
-        var $menuRight = $(".menuRight");
-
-        $form_btn.on('click', function () {
-            $form.toggleClass("showForm");
-            return false;
-        });
-
-        $menu_btn.on('click', function () {
-            $menuLeft.toggleClass("showMenu");
-            return false;
-        });
-
-        $ingredient_btn.on('click', function () {
-            $mainLeftCat.removeClass("active");
-            $section_btn.removeClass("activeBord");
-            $mainLeftIng.addClass("active");
-            $ingredient_btn.addClass("activeBord");
-        });
-        $section_btn.on('click', function () {
-            $mainLeftIng.removeClass("active");
-            $ingredient_btn.removeClass("activeBord");
-            $mainLeftCat.addClass("active");
-            $section_btn.addClass("activeBord");
-        });
-        $section_btn.on('click', function () {
-            $mainLeftIng.removeClass("active");
-            $ingredient_btn.removeClass("activeBord");
-            $mainLeftCat.addClass("active");
-            $section_btn.addClass("activeBord");
-        });
-        if ($(window).width() < 799) {
-
-            $ingredient_btn.on('click', function () {
-                $mainLeftCat.removeClass("active");
-                $section_btn.removeClass("activeBord");
-                $mainLeftIng.addClass("active");
-                $ingredient_btn.addClass("activeBord");
-            });
-            $section_btn.on('click', function () {
-                $mainLeftIng.removeClass("active");
-                $ingredient_btn.removeClass("activeBord");
-                $mainLeftCat.addClass("active");
-                $section_btn.addClass("activeBord");
-            });
-//            $menu_btn.on('click', function () {
-//                $menuFooter.toggleClass("showForm");
-//            });
-
-        }
-    });
-</script>
 </body>
+
 </html>
