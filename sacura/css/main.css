@@ -6423,6 +6423,7 @@ a.text-dark:focus {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 
 body.left-nav .flying-nav.left {
@@ -6456,6 +6457,11 @@ body.left-nav .flying-nav__switcher {
 body.left-nav .flying-nav__lists {
   display: -ms-flexbox;
   display: flex;
+}
+
+body.right-nav .flying-nav__title .close,
+body.right-nav .flying-nav__title .text {
+  display: block;
 }
 
 .lSSlideOuter {
@@ -10682,6 +10688,14 @@ main {
     width: 200%;
   }
 
+  body.right-nav .flying-nav.right {
+    /* mobile-all */
+    width: 100%;
+    height: calc(100vh - 60px) !important;
+    max-height: calc(100vh - 60px) !important;
+    overflow-y: auto;
+  }
+
   header nav {
     /* mobile-all */
     -ms-flex-pack: end;
@@ -10792,6 +10806,14 @@ main {
     /* tablet-all */
     height: 160px;
     width: 100%;
+  }
+
+  body.right-nav .flying-nav.right {
+    /* tablet-all */
+    width: 50%;
+    height: calc(100vh - 60px) !important;
+    max-height: calc(100vh - 60px) !important;
+    overflow-y: auto;
   }
 
   body.left-nav header {
