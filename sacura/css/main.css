@@ -6274,9 +6274,10 @@ a.text-dark:focus {
   height: 100%;
 }
 
-.flying-nav__logo svg {
+.flying-nav__logo img {
   max-height: calc(100% - 1rem);
   max-width: calc(100% - 1rem);
+  transition: all 0.8s ease;
 }
 
 .flying-nav__title {
@@ -6435,7 +6436,8 @@ body.left-nav .flying-nav.left .flying-nav__logo {
   width: 320px;
 }
 
-body.left-nav .flying-nav.left .flying-nav__logo svg {
+body.left-nav .flying-nav.left .flying-nav__logo img {
+  height: 100%;
   max-height: calc(100% - 4rem);
   max-width: calc(100% - 4rem);
 }
@@ -6992,6 +6994,7 @@ header {
   height: 60px;
   background-color: #ffffff;
   z-index: 10;
+  transition: all 0.4s ease;
 }
 
 header nav {
@@ -10677,7 +10680,7 @@ main {
     width: 100%;
   }
 
-  body.left-nav .flying-nav.left .flying-nav__logo svg {
+  body.left-nav .flying-nav.left .flying-nav__logo img {
     max-height: calc(100% - 2rem);
     max-width: calc(100% - 2rem);
   }
