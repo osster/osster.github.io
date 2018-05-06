@@ -11075,12 +11075,7 @@ main {
     max-width: calc(100% - 0.5rem) !important;
   }
 
-  .flying-nav__title {
-    /* mobile-landscape */
-    width: 80% !important;
-  }
-
-  .flying-nav.show .flying-nav__title {
+  .flying-nav.show.left .flying-nav__title {
     /* mobile-landscape */
     width: 80% !important;
     height: 60px !important;
