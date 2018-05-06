@@ -14,6 +14,25 @@
 </head>
 
 <body class="preloader">
+
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <svg id="times" viewBox="0 0 384 512">
+        <path fill="currentColor" d="M323.1 441l53.9-53.9c9.4-9.4 9.4-24.5 0-33.9L279.8 256l97.2-97.2c9.4-9.4 9.4-24.5 0-33.9L323.1 71c-9.4-9.4-24.5-9.4-33.9 0L192 168.2 94.8 71c-9.4-9.4-24.5-9.4-33.9 0L7 124.9c-9.4 9.4-9.4 24.5 0 33.9l97.2 97.2L7 353.2c-9.4 9.4-9.4 24.5 0 33.9L60.9 441c9.4 9.4 24.5 9.4 33.9 0l97.2-97.2 97.2 97.2c9.3 9.3 24.5 9.3 33.9 0z" class=""></path>
+    </svg>
+    <svg id="plus" viewBox="0 0 448 512">
+        <path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z" class=""></path>
+    </svg>
+    <svg id="minus" viewBox="0 0 448 512">
+        <path fill="currentColor" d="M424 318.2c13.3 0 24-10.7 24-24v-76.4c0-13.3-10.7-24-24-24H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h400z" class=""></path>
+    </svg>
+    <symbol id="sort-amount-down" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M187.298 395.314l-79.984 80.002c-6.248 6.247-16.383 6.245-22.627 0L4.705 395.314C-5.365 385.244 1.807 368 16.019 368H64V48c0-8.837 7.163-16 16-16h32c8.837 0 16 7.163 16 16v320h47.984c14.241 0 21.363 17.264 11.314 27.314zM240 96h256c8.837 0 16-7.163 16-16V48c0-8.837-7.163-16-16-16H240c-8.837 0-16 7.163-16 16v32c0 8.837 7.163 16 16 16zm-16 112v-32c0-8.837 7.163-16 16-16h192c8.837 0 16 7.163 16 16v32c0 8.837-7.163 16-16 16H240c-8.837 0-16-7.163-16-16zm0 256v-32c0-8.837 7.163-16 16-16h64c8.837 0 16 7.163 16 16v32c0 8.837-7.163 16-16 16h-64c-8.837 0-16-7.163-16-16zm0-128v-32c0-8.837 7.163-16 16-16h128c8.837 0 16 7.163 16 16v32c0 8.837-7.163 16-16 16H240c-8.837 0-16-7.163-16-16z" class=""></path>
+    </symbol>
+    <symbol id="sort-amount-up" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M4.702 116.686l79.984-80.002c6.248-6.247 16.383-6.245 22.627 0l79.981 80.002c10.07 10.07 2.899 27.314-11.314 27.314H128v320c0 8.837-7.163 16-16 16H80c-8.837 0-16-7.163-16-16V144H16.016c-14.241 0-21.363-17.264-11.314-27.314zM240 96h256c8.837 0 16-7.163 16-16V48c0-8.837-7.163-16-16-16H240c-8.837 0-16 7.163-16 16v32c0 8.837 7.163 16 16 16zm-16 112v-32c0-8.837 7.163-16 16-16h192c8.837 0 16 7.163 16 16v32c0 8.837-7.163 16-16 16H240c-8.837 0-16-7.163-16-16zm0 256v-32c0-8.837 7.163-16 16-16h64c8.837 0 16 7.163 16 16v32c0 8.837-7.163 16-16 16h-64c-8.837 0-16-7.163-16-16zm0-128v-32c0-8.837 7.163-16 16-16h128c8.837 0 16 7.163 16 16v32c0 8.837-7.163 16-16 16H240c-8.837 0-16-7.163-16-16z" class=""></path>
+    </symbol>
+</svg>
+
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience and security.</p>
@@ -28,7 +47,11 @@
     </div>
     <div class="flying-nav__title">
         <span class="text">Меню доставки</span>
-        <a href="#" class="flying-nav__close close">&times;</a>
+        <a href="#" class="flying-nav__close close">
+            <svg class="icon icon-close">
+                <use xlink:href="#times"></use>
+            </svg>
+        </a>
         <a href="#" class="flying-nav__show show"><img src="img/icons/hamburger.svg" width="24px" height="24px"></a>
     </div>
     <div class="flying-nav__switcher switcher">
@@ -114,7 +137,11 @@
 <aside id="page-cart" class="flying-nav right">
     <div class="flying-nav__title">
         <span class="text">Корзина заказа</span>
-        <a href="#" class="flying-nav__close close">&times;</a>
+        <a href="#" class="flying-nav__close close">
+            <svg class="icon icon-close">
+                <use xlink:href="#times"></use>
+            </svg>
+        </a>
     </div>
     <div class="flying-nav__cart-total">
         <span class="total-label">Мой заказ:</span> <span class="total-price">1 200 руб</span>
@@ -164,7 +191,7 @@
         <span class="total-label">Общая сумма заказа:</span> <span class="total-price">1 200 руб</span>
     </div>
     <div class="flying-nav__cart-checkout">
-        <a href="#" class="btn btn-outline-dark">Оформить заказ</a>
+        <a href="#" class="button button__outline">Оформить заказ</a>
     </div>
 </aside>
 
@@ -219,7 +246,44 @@
                 </nav>
             </div>
 
-            <div class="page-cards__filter"></div>
+            <div class="page-cards__filter">
+                <span class="page-cards__filter__title">
+                    <svg class="icon icon-plus "><use xlink:href="#plus"></use></svg>
+                    <svg class="icon icon-minus"><use xlink:href="#minus"></use></svg>
+                    Фильтр
+                </span>
+
+                <span class="page-cards__filter__sort">
+                    Сортировать по цене
+                    <svg class="icon icon-sort"><use xlink:href="#sort-amount-down"></use></svg>
+                </span>
+
+                <a class="page-cards__filter__clear" href="#">
+                    <svg class="icon icon-close">
+                        <use xlink:href="#times"></use>
+                    </svg>
+                    <span class="label">Сбросить фильтры</span>
+                </a>
+
+                <div class="page-cards__filter__dropdown show">
+
+                    <a id="losos" href="#" class="page-cards__filter__dropdown__item is-active">
+                        <span class="label">Лосось</span>
+                        <svg class="icon icon-close">
+                            <use xlink:href="#times"></use>
+                        </svg>
+                    </a>
+
+                    <a id="syr" href="#" class="page-cards__filter__dropdown__item">
+                        <span class="label">Сыр</span>
+                        <svg class="icon icon-close">
+                            <use xlink:href="#times"></use>
+                        </svg>
+                    </a>
+
+                    <a class="page-cards__filter__dropdown__apply" href="#">Применить</a>
+                </div>
+            </div>
 
             <div class="page-cards__content">
                 <div class="row">
