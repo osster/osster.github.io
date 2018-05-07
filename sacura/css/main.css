@@ -12194,12 +12194,28 @@ main {
     width: 200%;
   }
 
+  body.left-nav {
+    /* mobile-all */
+  }
+
+  body.left-nav .page-wrapper {
+    overflow: hidden;
+  }
+
   body.right-nav .flying-nav.right {
     /* mobile-all */
     width: 100%;
     height: calc(100vh - 60px) !important;
     max-height: calc(100vh - 60px) !important;
     overflow-y: auto;
+  }
+
+  body.right-nav {
+    /* mobile-all */
+  }
+
+  body.right-nav .page-wrapper {
+    overflow: hidden;
   }
 
   h1,
