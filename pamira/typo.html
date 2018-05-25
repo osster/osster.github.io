@@ -44,7 +44,7 @@
     your browser</a> to improve your experience and security.</p>
 <![endif]-->
 
-<header class="light-or-dark">
+<header>
     <div class="container">
         <div class="top-row">
             <div class="top-row__toggle-nav">
@@ -89,28 +89,7 @@
     </div>
 </header>
 <main>
-    <section class="top-slider">
-        <!-- Slider main container -->
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide" data-style="light"><img src="img/slides/slide-1.jpg"></div>
-                <div class="swiper-slide" data-style="dark"><img src="img/slides/slide-2.jpg"></div>
-                <div class="swiper-slide" data-style="light"><img src="img/slides/slide-1.jpg"></div>
-                <div class="swiper-slide" data-style="light"><img src="img/slides/slide-1.jpg"></div>
-                <div class="swiper-slide" data-style="dark"><img src="img/slides/slide-2.jpg"></div>
-                <div class="swiper-slide" data-style="light"><img src="img/slides/slide-1.jpg"></div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        
-        </div>
-    </section>
+
 </main>
 <footer>
     <div class="container">
@@ -305,38 +284,6 @@
 </footer>
 
 <script src="js/main.js"></script>
-
-<script>
-    var mySwiper = new Swiper ('.swiper-container', {
-        // Optional parameters
-        direction: 'horizontal',
-
-        loop: true,
-
-        roundLengths: true,
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-    mySwiper.on('slideChange', function (e) {
-        var slider = this;
-        var style = $(slider.slides[slider.activeIndex]).data('style');
-        if (style == 'light') {
-            $('header').removeClass('light').addClass('dark');
-        } else {
-            $('header').removeClass('dark').addClass('light');
-        }
-        console.log('slideChange style', style);
-    });
-</script>
 
 </body>
 
