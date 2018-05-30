@@ -9722,7 +9722,7 @@ h3 {
     .wr-header .navbar-toggler {
       padding: 0px; }
       .wr-header .navbar-toggler-icon {
-        background-image: url("/img/icons/icon-nav-toggle.svg");
+        background-image: url("img/icons/icon-nav-toggle.svg");
         background-position: center;
         background-repeat: no-repeat; }
       @media (max-width: 768px) and (max-height: 576px) and (orientation: landscape), (max-width: 576px) and (max-height: 768px) and (orientation: portrait) {
