@@ -249,7 +249,7 @@
 	                    <div class="containerH1-itemBig__types">
 	                        <a href="#"><h1>Типы кухонь</h1></a>
 	                        <p>Откройте для себя свою коллекцию</p>
-	                        <div class="know-more transform-know-more">
+	                        <div class="know-more transform-know-more typesKitchenBottom">
 	                            <a class="know-more__link" href="#">
 	                                <div class="know-more__link__title">Узнать больше</div>
 	                                <div class="know-more__link__img">
@@ -275,7 +275,7 @@
 	                    <div class="containerH1-itemBig__types">
 	                        <a href="#"><h1>Эргономика</h1></a>
 	                        <p>24 различных рабочих высот обеспечивают эргономичный дизайн кухни.</p>
-	                        <div class="know-more transform-know-more ergonomics">
+	                        <div class="know-more transform-know-more ergonomicsBottom">
 	                            <a class="know-more__link" href="#">
 	                                <div class="know-more__link__title">Узнать больше</div>
 	                                <div class="know-more__link__img">
@@ -306,7 +306,8 @@
 	                            день и каждая индивидуальна как и её
 	                            хозяин! Два крупнейшей завода в Европе
 	                            расположенных в Восточной Вестфалии,
-	                            Германия.</p>
+	                            Германия.
+	                        </p>
 	                        <div class="know-more transform-know-more-itemSmall aboutKitchenBottom">
 	                            <a class="know-more__link" href="#">
 	                                <div class="know-more__link__title">Узнать больше</div>
@@ -578,7 +579,8 @@
 	                            <label for="personal-information" class="call-form__form__personal-information__checkbox-text">- Я соглашаюсь на обработку персональных даных</label>
 	                        </span>
 	                    </form>
-	                    <button class="btn btn-outline-primary call-form__form-btn" name="button">Перезвонить мне</button>
+	                    <!--<button class="btn btn-outline-primary">Записаться</button>-->
+	                    <button type="button" name="button" class="btn btn-outline-primary btn-form">Перезвонить мне</button>
 	                    <!--<form name="form"  method="post" class="form__container">-->
 	                        <!--<div class="form__container__title"><h2>Бесплатный дизайн-проект</h2></div>-->
 	                        <!--<input class="form__container__input" type="text" name="name" placeholder="Ваше имя" required>-->
@@ -600,6 +602,9 @@
 	    <div class="container">
 	        <h3 class="mb-5">МЫ ГОТОВИМ КАК В САЛОНЕ ТЕХНИКИ, ТАК И В САЛОНЕ КУХОНЬ И МОЖЕМ ПРОВЕСТИ МАСТЕР-КЛАСС ДЛЯ ВАС</h3>
 	        <div class="row mb-5">
+	            <div class="col-md-4 mb-4"><a href="img/news/news-04.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-04.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-05.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-05.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-06.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-06.jpg" alt=""></a></div>
 	            <div class="col-md-4 mb-4"><a href="img/news/news-04.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-04.jpg" alt=""></a></div>
 	            <div class="col-md-4 mb-4"><a href="img/news/news-05.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-05.jpg" alt=""></a></div>
 	            <div class="col-md-4 mb-4"><a href="img/news/news-06.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-06.jpg" alt=""></a></div>
@@ -644,53 +649,50 @@
 	
 	    <div class="container">
 	        <div class="row justify-content-center">
-	            <div class="col-md-9 cont-form">
-	                <div class="text-center cont-form__intro">
-	                    <h2>ЗАПИШИТЕСЬ НА КОНСУЛЬТАЦИЮ К ДИЗАЙНЕРУ <br/> или получите бесплатный 3D дизайн-проект</h2>
-	                </div>
-	                <form class="cont-form__form" action="">
-	                    <div class="row">
-	                        <div class="col-md-5">
-	                            <input class="form-control" type="text" placeholder="Ваше имя">
-	                            <input class="form-control" type="text" placeholder="Ваш телефон">
-	                        </div>
-	                        <div class="col-md-7">
-	                            <fieldset class="form-group d-flex align-items-center">
-	                                <p class="legend">3D проект-дизайн</p>
-	                                <div class="form-check">
-	                                    <input class="form-check-input" type="radio" id="proekt1" name="project" value="need">
-	                                    <label class="form-check-label" for="proekt1">- Нужен</label>
-	                                </div>
-	                                <div class="form-check">
-	                                    <input class="form-check-input" type="radio" id="proekt2" name="project" value="noneed">
-	                                    <label class="form-check-label" for="proekt2">- Уже есть</label>
-	                                </div>
-	                            </fieldset>
-	                            <fieldset class="form-group d-flex align-items-center">
-	                                <p class="legend">Встраиваемая техника</p>
-	                                <div class="form-check form-check-inline">
-	                                    <input class="form-check-input" type="radio" id="tehnika1" name="tehnika" value="need">
-	                                    <label class="form-check-label" for="tehnika1">- Нужна</label>
-	                                </div>
-	                                <div class="form-check form-check-inline">
-	                                    <input class="form-check-input" type="radio" id="tehnika2" name="tehnika" value="noneed">
-	                                    <label class="form-check-label" for="tehnika2">- Уже есть</label>
-	                                </div>
-	                            </fieldset>
-	                        </div>
-	                        <div class="col-12 text-center accept">
-	                            <div class="form-group">
-	                                <div class="form-check">
-	                                    <input class="form-check-input" type="checkbox" id="accept">
-	                                    <label class="form-check-label" for="accept">
-	                                        Я соглашаюсь на обработку персональных даных
-	                                    </label>
-	                                </div>
+	            <div class="col-12 col-md-10">
+	                <div class="cont-form">
+	                    <div class="cont-form__title">ЗАПИШИТЕСЬ НА КОНСУЛЬТАЦИЮ К ДИЗАЙНЕРУ <br/> или получите бесплатный 3D дизайн-проект</div>
+	                    <form class="cont-form__form" action="">
+	                        <div class="row">
+	                            <div class="col-md-5">
+	                                <input class="form-control" type="text" placeholder="Ваше имя">
+	                                <input class="form-control" type="text" placeholder="Ваш телефон">
 	                            </div>
-	                            <button type="submit" class="btn btn-outline-primary">Записаться</button>
+	                            <div class="col-md-7">
+	                                <fieldset class="form-group d-flex align-items-center justify-content-between flex-wrap">
+	                                    <p class="legend">Дизайн-проект</p>
+	                                    <div class="form-check">
+	                                        <input class="form-check-input" type="radio" id="proekt1" name="project" value="need">
+	                                        <label class="form-check-label" for="proekt1">- Нужен</label>
+	                                    </div>
+	                                    <div class="form-check">
+	                                        <input class="form-check-input" type="radio" id="proekt2" name="project" value="noneed">
+	                                        <label class="form-check-label" for="proekt2">- Уже есть</label>
+	                                    </div>
+	                                </fieldset>
+	                                <fieldset class="form-group d-flex align-items-center justify-content-between flex-wrap flex-xl-nowrap">
+	                                    <p class="legend">Контсультация по выбору
+	                                        втраиваемой  техники, мастер-класс</p>
+	                                    <div class="form-check form-check-inline">
+	                                        <input class="form-check-input" type="checkbox" id="tehnika1" name="tehnika" value="need">
+	                                        <label class="form-check-label" for="tehnika1">- Нужна</label>
+	                                    </div>
+	                                </fieldset>
+	                            </div>
+	                            <div class="col-12 text-center accept">
+	                                <div class="form-group">
+	                                    <div class="form-check">
+	                                        <input class="form-check-input" type="checkbox" id="accept">
+	                                        <label class="form-check-label" for="accept">
+	                                            Я соглашаюсь на обработку персональных даных
+	                                        </label>
+	                                    </div>
+	                                </div>
+	                                <button type="submit" class="btn btn-outline-primary">Записаться</button>
+	                            </div>
 	                        </div>
-	                    </div>
-	                </form>
+	                    </form>
+	                </div>
 	            </div>
 	        </div>
 	    </div>
@@ -707,13 +709,13 @@
 	            <div class="col-12">
 	                <div class="swiper-container gallery-top">
 	                    <div class="swiper-wrapper">
-	                        <div class="swiper-slide" style="background-image:url(img/slides/01.jpg)"></div>
-	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_3.jpg)"></div>
-	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_4.jpg)"></div>
-	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_5.jpg)"></div>
-	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_6.jpg)"></div>
-	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_7.jpg)"></div>
-	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_8.jpg)"></div>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/01.jpg)" href="img/slides/01.jpg"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_3.jpg)" href="img/slides/Mask_Group_3.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_4.jpg)" href="img/slides/Mask_Group_4.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_5.jpg)" href="img/slides/Mask_Group_5.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_6.jpg)" href="img/slides/Mask_Group_6.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_7.jpg)" href="img/slides/Mask_Group_7.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_8.jpg)" href="img/slides/Mask_Group_8.jpg" rel="g-slider-bottom"></a>
 	                    </div>
 	                    <!-- Add Pagination -->
 	                    <div class="swiper-pagination"></div>

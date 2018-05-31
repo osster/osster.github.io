@@ -18448,109 +18448,6 @@ return Popper;
 // Импортируем другие js-файлы
 $(document).ready(function() {
 
-    // Группы объектов
-    var groups = [
-        {
-            name: "Студия кухни nobilia",
-            style: "islands#redIcon",
-            items: [
-                {
-                    center: [47.230731, 39.724589],
-                    name: "<h5 class='map__title'>График работы:</h5>" +
-                    "<p class='map__text'>пн-сб: с 10:00 до 19:00,<br>" +
-                    "вс: с 10:00 до 17:00</p>" +
-                    "<h5 class='map__title'>Адрес:</h5>" +
-                    "<p class='map__text'>г.Ростов-на-Дону,<br>" +
-                    "ул.Красноармейска д.103/123" +
-                    "<p class='map__text'>Телефон:  <a class='map__tel' href='tel:+7(863) 299-44-53'>  +7 (863) 299-44-53</p>"
-                }
-            ]}
-    ];
-
-    ymaps.ready(init);
-
-    function init() {
-
-        // Создание экземпляра карты.
-        var myMap = new ymaps.Map('map', {
-                center: [47.230731, 39.724589],
-                zoom: 13,
-                controls: ['zoomControl', 'fullscreenControl', 'geolocationControl']
-            }, {
-                searchControlProvider: 'yandex#search'
-            }),
-
-            // Контейнер для меню.
-            menu = $('<div class="map__menu"/>');
-
-        for (var i = 0, l = groups.length; i < l; i++) {
-            createMenuGroup(groups[i]);
-        }
-
-        function createMenuGroup (group) {
-
-            // Пункт меню.
-            var submenu = $('<div class="map__submenu"/>'),
-                // Коллекция для геообъектов группы.
-                collection = new ymaps.GeoObjectCollection(null, {preset: group.style});
-
-            // Добавляем коллекцию на карту.
-            myMap.geoObjects.add(collection);
-            // Добавляем подменю.
-            submenu
-                // Добавляем пункт в меню.
-                .appendTo(menu)
-                // По клику удаляем/добавляем коллекцию на карту и скрываем/отображаем подменю.
-                .find('a')
-                .bind('click', function () {
-                    if (collection.getParent()) {
-                        myMap.geoObjects.remove(collection);
-                        submenu.hide();
-                    } else {
-                        myMap.geoObjects.add(collection);
-                        submenu.show();
-                    }
-                });
-            for (var j = 0, m = group.items.length; j < m; j++) {
-                createSubMenu(group.items[j], collection, submenu);
-            }
-        }
-
-        function createSubMenu (item, collection, submenu) {
-            // Пункт подменю.
-            var submenuItem = $(item.name),
-                // Создаем метку.
-                placemark = new ymaps.Placemark(item.center, { balloonContent: item.name });
-
-            // Добавляем метку в коллекцию.
-            collection.add(placemark);
-            // Добавляем пункт в подменю.
-            submenuItem
-                .appendTo(submenu)
-                // При клике по пункту подменю открываем/закрываем баллун у метки.
-                .find('a')
-                .bind('click', function () {
-                    if (!placemark.balloon.isOpen()) {
-                        placemark.balloon.open();
-                    } else {
-                        placemark.balloon.close();
-                    }
-                    return false;
-                });
-        }
-
-        // Добавляем меню в тэг WR-MAP.
-        menu.appendTo($('.wr-map'));
-
-        myMap.behaviors.disable(['scrollZoom']);
-        myMap.setBounds({
-            checkZoomRange: true,
-        });
-        // Выставляем масштаб карты чтобы были видны все группы.
-        myMap.setBounds(myMap.geoObjects.getBounds());
-    }
-
-
 // GALLERY 3D
     var galleryTop = new Swiper('.gallery-top', {
         effect: 'coverflow',
@@ -18558,6 +18455,7 @@ $(document).ready(function() {
         centeredSlides: true,
         slidesPerView: 2,
         loop: true,
+        slideToClickedSlide: true,
         loopedSlides: 5, //looped slides should be the same
         navigation: {
             nextEl: '.swiper-button-next',
@@ -18570,6 +18468,24 @@ $(document).ready(function() {
             modifier: 1,
             slideShadows : true,
         },
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is <= 320px
+            576: {
+                effect: 'slide',
+                slidesPerView: 1
+            },
+            // when window width is <= 480px
+            768: {
+                effect: 'slide',
+                slidesPerView: 1
+            },
+            // when window width is <= 640px
+            1024: {
+                effect: 'slide',
+                slidesPerView: 1
+            }
+        }
     });
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
@@ -18579,10 +18495,29 @@ $(document).ready(function() {
         loop: true,
         loopedSlides: 5, //looped slides should be the same
         slideToClickedSlide: true,
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is <= 576px
+            576: {
+                slidesPerView: 2
+            },
+            // when window width is <= 768px
+            768: {
+                slidesPerView: 3
+            },
+            // when window width is <= 1024px
+            1024: {
+                slidesPerView: 3
+            }
+        }
     });
 
     galleryTop.controller.control = galleryThumbs;
     galleryThumbs.controller.control = galleryTop;
+
+    galleryTop.on('click', function (e) {
+        console.log('galleryTop click', e, galleryTop.clickedSlide);
+    });
 
 
 
@@ -18658,4 +18593,108 @@ $(document).ready(function() {
 
     $( '.swipebox' ).swipebox();
 	
+});
+
+$(window).load(function () {
+    // Группы объектов
+    var groups = [
+        {
+            name: "Студия кухни nobilia",
+            style: "islands#redIcon",
+            items: [
+                {
+                    center: [47.230731, 39.724589],
+                    name: "<h5 class='map__title'>График работы:</h5>" +
+                    "<p class='map__text'>пн-сб: с 10:00 до 19:00,<br>" +
+                    "вс: с 10:00 до 17:00</p>" +
+                    "<h5 class='map__title'>Адрес:</h5>" +
+                    "<p class='map__text'>г.Ростов-на-Дону,<br>" +
+                    "ул.Красноармейска д.103/123" +
+                    "<p class='map__text'>Телефон:  <a class='map__tel' href='tel:+7(863) 299-44-53'>  +7 (863) 299-44-53</p>"
+                }
+            ]}
+    ];
+
+    ymaps.ready(init);
+
+    function init() {
+
+        // Создание экземпляра карты.
+        var myMap = new ymaps.Map('map', {
+                center: [47.230731, 39.724589],
+                zoom: 13,
+                controls: ['zoomControl', 'fullscreenControl', 'geolocationControl']
+            }, {
+                searchControlProvider: 'yandex#search'
+            }),
+
+            // Контейнер для меню.
+            menu = $('<div class="map__menu"/>');
+
+        for (var i = 0, l = groups.length; i < l; i++) {
+            createMenuGroup(groups[i]);
+        }
+
+        function createMenuGroup (group) {
+
+            // Пункт меню.
+            var submenu = $('<div class="map__submenu"/>'),
+                // Коллекция для геообъектов группы.
+                collection = new ymaps.GeoObjectCollection(null, {preset: group.style});
+
+            // Добавляем коллекцию на карту.
+            myMap.geoObjects.add(collection);
+            // Добавляем подменю.
+            submenu
+            // Добавляем пункт в меню.
+                .appendTo(menu)
+                // По клику удаляем/добавляем коллекцию на карту и скрываем/отображаем подменю.
+                .find('a')
+                .bind('click', function () {
+                    if (collection.getParent()) {
+                        myMap.geoObjects.remove(collection);
+                        submenu.hide();
+                    } else {
+                        myMap.geoObjects.add(collection);
+                        submenu.show();
+                    }
+                });
+            for (var j = 0, m = group.items.length; j < m; j++) {
+                createSubMenu(group.items[j], collection, submenu);
+            }
+        }
+
+        function createSubMenu (item, collection, submenu) {
+            // Пункт подменю.
+            var submenuItem = $(item.name),
+                // Создаем метку.
+                placemark = new ymaps.Placemark(item.center, { balloonContent: item.name });
+
+            // Добавляем метку в коллекцию.
+            collection.add(placemark);
+            // Добавляем пункт в подменю.
+            submenuItem
+                .appendTo(submenu)
+                // При клике по пункту подменю открываем/закрываем баллун у метки.
+                .find('a')
+                .bind('click', function () {
+                    if (!placemark.balloon.isOpen()) {
+                        placemark.balloon.open();
+                    } else {
+                        placemark.balloon.close();
+                    }
+                    return false;
+                });
+        }
+
+        // Добавляем меню в тэг WR-MAP.
+        menu.appendTo($('.wr-map'));
+
+        myMap.behaviors.disable(['scrollZoom']);
+        myMap.setBounds({
+            checkZoomRange: true,
+        });
+        // Выставляем масштаб карты чтобы были видны все группы.
+        myMap.setBounds(myMap.geoObjects.getBounds());
+    }
 });
