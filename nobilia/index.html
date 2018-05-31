@@ -56,6 +56,8 @@
 	</head>
 
 <body>
+    <div id="top-anchor"></div>
+
 	<!--[if lt IE 10]>
 	<p class="browsehappy">Вы используете <strong>УСТАРЕВШИЙ Internet Explorer</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/">обновите ваш Браузер</a> чтобы увидеть больше возможностей на сайтах!</p>
 	<![endif]-->
@@ -178,14 +180,21 @@
 
 
 	<!--TOP INTRO-->
+	<link rel="stylesheet" href="../css/_swipebox.scss">
 	<aside class="wr-flying-nav">
 	    <div class="wr-flying-nav__links d-flex flex-column">
-	        <a class="icon icon-plan" href="#"><svg width="32" height="32"><use xlink:href="#icon-list"></use></svg></a>
-	        <a class="icon icon-pin" href="#"><svg width="32" height="32"><use xlink:href="#icon-pin"></use></svg></a>
-	        <a class="icon icon_pulse icon-calc" href="#"><svg width="32" height="32"><use xlink:href="#icon-calc"></use></svg></a>
+	        <a class="icon icon-plan" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Список сравнения"><use xlink:href="#icon-list"></use></svg>
+	        </a>
+	        <a class="icon icon-pin" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Избранное"><use xlink:href="#icon-pin"></use></svg>
+	        </a>
+	        <a class="icon icon_pulse icon-calc" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Заказать просчёт"><use xlink:href="#icon-calc"></use></svg>
+	        </a>
 	    </div>
-	    <div class="wr-flying-nav__next">
-	        <a class="icon icon-next-big" href="#"><svg width="32" height="32"><use xlink:href="#icon-angle-up"></use></svg></a>
+	    <div class="wr-flying-nav__gototop">
+	        <a class="icon icon-next-big" href="#top-anchor"><svg width="32" height="32"><use xlink:href="#icon-angle-up"></use></svg></a>
 	    </div>
 	</aside>
 	
@@ -580,7 +589,7 @@
 	                        </span>
 	                    </form>
 	                    <!--<button class="btn btn-outline-primary">Записаться</button>-->
-	                    <button type="button" name="button" class="btn btn-outline-primary btn-form">Перезвонить мне</button>
+	                    <button type="button" name="button" class="btn btn-outline-primary btn-call-form">Перезвонить мне</button>
 	                    <!--<form name="form"  method="post" class="form__container">-->
 	                        <!--<div class="form__container__title"><h2>Бесплатный дизайн-проект</h2></div>-->
 	                        <!--<input class="form__container__input" type="text" name="name" placeholder="Ваше имя" required>-->
