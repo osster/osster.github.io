@@ -56,6 +56,8 @@
 	</head>
 
 <body>
+	<div id="top-anchor"></div>
+
 	<!--[if lt IE 10]>
 	<p class="browsehappy">Вы используете <strong>УСТАРЕВШИЙ Internet Explorer</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/">обновите ваш Браузер</a> чтобы увидеть больше возможностей на сайтах!</p>
 	<![endif]-->
@@ -144,23 +146,33 @@
 	</section>
 
 	<!--TOP INNER tehnika-->
-	<section class="wr-top-inner-tehnika">
+	<aside class="wr-flying-nav">
+	    <div class="wr-flying-nav__links d-flex flex-column">
+	        <a class="icon icon-plan" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Список сравнения"><use xlink:href="#icon-list"></use></svg>
+	        </a>
+	        <a class="icon icon-pin" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Избранное"><use xlink:href="#icon-pin"></use></svg>
+	        </a>
+	        <a class="icon icon_pulse icon-calc" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Заказать просчёт"><use xlink:href="#icon-calc"></use></svg>
+	        </a>
+	    </div>
+	    <div class="wr-flying-nav__gototop">
+	        <a class="icon icon-next-big" href="#top-anchor"><svg width="32" height="32"><use xlink:href="#icon-angle-up"></use></svg></a>
+	    </div>
+	</aside>
+	
+	<section class="wr-topintro" style="background-image:url(../img/tehnika/kitchen6.jpg);">
 	    <div class="container">
 	        <div class="topintro">
-	            <div class="topintro__slogan row flex-column align-items-end">
+	            <div class="topintro__slogan">
 	                <div class="topintro__header">
 	                    <p>ВЫ УЖЕ ОПРЕДЕЛИЛИСЬ С ТЕХНИКОЙ ДЛЯ КУХНИ?</p>
 	                </div>
 	                <div class="topintro__text">
 	                    <p>ПОЗНАКОМЬТЕСЬ С БРЕНДАМИ - УЗНАЙТЕ О НИХ ВСЁ</p>
 	                </div>
-	            </div>
-	            <div class="topintro__next">
-	                <a class="icon icon-next-big" href="#"></a>
-	            </div>
-	            <div class="topintro__links d-flex flex-column">
-	                <a class="icon icon-pin" href="#"></a>
-	                <a class="icon icon-plan" href="#"></a>
 	            </div>
 	        </div>
 	    </div>
@@ -355,15 +367,19 @@
 	                                    </div>
 	                                </div>
 	                            </div>
-	                            <div class="col-12 text-center accept">
+	                            <div class="col-12 text-center mb-4 accept">
 	                                <div class="form-group">
 	                                    <div class="form-check">
-	                                        <input class="form-check-input" type="checkbox" id="agreeClb" name="agreeClb">
+	                                        <span class="form-check-wrapper">
+	                                            <input class="form-check-input" type="checkbox" id="agreeClb" name="agreeClb">
+	                                        </span>
 	                                        <label class="form-check-label" for="agreeClb">
 	                                            Я соглашаюсь на обработку персональных даных
 	                                        </label>
 	                                    </div>
 	                                </div>
+	                            </div>
+	                            <div class="col-12 text-center">
 	                                <button type="submit" class="btn btn-outline-primary">Записаться</button>
 	                            </div>
 	                        </div>
@@ -415,6 +431,17 @@
 	<!--MAP-->
 	<div class="wr-map">
 	    <div id="map"></div>
+	    <div class="map__menu">
+	        <h5 class="map__title">График работы:</h5>
+	
+	        <p class="map__text">пн-сб: с 10:00 до 19:00,<br>вс: с 10:00 до 17:00</p>
+	
+	        <h5 class="map__title">Адрес:</h5>
+	
+	        <p class="map__text">г.Ростов-на-Дону,<br>ул.Красноармейска д.103/123</p>
+	
+	        <p class="map__text">Телефон: <a class="map__tel" href="tel:+7(863) 299-44-53"> +7 (863) 299-44-53</a></p>
+	    </div>
 	</div>
 
 	<!--FOOTER-->

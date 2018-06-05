@@ -24356,16 +24356,17 @@ $(document).ready(function () {
         }
     });
 
-    galleryTop.controller.control = galleryThumbs;
-    galleryThumbs.controller.control = galleryTop;
+    if (galleryTop.controller && galleryThumbs.controller) {
+        galleryTop.controller.control = galleryThumbs;
+        galleryThumbs.controller.control = galleryTop;
 
-    galleryTop.on('click', function (e) {
-        console.log('galleryTop click', e, galleryTop.clickedSlide);
-    });
+        galleryTop.on('click', function (e) {
+            console.log('galleryTop click', e, galleryTop.clickedSlide);
+        });
+    }
 
 
     // SELECT STYLISE
-
     $('select').each(function () {
         var $this = $(this), numberOfOptions = $(this).children('option').length;
 
@@ -24443,6 +24444,7 @@ $(document).ready(function () {
     $('a[href*="#"]')
         .not('[href="#"]')
         .not('[href="#0"]')
+        .not('[href="#searchCollapse"]')
         .click(function (event) {
             // Figure out element to scroll to
             var target = $(this.hash);
@@ -24494,7 +24496,7 @@ $(window).on('load', function () {
             var $itemBigTypesP = $(".containerH1-itemBig__types p");
             var $itemBigTransform = $(".containerH1-itemBig__types.transform-know-more-itemSmall");
 
-            $itemSmall.on('touchstart', function () {
+            $itemSmall.on('touchright', function () {
 
                 $itemSmallTypes.toggleClass("itemSmallTypesJS");
                 $itemSmallTypesH1.toggleClass("itemSmallTypesH1JS");
@@ -24505,7 +24507,7 @@ $(window).on('load', function () {
 
             });
 
-            $itemBig.on('touchstart', function () {
+            $itemBig.on('touchright', function () {
 
                 $itemBigTypes.toggleClass("itemSmallTypesJS");
                 $itemBigTypesH1.toggleClass("itemSmallTypesH1JS");
@@ -24531,13 +24533,7 @@ $(window).load(function () {
             items: [
                 {
                     center: [47.230731, 39.724589],
-                    name: "<h5 class='map__title'>График работы:</h5>" +
-                    "<p class='map__text'>пн-сб: с 10:00 до 19:00,<br>" +
-                    "вс: с 10:00 до 17:00</p>" +
-                    "<h5 class='map__title'>Адрес:</h5>" +
-                    "<p class='map__text'>г.Ростов-на-Дону,<br>" +
-                    "ул.Красноармейска д.103/123" +
-                    "<p class='map__text'>Телефон:  <a class='map__tel' href='tel:+7(863) 299-44-53'>  +7 (863) 299-44-53</p>"
+                    name: "Студия кухни nobilia"
                 }
             ]
         }
@@ -24616,12 +24612,13 @@ $(window).load(function () {
         }
 
         // Добавляем меню в тэг WR-MAP.
-        menu.appendTo($('.wr-map'));
+       //menu.appendTo($('.wr-map'));
 
         myMap.behaviors.disable(['scrollZoom']);
         myMap.setBounds({
             checkZoomRange: true,
         });
+
         // Выставляем масштаб карты чтобы были видны все группы.
         myMap.setBounds(myMap.geoObjects.getBounds());
     }
