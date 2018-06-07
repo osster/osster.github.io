@@ -24366,6 +24366,49 @@ $(document).ready(function () {
     }
 
 
+    // GALLERY SPEED
+    var galleryTopSpeed = new Swiper('.gallery-top-speed', {
+        //grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 1,
+        loop: true,
+        slideToClickedSlide: true,
+        loopedSlides: 5, //looped slides should be the same
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is <= 320px
+            576: {
+                effect: 'slide',
+                slidesPerView: 1
+            },
+            // when window width is <= 480px
+            768: {
+                effect: 'slide',
+                slidesPerView: 2
+            },
+            // when window width is <= 640px
+            1024: {
+                effect: 'slide',
+                slidesPerView: 3
+            }
+        }
+    });
+
+    if (galleryTopSpeed.controller && galleryThumbs.controller) {
+        galleryTopSpeed.controller.control = galleryThumbs;
+        galleryThumbs.controller.control = galleryTopSpeed;
+
+        galleryTopSpeed.on('click', function (e) {
+            console.log('galleryTop click', e, galleryTopSpeed.clickedSlide);
+        });
+    }
+
+///////////////////////////////////////////////////////////////////////////////
+
     // SELECT STYLISE
     $('select').each(function () {
         var $this = $(this), numberOfOptions = $(this).children('option').length;
@@ -24623,3 +24666,102 @@ $(window).load(function () {
         myMap.setBounds(myMap.geoObjects.getBounds());
     }
 });
+
+
+$(window).load(function () {
+    var swiper = new Swiper('.slider-tipykuhon', {
+        loop: true,
+        navigation: {
+            nextEl: '.slider-tipykuhon__next',
+            prevEl: '.slider-tipykuhon__prev'
+        }
+    });
+});
+
+
+$(document).ready(function () {
+
+    var swiper = new Swiper('.slider-facade', {
+        spaceBetween: 10,
+        slidesOffsetBefore: -20,
+        slidesPerView: 4,
+        autoHeight:true,
+        loop: true,
+        navigation: {
+            nextEl: '.slider-facade__next',
+            prevEl: '.slider-facade__prev'
+        },
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is <= 320px
+            576: {
+                effect: 'slide',
+                slidesPerView: 1,
+                spaceBetween: 0,
+                loop: true,
+                slideToClickedSlide: true
+            },
+            // when window width is <= 480px
+            768: {
+                effect: 'slide',
+                slidesPerView: 2,
+                spaceBetween: 10,
+                loop: true,
+                slideToClickedSlide: true
+            },
+            // when window width is <= 640px
+            1024: {
+                effect: 'slide',
+                slidesPerView: 3,
+                spaceBetween: 10,
+                slidesOffsetBefore: 10,
+                loop: true,
+                slideToClickedSlide: true
+            }
+        }
+    });
+});
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+// // GALLERY FACADE
+// var galleryTopFacade = new Swiper('.gallery-top-facade', {
+//     spaceBetween: 10,
+//     slidesOffsetBefore: -10,
+//     slidesPerView: 4,
+//     loop: true,
+//     slideToClickedSlide: true,
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev'
+//     },
+//     // Responsive breakpoints
+//     breakpoints: {
+//         // when window width is <= 320px
+//         576: {
+//             effect: 'slide',
+//             slidesPerView: 1,
+//             spaceBetween: 0,
+//             loop: true,
+//             slideToClickedSlide: true
+//         },
+//         // when window width is <= 480px
+//         768: {
+//             effect: 'slide',
+//             slidesPerView: 2,
+//             spaceBetween: 10,
+//             loop: true,
+//             slideToClickedSlide: true
+//         },
+//         // when window width is <= 640px
+//         1024: {
+//             effect: 'slide',
+//             slidesPerView: 3,
+//             spaceBetween: 10,
+//             slidesOffsetBefore: 10,
+//             loop: true,
+//             slideToClickedSlide: true
+//         }
+//     }
+// });
