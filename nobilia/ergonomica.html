@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- META -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<html lang="en">
+	
+	
+		<!-- FAVICON -->
+		<link rel="icon" type="image/x-icon" href="favicon.ico" >
+		<link rel="icon" type="image/png" href="favicon.png" type="image/x-icon">
+	
+	
+		<!-- SEO -->
+		<meta name="description" content="">
+		<meta name="rating" content="">
+		<meta name="author" content="">
+		<meta name="robots" content="index,follow">
+	
+		<!-- CONFIG -->
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	
+		<!-- Tweeter card -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@site_account">
+		<meta name="twitter:creator" content="@individual_account">
+		<meta name="twitter:url" content="https://example.com/page.html">
+		<meta name="twitter:title" content="Content Title">
+		<meta name="twitter:description" content="Content description less than 200 characters">
+		<meta name="twitter:image" content="https://example.com/image.jpg">
+	
+	
+		<!-- Facebook card -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://example.com/page.html">
+		<meta property="og:title" content="Content Title">
+		<meta property="og:image" content="https://example.com/image.jpg">
+		<meta property="og:description" content="Description Here">
+		<meta property="og:site_name" content="Site Name">
+		<meta property="og:locale" content="en_US">
+	
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/main.css">
+	
+		<title>nobilia</title>
+	
+	
+		<!--JAVASCRIPT-->
+		<script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	
+	</head>
+
+<body>
+	<!--[if lt IE 10]>
+	<p class="browsehappy">Вы используете <strong>УСТАРЕВШИЙ Internet Explorer</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/">обновите ваш Браузер</a> чтобы увидеть больше возможностей на сайтах!</p>
+	<![endif]-->
+
+	<!--SVG-->
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+	    <symbol id="icon-home" viewBox="0 0 576 512">
+	        <path fill="currentColor"
+	              d="M488 312.7V456c0 13.3-10.7 24-24 24H348c-6.6 0-12-5.4-12-12V356c0-6.6-5.4-12-12-12h-72c-6.6 0-12 5.4-12 12v112c0 6.6-5.4 12-12 12H112c-13.3 0-24-10.7-24-24V312.7c0-3.6 1.6-7 4.4-9.3l188-154.8c4.4-3.6 10.8-3.6 15.3 0l188 154.8c2.7 2.3 4.3 5.7 4.3 9.3zm83.6-60.9L488 182.9V44.4c0-6.6-5.4-12-12-12h-56c-6.6 0-12 5.4-12 12V117l-89.5-73.7c-17.7-14.6-43.3-14.6-61 0L4.4 251.8c-5.1 4.2-5.8 11.8-1.6 16.9l25.5 31c4.2 5.1 11.8 5.8 16.9 1.6l235.2-193.7c4.4-3.6 10.8-3.6 15.3 0l235.2 193.7c5.1 4.2 12.7 3.5 16.9-1.6l25.5-31c4.2-5.2 3.4-12.7-1.7-16.9z"
+	              class=""></path>
+	    </symbol>
+	    <symbol id="icon-search" viewBox="0 0 512 512">
+	        <path fill="currentColor"
+	              d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+	              class=""></path>
+	    </symbol>
+	    <symbol id="icon-pin" viewBox="0 0 384 512">
+	        <path fill="currentColor"
+	              d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z"
+	              class=""></path>
+	    </symbol>
+	    <symbol id="icon-list" viewBox="0 0 384 512">
+	        <path fill="currentColor"
+	              d="M280 240H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0 96H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zM112 232c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zM336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 48c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm144 408c0 4.4-3.6 8-8 8H56c-4.4 0-8-3.6-8-8V120c0-4.4 3.6-8 8-8h40v32c0 8.8 7.2 16 16 16h160c8.8 0 16-7.2 16-16v-32h40c4.4 0 8 3.6 8 8v336z"
+	              class=""></path>
+	    </symbol>
+	    <symbol id="icon-calc" viewBox="0 0 448 512">
+	        <path fill="currentColor"
+	              d="M0 464V48C0 21.49 21.49 0 48 0h352c26.51 0 48 21.49 48 48v416c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48zm384-284V76c0-6.627-5.373-12-12-12H76c-6.627 0-12 5.373-12 12v104c0 6.627 5.373 12 12 12h296c6.627 0 12-5.373 12-12zM128 308v-40c0-6.627-5.373-12-12-12H76c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm256 128V268c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v168c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm-256 0v-40c0-6.627-5.373-12-12-12H76c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm128-128v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm0 128v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12z"
+	              class=""></path>
+	    </symbol>
+	    <symbol id="icon-angle-up" viewBox="0 0 320 512">
+	        <path fill="currentColor"
+	              d="M168.5 164.2l148 146.8c4.7 4.7 4.7 12.3 0 17l-19.8 19.8c-4.7 4.7-12.3 4.7-17 0L160 229.3 40.3 347.8c-4.7 4.7-12.3 4.7-17 0L3.5 328c-4.7-4.7-4.7-12.3 0-17l148-146.8c4.7-4.7 12.3-4.7 17 0z"
+	              class=""></path>
+	    </symbol>
+	    <symbol id="icon-nav-toggle" viewBox="0 0 448 512">
+	        <path fill="currentColor"
+	              d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
+	              class=""></path>
+	    </symbol>
+	
+	    <symbol id="slider-arrow" viewBox="0 0 23 61">
+	        <defs>
+	            <path id="vnbya" d="M222.5 1533.5l-18 28"/>
+	            <path id="vnbyb" d="M222.5 1591.5l-18-32"/>
+	        </defs>
+	        <g><g transform="translate(-202 -1532)">
+	            <use fill="#fff" fill-opacity="0" stroke="#95989a" stroke-miterlimit="50" stroke-width="4" xlink:href="#vnbya"/>
+	        </g>
+	            <g transform="translate(-202 -1532)">
+	                <use fill="#fff" fill-opacity="0" stroke="#95989a" stroke-miterlimit="50" stroke-width="4" xlink:href="#vnbyb"/>
+	            </g>
+	        </g>
+	    </symbol>
+	
+	    <symbol id="icon-play" viewBox="0 0 25 31">
+	        <path fill="currentColor"
+	              d="M0,30.7C0,20.9,0,12,0,2.3c7.7,4.9,14.7,9.4,22.3,14.2C14.8,21.3,7.7,25.8,0,30.7z"></path>
+	    </symbol>
+	</svg>
+
+	<!--FLYING NAV-->
+	<div id="top-anchor"></div>
+	
+	<aside class="wr-flying-nav">
+	    <div class="wr-flying-nav__links d-flex flex-column">
+	        <a class="icon icon-plan" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Список сравнения"><use xlink:href="#icon-list"></use></svg>
+	        </a>
+	        <a class="icon icon-pin" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Избранное"><use xlink:href="#icon-pin"></use></svg>
+	        </a>
+	        <a class="icon icon_pulse icon-calc" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Заказать просчёт"><use xlink:href="#icon-calc"></use></svg>
+	        </a>
+	    </div>
+	    <div class="wr-flying-nav__gototop">
+	        <a class="icon" href="#top-anchor"><svg width="32" height="32"><use xlink:href="#icon-angle-up"></use></svg></a>
+	    </div>
+	</aside>
+
+	<section class="wr-header">
+		<div class="container">
+			<!--MENU-->
+			<nav class="navbar navbar-expand-xl bg-white">
+			    <a class="navbar-brand" href="index.html">
+			        <img class="img-fluid" src="img/logo_de.png">
+			    </a>
+			
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Navigation">
+			        <svg width="28" height="28"><use xlink:href="#icon-nav-toggle"></use></svg>
+			    </button>
+			
+			    <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+			        <ul class="navbar-nav">
+			            <li class="nav-item active">
+			                <a class="nav-link" href="index.html">
+			                    <img class="d-none d-xl-block" src="img/icons/icon-home.png" alt="">
+			                    <span class="d-inline-block d-xl-none">Главная</span>
+			                </a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="catalog.html">Каталог</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="tipykuhon.html">Типы кухонь</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="9categories.html">9 ценовых категорий</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="vstraivaemaya-tehnika.html">Встраиваемая техника</a>
+			            </li>
+			            <li class="nav-item dropdown">
+			                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			                    nobilia
+			                </a>
+			                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			                    <a class="dropdown-item" href="nobilia.html">О nobilia</a>
+			                    <a class="dropdown-item" href="#">История компании</a>
+			                    <a class="dropdown-item" href="#">Компетенции и факты</a>
+			                    <a class="dropdown-item" href="napolnenie-shkafov.html">Наполнение шкафов</a>
+			                    <a class="dropdown-item" href="ergonomica.html">Эргономика</a>
+			                    <a class="dropdown-item" href="#">Системы освещения</a>
+			                    <a class="dropdown-item" href="#">Видео коллекция</a>
+			                    <a class="dropdown-item" href="designer.html">Дизайнеры и архитекторы</a>
+			                    <a class="dropdown-item" href="#">Избранное</a>
+			                    <a class="dropdown-item" href="#">Sale</a>
+			                    <a class="dropdown-item" href="#">Контакты</a>
+			                </div>
+			            </li>
+			        </ul>
+			    </div>
+			
+			    <div class="navbar__search">
+			        <a data-toggle="collapse" href="#searchCollapse" role="button" aria-expanded="false" aria-controls="searchCollapse">
+			            <svg width="24" height="24"><use xlink:href="#icon-search"></use></svg>
+			        </a>
+			    </div>
+			
+			    <div class="navbar__contacts">
+			        <a class="navbar__contacts__phone text-dark d-block mb-2" href="tel:+7 (863) 299-44-53">+7 (863) 299-44-53</a>
+			        <span class="navbar__contacts__location small">Красноармейская 103/123</span>
+			    </div>
+			
+			    <div id="searchCollapse" class="collapse navbar-search-collapse">
+			        <div class="container py-4">
+			            <div class="input-group">
+			                <input id="q" name="q" class="form-control" placeholder="Найти...">
+			                <div class="input-group-append">
+			                    <button class="btn btn-sm btn-outline-primary" type="submit">Найти</button>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</nav>
+
+			<div class="breadcrumbs">
+				<a href="/index.html"><img src="img/icons/icon-home-sm.png" alt=""></a>
+				<a class="active" href="">Эргономика"</a>
+			</div>
+
+		</div>
+	</section>
+
+	<!--TOP INTRO-->
+	<section class="wr-topintro" style="background-image: url(img/ergonomica/ergonomie@2x.jpg);">
+	    <div class="container">
+	        <div class="topintro">
+	            <div class="topintro__slogan">
+	                <div class="topintro__header">
+	                    <p>КУХНЯ - ЗОНА КОМФОРТА</p>
+	                </div>
+	                <div class="topintro__text">
+	                    <p>ЗАБОТА О ЗДОРОВЬЕ</p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+	<!--tipykuhon-CONTENT-->
+	<div class="wr-important text-center">
+	    <div class="important">
+	        <h2 class="title-center">Узнайте секрет эргономики</h2>
+	        <p>Каждый мечтает о кухне, которая делает повседневную работу максимально комфортной и которая использует
+	            новейшие
+	            современные технологии! Здесь Вы найдете всё, что нужно, чтобы упростить Вашу работу на кухне, сведите к
+	            минимуму нагрузку
+	            на свою спину. Важно! Кухня разработана в соответствии с эргономическими принципами. Среди них: минимизация
+	            беготни и
+	            адаптации рабочей высоты для пользователей кухни, а также установка бытовой техники на доступную высоту. Наш
+	            персонал
+	            постоянно проходит стажировку в Германии, чтобы быть в курсе новых технологий.
+	        </p>
+	    </div>
+	</div>
+	
+	<!--VIDEOBLOCK CONTENT-->
+	
+	<section class="wr-video">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12">
+	                <h3 class="title">ИНОГДА ОДИН ФИЛЬМ ГОВОРИТ БОЛЕЕ 1000 СЛОВ.</h3>
+	                <p>Испытайте, что движет нами: и, действуйте! Узнайте о нашей компании и посмотрите видео продукции.</p>
+	            </div>
+	        </div>
+	
+	        <div class="row">
+	            <div class="col-md-4 col-12">
+	                <div class="videoBlocks-item">
+	                    <div class="videoBlocks-item__video">
+	                        <img src="img/tipykuhon/2018-05-26-14-14-19.jpg">
+	                    </div>
+	                    <div class="videoBlocks-item__info">
+	                        <h5 class="videoBlocks-item__info__title">Система удаления отходов</h5>
+	                        <p class="videoBlocks-item__info__text">Всё работает как часы</p>
+	                        <p class="videoBlocks-item__info__time">4:35</p>
+	                    </div>
+	                </div>
+	            </div>
+	
+	            <div class="col-md-4 col-12">
+	                <div class="videoBlocks-item">
+	                    <div class="videoBlocks-item__video">
+	                        <img src="img/tipykuhon/2018-05-26-14-09-26.jpg">
+	                    </div>
+	                    <div class="videoBlocks-item__info">
+	                        <h5 class="videoBlocks-item__info__title">Система организации</h5>
+	                        <p class="videoBlocks-item__info__text">Каждая кухня индивидуальна как и её хозяин</p>
+	                        <p class="videoBlocks-item__info__time">1:18</p>
+	                    </div>
+	                </div>
+	            </div>
+	
+	            <div class="col-md-4 col-12">
+	                <div class="videoBlocks-item">
+	                    <div class="videoBlocks-item__video">
+	                        <img src="img/tipykuhon/2018-05-25-19-48-15.jpg">
+	                    </div>
+	                    <div class="videoBlocks-item__info">
+	                        <h5 class="videoBlocks-item__info__title">Настенные шкафы</h5>
+	                        <p class="videoBlocks-item__info__text">Всё работает как часы</p>
+	                        <p class="videoBlocks-item__info__time">6:14</p>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="row">
+	            <div class="col-12">
+	                <div class="videoGalleryLink">
+	                    <p class="videoGalleryLink__title">
+	                        Откройте для себя мир кухонь nobilia: в нашем видео вы можете узнать о нашей продукции и узнать
+	                        больше о
+	                        компании nobilia.
+	                    </p>
+	                    <div href="#" class="videoGalleryLink__link">
+	                        <a href="#" class="videoGalleryLink__link__btn">
+	                            <i class="icon icon-play">
+	                                <svg width="25" height="31" data-toggle="tooltip" data-placement="left"
+	                                     title="Перейти в видео">
+	                                    <use xlink:href="#icon-play"></use>
+	                                </svg>
+	                            </i>
+	                            ПЕРЕЙТЕ В ВИДЕО КОЛЛЕКЦИЮ NOBILIA
+	                        </a>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	
+	<section class="wr-content pb-5 wr-ergonomica-content">
+	    <div class="container">
+	        <div class="row mb-5">
+	            <div class="col-12 text-center mb-5">
+	                <h3 class="title-center">ВСЁ ПРОДУМАННО И ЭРГОНОМИЧНО СПЛАНИРОВАНО</h3>
+	                <p class="w-75 mx-auto">Мы обращаем внимание на эти моменты при планировании кухни. Это делает Ваше
+	                    ежедневное
+	                    прибывание на ней более расслабленным и легким для спины.</p>
+	            </div>
+	            <div class="col-12 col-md-7 pr-5 pb-5">
+	
+	                <div class="swiper-container slider-pagination slider-ergonomica-1">
+	                    <div class="swiper-wrapper">
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/hoehenverstellbarer-stauraum.jpg)"
+	                           href="img/ergonomica/hoehenverstellbarer-stauraum.jpg"></a>
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/oeffnen-mit-sensor.jpg)"
+	                           href="img/ergonomica/oeffnen-mit-sensor.jpg"></a>
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/kopffreiheit.jpg)"
+	                           href="img/ergonomica/kopffreiheit.jpg"></a>
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/kochen.jpg)"
+	                           href="img/ergonomica/kochen.jpg"></a>
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/arbeitshoehe-festlegen.jpg)"
+	                           href="img/ergonomica/arbeitshoehe-festlegen.jpg"></a>
+	                    </div>
+	                    <!-- Add Pagination -->
+	                    <div class="swiper-pagination swiper-ergonomica-1"></div>
+	                </div>
+	
+	            </div>
+	
+	            <div class="col-12 col-md-5">
+	                <h3>Можно дотянуться до самых дальних уголков</h3>
+	                <p>Исключительный комфорт в работе</p>
+	                <ul>
+	                    <li>Лёгкий и равномерный ход благодаря уникальному принципу призмы</li>
+	                    <li>Равномерный и беспрепятственный ход направляющих профилей благодаря синхронному управлению</li>
+	                    <li>Оптимально отрегулированное, удобное, мягкое закрывание</li>
+	                    <li>Новая система демпферов с превосходной характеристикой</li>
+	                    <li>Мягкое втягивание выдвижных ящиков и глубоких выдвижных ящиков до 80 кг</li>
+	                    <li>Небольшие усилия для вытягивания делают открывание комфортным, даже при отсутствии ручек на
+	                        кухне
+	                    </li>
+	                </ul>
+	                <p>Исключительная устойчивость</p>
+	                <ul>
+	                    <li>Направляющие в трёх ступенях нагрузки: 40, 60, 70 и 80 кг</li>
+	                    <li>Уникальный принцип призмы обеспечивает максимальную боковую устойчивость – даже при широких
+	                        ящиках
+	                    </li>
+	                    <li>Оптимальное распределение нагрузки благодаря принципу призмы и синхронному управлению</li>
+	                    <li>Низкие выбойные значения</li>
+	                    <li>Прочное соединение между панелью, задней стенкой и рамой</li>
+	                    <li>Надёжное соединение между выдвижным ящиком и направляющей</li>
+	                </ul>
+	                <p>Разнообразные возможности оснащения</p>
+	                <ul>
+	                    <li>Гармоничный, высококачественный и не подверженный влияниям моды дизайн с двойным серебристым
+	                        покрытием
+	                    </li>
+	                    <li>Глубокие выдвижные ящики серийно оборудованы релингом</li>
+	                    <li>За дополнительную плату возможна стеклянная боковина.</li>
+	                    <li>За дополнительную плату поставляется боковина из металла.</li>
+	                    <li>В случае заказа боковых облицовок внутренних выдвижных ящиков будет доставлена также передняя
+	                        панель в стеклянном серийном исполнении.
+	                    </li>
+	                </ul>
+	            </div>
+	
+	        </div> <!--  end row-->
+	
+	        <div class="row">
+	            <div class="col-12 col-md-7 pr-5 pb-5">
+	
+	                <div class="swiper-container slider-pagination slider-ergonomica-2">
+	                    <div class="swiper-wrapper">
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/oeffnen-mit-sensor.jpg)"
+	                           href="img/ergonomica/oeffnen-mit-sensor.jpg"></a>
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/kopffreiheit.jpg)"
+	                           href="img/ergonomica/kopffreiheit.jpg"></a>
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/kochen.jpg)"
+	                           href="img/ergonomica/kochen.jpg"></a>
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/arbeitshoehe-festlegen.jpg)"
+	                           href="img/ergonomica/arbeitshoehe-festlegen.jpg"></a>
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/hoehenverstellbarer-stauraum.jpg)"
+	                           href="img/ergonomica/hoehenverstellbarer-stauraum.jpg"></a>
+	                    </div>
+	                    <!-- Add Pagination -->
+	                    <div class="swiper-pagination swiper-ergonomica-2"></div>
+	                </div>
+	
+	            </div>
+	
+	            <div class="col-12 col-md-5">
+	                <h3>Встроенные системы сортировки мусора, открытие шкафа с помощью сенсора, когда заняты руки</h3>
+	                <div>
+	                    <p>С помощью сенсорного механизма открытия Libero для систем разделения отходов: Euro-Cargo Soft,
+	                        Euro-Cargo S, Separato-K, Separato-M и Cargo frame, выбвижной блок может быть открыт простым
+	                        прикосновением ноги через датчик в цоколе.</p>
+	                </div>
+	
+	                <div>
+	                    <h4>Шкаф под мойку с системой сортировки мусора Separato-K:</h4>
+	                    <p>Оснащён контейнерами мусора 1 х 18 и 2 х 8 л</p>
+	                    <p>1 биокрышка (во всех)</p>
+	                    <p>1 или 2 бокувых организации</p>
+	                </div>
+	
+	                <div>
+	                    <h4>Шкаф под мойку с системой сортировки мусора, коробом Cargo</h4>
+	                    <p>Оснащён контейнерами мусора 2 х 14 или 1 х 20 и 1 х 12 л или 1 х20 и 2 х 10 л + 1 биокрышка</p>
+	                </div>
+	                <div>
+	                    <h4>Это лишь несколько вариантов из 8 серий, которые уникальны по своему.</h4>
+	                </div>
+	                <div>
+	                    <h4>В нашем салоне мы покажем их в живую и Вы сможете по достоинству оценить качество кухонь
+	                        nobilia.</h4>
+	                </div>
+	            </div>
+	
+	        </div> <!--  end row-->
+	
+	        <div class="row">
+	            <div class="col-12 col-md-7 pr-5 pb-5">
+	
+	                <div class="swiper-container slider-pagination slider-ergonomica-3">
+	                    <div class="swiper-wrapper">
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/kopffreiheit.jpg)"
+	                           href="img/ergonomica/kopffreiheit.jpg"></a>
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/kochen.jpg)"
+	                           href="img/ergonomica/kochen.jpg"></a>
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/arbeitshoehe-festlegen.jpg)"
+	                           href="img/ergonomica/arbeitshoehe-festlegen.jpg"></a>
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/hoehenverstellbarer-stauraum.jpg)"
+	                           href="img/ergonomica/hoehenverstellbarer-stauraum.jpg"></a>
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/oeffnen-mit-sensor.jpg)"
+	                           href="img/ergonomica/oeffnen-mit-sensor.jpg"></a>
+	                    </div>
+	                    <!-- Add Pagination -->
+	                    <div class="swiper-pagination swiper-ergonomica-3"></div>
+	                </div>
+	
+	            </div>
+	
+	            <div class="col-12 col-md-5">
+	                <h3>AVENTOS - удобство в движении и огромное
+	                    разнообразие</h3>
+	                <div><p>Система подъёмных механизмов AVENTOS для навесных шкафов привносит в обращение со шкафом новый
+	                    уровень комфорта. Даже большие и тяжелые дверцы открываются шутя. При этом шкафы AVENTOS
+	                    чрезвычайно практичны и не стесняют свободу движений человека.
+	                    Независимо от степени открывания, откидные дверцы AVENTOS всегда закрываются тихо и плавно.</p>
+	                </div>
+	                <div><p>При оснащении электрическим приводом SERVO-DRIVE откидные дверцы и складные поднимающиеся дверцы
+	                    открываются от легкого прикосновения пальца и снова закрываются при одном нажатии на удобно
+	                    расположенный выключатель на внутренней стороне корпуса. Сервопривод поставляется дополнительно, за
+	                    отдельную плату.
+	                </p></div>
+	            </div>
+	
+	        </div> <!--  end row-->
+	
+	
+	        <div class="row">
+	            <div class="col-12 col-md-7 pr-5 pb-5">
+	
+	                <div class="swiper-container slider-pagination slider-ergonomica-4">
+	                    <div class="swiper-wrapper">
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/kochen.jpg)"
+	                           href="img/ergonomica/kochen.jpg"></a>
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/arbeitshoehe-festlegen.jpg)"
+	                           href="img/ergonomica/arbeitshoehe-festlegen.jpg"></a>
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/hoehenverstellbarer-stauraum.jpg)"
+	                           href="img/ergonomica/hoehenverstellbarer-stauraum.jpg"></a>
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/oeffnen-mit-sensor.jpg)"
+	                           href="img/ergonomica/oeffnen-mit-sensor.jpg"></a>
+	                        <a class="swiper-slide"
+	                           style="background-image:url(img/ergonomica/kopffreiheit.jpg)"
+	                           href="img/ergonomica/kopffreiheit.jpg"></a>
+	                    </div>
+	                    <!-- Add Pagination -->
+	                    <div class="swiper-pagination swiper-ergonomica-4"></div>
+	                </div>
+	
+	            </div>
+	
+	            <div class="col-12 col-md-5">
+	                <h3>Подбор активной высоты для приготовление пищи у плиты</h3>
+	                <div><p>Определением высоты для приготовления пищи является верхний край среднего размера кастрюле на
+	                    плите.
+	                    25
+	                    см ниже высоты локтя. Это гарантирует расслабленное приготовление пищи, когда плечо и рука не
+	                    напряжены.</p>
+	                </div>
+	                <ul>
+	                    <li>В нижних шкафах размера X высота корпуса (792 мм) обеспечивает
+	                        на 10 процентов больший объем для хранения вещей, чем у шкафов
+	                        стандартной высоты, и позволяет хранить еще больше утвари
+	                        и запасов.
+	                    </li>
+	                    <li>Кроме того, благодаря отличному внешнему виду новые шкафы
+	                        обеспечивают прекрасное сочетание функциональности и эргономичности.
+	                    </li>
+	                </ul>
+	                <div>
+	                    <h4>Встроенная техника на доступной высоте</h4>
+	                    <p>Поднятые на нужный, уровень электроприборы, становятся намного удобнее, ведь вы сможете
+	                        осуществлять погрузку и разгрузку с лёгкостью для спины и предотвратит появление проблем позже.
+	                        В дополнение к холодильнику, паровая плита или посудомоечная машина, духовки, микроволновые печи
+	                        и полностью
+	                        автоматические кофемашины
+	                        также могут быть встроены в эргономически правильные высоты. Таким образом, никакое ценное
+	                        рабочее
+	                        пространство на столешнице не будет потрачено впустую, а спокойный день работы на кухне
+	                        гарантирован.</p>
+	                </div>
+	            </div>
+	
+	        </div> <!--  end row-->
+	
+	
+	        <div class="row">
+	            <div class="col-12 col-md-7 pr-5 pb-5">
+	                <img src="img/ergonomica/kochen.jpg" alt="">
+	
+	            </div>
+	
+	            <div class="col-12 col-md-5">
+	                <h3>Активная высота для приготовления пищи на столешнице и раковины</h3>
+	                <div><p>Стандартная высота каркаса напольного шкафа 720 мм
+	                    предназначена для приготовления у плиты. При расчёте оптимальной высоты сопоставляется размер
+	                    каркаса и высота цоколя по отношению к росту человека.</p>
+	                </div>
+	                <div>
+	                    <h4>Превосходная эргономичность</h4>
+	                </div>
+	
+	                <ul>
+	                    <li>Если говорить об экономии места и активной высоте, шкафы высотой XL представляют собой
+	                        промежуточное
+	                        звено между шкафами стандартного размера и шкафами максимальной высоты, входящими
+	                        в наш ассортимент кухонь.
+	                    </li>
+	                    <li>Индивидуальный выбор активной высоты осуществляется путем
+	                        сочетания 4-х различных цоколей (высотой 70, 100, 150, 200 мм)
+	                        и двух вариантов столешниц (высотой 16 и 38 мм).
+	                    </li>
+	                    <li>Благодаря этому можно обеспечить активную высоту от 815
+	                        до 1030 мм.
+	                    </li>
+	                </ul>
+	
+	
+	                <div>
+	                    <h4>Активная высота для раковины</h4>
+	
+	                    <p>Активная высота для действий в раковине определяет дно раковины. Идеально, когда высота верхнего
+	                        уровня
+	                        раковины находится выше робочей поверхности, при этом дно раковины находится на уровне 10-15 см
+	                        ниже
+	                        высоты локтя. Это снимает давление на диски спины.</p>
+	                </div>
+	            </div>
+	
+	        </div> <!--  end row-->
+	
+	
+	        <div class="row">
+	            <div class="col-12 col-md-7 pr-5 pb-5">
+	                <img src="img/ergonomica/arbeitshoehe-festlegen.jpg" alt="">
+	
+	            </div>
+	
+	            <div class="col-12 col-md-5">
+	                <h3>Наш системный растр - кухни нужного размера</h3>
+	                <div>
+	                    <p>Какой дизайн фасада выбрать? Какая рабочая высота подходит мне
+	                        лучше всего, чтобы спокойно и безопасно делать всю кухонную работу?
+	                        Это сравнение систем покажет вам различные дизайны фасадов разных
+	                        систем, а также возможную активную высоту. Выбирайте корпус стан-
+	                        дартной высоты 720 мм, XL-высоты 792 мм или максимальной высоты
+	                        864 мм. Точный индивидуальный выбор активной высоты осуществляет-
+	                        ся при выборе высоты цоколя для всех систем (4 варианта на выбор:
+	                        70, 100, 150, 200 мм) и одного из двух вариантов высоты столешницы —
+	                        16 или 38 мм. Нужный размер для каждого запроса.
+	                    </p></div>
+	
+	                <h4>Высота стандарт: 720 мм</h4>
+	                <ul>
+	                    <li>Высота столешницы - от 743 до 958 мм, рост человека - от 1500 мм</li>
+	                </ul>
+	                <h4>Высота XL: 792 мм</h4>
+	                <ul>
+	                    <li>Высота корпуса 792 мм, этим позволяет примерно 10 процентов
+	                        больше вместимости чем в стандартной высоте.</li>
+	                    <li>Высота столешницы от 815 до 1030 мм, рост человека - 1750 мм</li>
+	                </ul>
+	
+	                <h4>Высота стандарт: 720 мм LINE N</h4>
+	                <ul>
+	                    <li>Стандартная высота нижних шкафов кухонь LINE N составляет 720 мм.</li>
+	                    <li>Высота столешницы - от 743 до 958 мм, рост человека - от 1500 мм</li>
+	                </ul>
+	                <h4>Высота Maxi: 864 мм</h4>
+	                <ul>
+	                    <li>Высота столешницы - от 887 до 1102 мм, рост человека от -
+	                        1800 мм</li>
+	                </ul>
+	            </div>
+	
+	        </div> <!--  end row-->
+	        
+	        <div class="row">
+	            <div class="col-12 col-md-5">
+	                <img src="img/ergonomica/2018-05-27-12-32-43.jpg" alt="">
+	                <img src="img/ergonomica/2018-05-27-12-33-11.jpg" alt="">
+	                <img src="img/ergonomica/2018-05-27-12-33-31.jpg" alt="">
+	                <img src="img/ergonomica/2018-05-27-12-34-02.jpg" alt="">
+	                <img src="img/ergonomica/2018-05-27-12-34-29.jpg" alt="">
+	            </div>
+	            <div class="col-12 col-md-7">
+	                <h3>Xtra – столешница для особых потребностей</h3>
+	                <div>
+	                    <p>Декоры для столешниц Xtra отличаются особой трехмерной структурой и создают ощущение использования природного камня. Подходящие вангены и стеновые панели расширяют возможности оформления кухонь с использованием имитации природного камня.
+	                    </p>
+	                </div>
+	                <div>
+	                    <p>Благодаря инновационной многослойной конструкции плиты Xtra не только шикарно выглядят — они отличаются надежностью и обеспечивают установку заподлицо моек и варочных поверхностей.
+	                    </p>
+	                </div>
+	                <h4>Особая трехмерная структура</h4>
+	                <ul>
+	                    <li>Столешницы Xtra отличаются особой трехмерной структурой поверхности, имитирующей природный камень.</li>
+	                    <li>Трехмерная поверхность создается с помощью особо крепкого слоистого материала (1,2 мм вместо 0,8 мм).</li>
+	                    <li>Столешницы Xtra имитируют использование природного камня и обладают всеми преимуществами плит, изготовленных из слоистого пластика высокого давления.</li>
+	                    <li>Столешницы Xtra легко подгоняются на месте. В сравнении с плитами из природного камня они значительно легче и доступней.</li>
+	                </ul>
+	
+	                <h4>Особая устойчивость к разбуханию</h4>
+	                <ul>
+	                    <li>Столешницы Xtra отличаются многослойной конструкцией.</li>
+	                    <li>Под сверхкрепким слоистым материалом находится инновационный функциональный слой толщиной 9,4 мм, который существенно повы шает водонепроницаемость столешницы.
+	                    </li>
+	                    <li><Этот функциональный слой предотвращает попадание воды сверху внутрь столешницы и вызываемое этим разбухание./li>
+	                </ul>
+	                <h4>Особая прочность</h4>
+	                <ul>
+	                    <li>Надежная ударопрочная поверхность. Инновационный функциональный слой обеспечивает высокую прочность плиты.</li>
+	                    <li>Благодаря этому столешницы Xtra толщиной 38 мм полностью отвечают требованиям повседневной работы на кухне</li>
+	                </ul>
+	                <h4>Установка заподлицо</h4>
+	                <ul>
+	                    <li>Столешницы Xtra отличаются более высокой водонепроницаемостью, чем обычные плиты. Это позволяет установку заподлицо выбранных варочных плит и моек (подрезка проводится внутри функционального слоя).
+	                    </li>
+	                    <li>Подходящие вырезы для монтажа заподлицо изготавливаются на за воде за дополнительную плату. Вырезы указаны в регистре 4.
+	                    </li>
+	                    <li>Изготовление вырезов для монтажа заподлицо допускается только для встраиваемых варочных поверхностей и моек с соответствующим техническим допуском. Для этого в соответствующих разделах нашего перечня техники и моек указаны некоторые варочные поверхности и мойки. Они отмечены специальным символом
+	                    </li>
+	                </ul>
+	            </div>
+	        </div><!--  end row-->
+	    </div>
+	</section>
+	
+	
+	<section class="wr-content pb-5 wr-ergonomica-content">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 text-center mb-5">
+	                <h3 class="title-center">ФУРНИТУРА ДОСТОЙНА ВНИМАНИЯ - БОЛЕЕ 15 ЛЕТ СРОК СЛУЖБЫ ВСЕХ МЕХАНИЗМОВ</h3>
+	            </div>
+	        </div><!--  end row-->
+	
+	        <div class="row">
+	            <div class="col-12 col-md-5 d-flex flex-wrap">
+	                <img class="w-50 m-0 p-2" src="img/ergonomica/2018-05-27-11-32-11.jpg" alt="">
+	                <img class="w-50 m-0 p-2" src="img/ergonomica/2018-05-27-11-32-37.jpg" alt="">
+	                <img class="w-50 m-0 p-2" src="img/ergonomica/2018-05-27-11-33-15.jpg" alt="">
+	                <img class="w-50 m-0 p-2" src="img/ergonomica/2018-05-27-11-33-40.jpg" alt="">
+	                <img class="w-50 m-0 p-2" src="img/ergonomica/2018-05-27-11-34-29.jpg" alt="">
+	                <img class="w-50 m-0 p-2" src="img/ergonomica/2018-05-27-11-33-55.jpg" alt="">
+	                <img class="w-50 m-0 p-2" src="img/ergonomica/2018-05-27-11-34-03.jpg" alt="">
+	                <img class="w-50 m-0 p-2" src="img/ergonomica/2018-05-27-11-34-16.jpg" alt="">
+	            </div>
+	
+	            <div class="col-12 col-md-7">
+	                <h3>Угловые решения для нижних шкафов</h3>
+	                <div>
+	                    <p>Благодаря возможности выбора размеров, индивидуальному комфорту и прекрасному доступу к
+	                        внутренней зоне угловых шкафов nobilia вы можете свободно планировать вашу систему.</p>
+	                    <ul>
+	                        <li>Планировочные размеры для углов (без отсеков): 650 x 650 мм (угловая заглушка «мертвый угол»)</li>
+	                        <li>Планировочные размеры для угловых шкафов: 800 x 800 мм, 900 x 900 мм</li>
+	                        <li>Планировочные размеры для диагональных угловых шкафов: 800 x 800 мм, 900 x 900 мм</li>
+	                        <li>Планировочные размеры для полуугловых шкафов:</li>
+	                    </ul>
+	                    <p>650 (630) - 750 мм x 1050 (1030) - 1150 мм</p>
+	                    <p>650 (630) - 750 мм x 1100 (1080) - 1200 мм</p>
+	                    <p>650 (630) - 750 мм x 1150 (1130) - 1250 мм</p>
+	                    <p>650 (630) - 750 мм x 1250 (1230) - 1350 мм</p>
+	                    <p>Возможно заводское изменение планировочных размеров от минус 20 до плюс 100 мм.</p>
+	                </div>
+	
+	                <div class="row">
+	                    <div class="col-12 col-md-6">
+	                        Угловая корпусная заглушка UPE*
+	                        «мертвый угол»
+	                        • Низкая цена
+	                        • Угловое решение с корпусной заглушкой без отсека для хранения
+	
+	                        Угловой нижний шкаф U(D)TE*
+	                        со вставными полками
+	                        • Конструкция отсека для хранения, ориентированная на цену
+	                        • Хороший доступ благодаря шарниру на 165°
+	                        • Разбирается на месте
+	                        • Нагрузка на пол до 50 кг/м²
+	
+	                        Угловые шкафы с механизмом «карусель» UE(D)K */UE(D)T*, 360°
+	                        • Средняя ценовая категория
+	                        • Конструкция зоны для хранения со средним комфортом доступа
+	                        • Хороший обзор благодаря поворотному днищу, регулируемомупо высоте
+	                        • Разбирается на месте
+	                        • Настройка фасада по трем осям
+	                        • Закрывающая сила регулируется
+	                        • Дополнительная нагрузка от одной полки: 25 кг
+	
+	                        Диагональный Угловой шкаф UE(D)*
+	                        • Диагональное угловое решение со вставными полками
+	                        • Конструкция отсека для хранения, ориентированная на цену
+	                        • Разбирается на месте
+	                        • Нагрузка на пол до 50 кг/м²
+	                    </div>
+	                    <div class="col-12 col-md-6">
+	                        Диагональный шкаф с механизмом «карусель» UE(D)T*
+	                        • Поворотный механизм с деревянным днищем и металлическим релингом обеспечиваетхороший обзор
+	                        • Средняя ценовая категория
+	                        • Конструкция зоны для хранения со средним комфортом доступа
+	                        • Поворачивается на 360°
+	                        • Разбирается на месте
+	
+	                        Угловой шкаф UE(D)*
+	                        • Угловой шкаф со вставными полками
+	                        • Конструкция отсека для хранения, ориентированная на цену
+	                        • Нагрузка на полку до 50 кг/м²
+	
+	                        Угловой шкаф UEBD*
+	                        Деревянное поворотное днище
+	                        • Средняя ценовая категория
+	                        • Поворотный механизм с деревянным поворотным днищем и металлическим релингом обеспечивает хороший обзор
+	                        • Конструкция зоны для хранения со средним комфортом доступа
+	                        • Нагрузка на одну полку: 15 кг
+	
+	                        Угловой шкаф UE(D)SA* Леманс
+	                        • Высокая ценовая категория
+	                        • Выездной механизм выезжает навстречу пользователю - облегченный доступ к внутренней зоне
+	                        • Благодаря регулировкемеханизма по высоте обеспечивается хороший доступ к внутренней зоне шкафа
+	                        • Конструкция зоны для хранения с высоким комфортом доступа
+	                    </div>
+	                </div>
+	            </div>
+	        </div><!--  end row-->
+	    </div>
+	</section>
+	<section class="wr-img" style="background-image: url(img/ergonomica/2018-05-27-13-36-51.jpg);">
+	
+	</section>
+	
+	
+	<div class="wr-important text-center">
+	    <div class="important">
+	        <h2 class="title-center">И это еще не все</h2>
+	        <p>
+	            УЗНАЙТЕ, СЕКРЕТ ЭРГОНОМИКИ, УЗНАТЬ О ИННОВАЦИОННЫХ СИСТЕМАХ ОСВЕЩЕНИЯ, ОПРЕДЕЛИТЕ НАБОР НЕОБХОДИМОЙ ТЕХНИКИ.
+	            Мы подготовили для Вас полезную информацию, обладая ей, определиться и спланировать кухню свой мечты будет
+	            намного проще.
+	        </p>
+	    </div>
+	</div>
+
+
+	<!--FEATURES BLOCK-->
+	
+	<section class="wr-features">
+	    <div class="container">
+	        <div class="row">
+	
+	            <div class="col-md-6 col-12">
+	                <div class="features">
+	                    <div class="features__img">
+	                        <img src="img/nobilia/ergonomie.jpg">
+	                    </div>
+	                    <div class="features__info">
+	                        <h3 class="features__info__title">Эргономика</h3>
+	                        <p class="features__info__text">
+	                            24 различных рабочих высот обеспечивают эргономичный дизайн кухни.
+	                        </p>
+	                        <div class="features__info__link">
+	                            <a href="#" class="more-btn">Узнать больше</a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	
+	            <div class="col-md-6 col-12">
+	                <div class="features">
+	                    <div class="features__img">
+	                        <img src="img/main-img/07-stauraum.jpg">
+	                    </div>
+	                    <div class="features__info">
+	                        <h3 class="features__info__title">Наполнение шкафов</h3>
+	                        <p class="features__info__text">
+	                            Благодаря нашей фурнитуре вы используете всё пространство внутренних шкафов и конечно свет.
+	                        </p>
+	                        <div class="features__info__link">
+	                            <a href="napolnenie-shkafov.html" class="more-btn">Узнать больше</a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	
+	            <div class="col-md-6 col-12">
+	                <div class="features">
+	                    <div class="features__img">
+	                        <img src="img/main-img/lichtsysteme.png">
+	                    </div>
+	                    <div class="features__info">
+	                        <h3 class="features__info__title">Система оповещения</h3>
+	                        <p class="features__info__text">
+	                            Благодаря нашей фурнитуре вы используете всё пространство внутренних шкафов и конечно свет.
+	                        </p>
+	                        <div class="features__info__link">
+	                            <a href="#" class="more-btn">Узнать больше</a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	
+	            <div class="col-md-6 col-12">
+	                <div class="features">
+	                    <div class="features__img">
+	                        <img src="img/main-img/electrogeraete.jpg">
+	                    </div>
+	                    <div class="features__info">
+	                        <h3 class="features__info__title">Встраиваемая техника</h3>
+	                        <p class="features__info__text third-blocks__row__item__info__correctMargin">
+	                            Неотъемлемая составляющая кухни вашей мечты: электроприборы. Откройте для себя разнообразие
+	                            брендов.
+	                        </p>
+	                        <div class="features__info__link">
+	                            <a href="#" class="more-btn">Узнать больше</a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	
+	        </div>
+	    </div>
+	</section>
+
+	<!--tipykuhon benefit-->
+	<section class="wr-benefit">
+	    <div class="benefit-title">
+	        ВЫГОДА, КОТОРУЮ ВЫ ПОЛУЧАЕТЕ ЗАКАЗАВ КУХНЮ В СТУДИИ <span>NOBILIA</span>
+	    </div>
+	    <div class="container">
+	        <div class="row align-items-stretch">
+	            <div class="col-12 col-md-3 mb-3">
+	                <div class="benefit-item">
+	                    <p class="benefit-item__title">
+	                        Салон вмещает множество кухонь
+	                    </p>
+	                    <p class="benefit-item__text">
+	                        Все популярные механизмы и стили представлены в нашем салоне, всё можно потрагать. Потрясающие механизмы, умная система подсветки, вся техника подключена.
+	                    </p>
+	                </div>
+	            </div>
+	            <div class="col-12 col-md-3 mb-3">
+	                <div class="benefit-item">
+	                    <p class="benefit-item__title">
+	                        Менеджеры и сборщики стажируются в Германии
+	                    </p>
+	                    <p class="benefit-item__text">
+	                        Все наши сотрудники в том числе и сбощики, проходят обучение и стажировку на фабрике nobilia. Вам всегда расскажут о новинках и соберут кухню точно в срок!
+	                    </p>
+	                </div>
+	            </div>
+	            <div class="col-12 col-md-3 mb-3">
+	                <div class="benefit-item">
+	                    <p class="benefit-item__title">
+	                        Идеальная точность исполнения заказа
+	                    </p>
+	                    <p class="benefit-item__text">
+	                        Контроль каждого заказа от его приёма до передачи клиенту. Контроль ведёт не только Ваш дизайнер, консультант, но и технологи фабрики.
+	                    </p>
+	                </div>
+	            </div>
+	            <div class="col-12 col-md-3 mb-3">
+	                <div class="benefit-item">
+	                    <p class="benefit-item__title">
+	                        Максимальные сроки изготовления - 60 дней
+	                    </p>
+	                    <p class="benefit-item__text">
+	                        Фабрика ежедневно производит более 3 000 кухонь. Ваша кухня будет изготовлена всего за 30 минут, далее она пройдет проверку и отправится в Ростов-на-Дону
+	                    </p>
+	                </div>
+	            </div>
+	        </div>
+	    </div> <!--/container -->
+	
+	</section> <!--/wrapper -->
+
+	<!--CALL-FORM-->
+	<div class="call-form-section">
+	    <div class="wrapper">
+	        <div class="container">
+	            <div class="row">
+	                <div class="call-form col">
+	
+	                    <div class="call-form__title">
+	                        ЧТО ДЕЛАТЬ ДАЛЬШЕ?
+	                    </div>
+	
+	                    <form name="call-form" method="post" class="call-form__form">
+	
+	                        <input type="hidden" name="sessid" value="1234567890"/>
+	
+	                        <p class="call-form__form__text">
+	                            Вы можете записаться на замер или назначить встречу в салоне.<br>
+	                            Мы ответим на все вопросы, просто заполните форму и мы Вам перезвоним.
+	                        </p>
+	
+	                        <div class="row">
+	                            <div class="col-lg-6">
+	                                <div class="form-group">
+	                                    <input class="form-control call-form__form__input" type="text" name="name"
+	                                           placeholder="Ваше имя" required>
+	                                </div>
+	                            </div>
+	                            <div class="col-lg-6">
+	                                <input class="form-control call-form__form__input" type="text" name="phone"
+	                                       placeholder="Ваш телефон" required>
+	                            </div>
+	
+	                            <div class="col-lg-12">
+	                                <div class="form-group call-form__form__agree">
+	                                    <span class="call-form__form__agree_wrapper">
+	                                        <input id="agree-clb" class="call-form__form__agree_checkbox"
+	                                               type="checkbox" name="agreeClb"/>
+	                                    </span>
+	                                    <label for="agree-clb" class="call-form__form__agree_label">
+	                                        - Я соглашаюсь на обработку персональных даных</label>
+	                                </div>
+	                            </div>
+	                        </div>
+	
+	
+	                        <button type="submit" name="button" class="btn btn-outline-primary btn-call-form">Перезвонить
+	                            мне
+	                        </button>
+	
+	                    </form>
+	
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<!--CALL-FORM-->
+	<section class="wr-cta">
+	
+	    <div class="container">
+	        <h3 class="mb-5">ГОТОВИМ КАК В САЛОНЕ ТЕХНИКИ, ТАК И В САЛОНЕ КУХОНЬ И МОЖЕМ ПРОВЕСТИ МАСТЕР-КЛАСС ДЛЯ ВАС МЫ С УДОВОЛЬСТВИЕМ ПОЗНАКОМИМ ВАС С ФУНКЦИОНАЛОМ СОВРЕМЕННОЙ ТЕХНИКИ И НАСЛАДИМСЯ ПРИГОТОВЛЕННЫМ ШЕДЕВРОМ </h3>
+	        <div class="row mb-5">
+	            <div class="col-md-4 mb-4"><a href="img/news/news-04.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-04.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-05.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-05.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-06.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-06.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-04.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-04.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-05.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-05.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-06.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-06.jpg" alt=""></a></div>
+	        </div>
+	        <button type="button" class="btn btn-outline-primary">Записаться</button>
+	    </div> <!--/wrapper -->
+	
+	</section>
+
+	<!--EVENTS-->
+	<section class="wr-events">
+	
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 mb-3">
+	                <h3 class="title-center">ПРОШЕДШИЕ МЕРОПРИЯТИЯ</h3>
+	            </div>
+	            <div class="col-md-6 mb-4">
+	                <a href="img/news/news-01.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-01.jpg" alt=""></a>
+	            </div>
+	            <div class="col-md-6 mb-4 align-self-center events-text">
+	                <h3>ОТКРЫТИЕ САЛОНА nobilia в РОСТОВЕ-НА-ДОНУ</h3>
+	                <p>Фото и информация с нашего последнего мероприятия. Хотите попасть на следующий мастер-класс?</p>
+	            </div>
+	            <div class="col-md-6 mb-4">
+	                <a href="img/news/news-02.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-02.jpg" alt=""></a>
+	            </div>
+	            <div class="col-md-6 mb-4">
+	                <a href="img/news/news-03.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-03.jpg" alt=""></a>
+	            </div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-04.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-04.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-05.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-05.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-06.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-06.jpg" alt=""></a></div>
+	        </div>
+	
+	    </div> <!--/wrapper -->
+	
+	</section>
+
+	<!--CONTACT FORM-->
+	<section class="wr-cont-form">
+	
+	    <div class="container">
+	        <div class="row justify-content-center">
+	            <div class="col-12 col-md-10">
+	                <div class="cont-form">
+	                    <div class="cont-form__title">ЗАПИШИТЕСЬ НА КОНСУЛЬТАЦИЮ К ДИЗАЙНЕРУ <br/> или получите бесплатный 3D дизайн-проект</div>
+	                    <form class="cont-form__form" action="">
+	                        <div class="row">
+	                            <div class="col-md-5">
+	                                <input class="form-control" type="text" placeholder="Ваше имя" name="name">
+	                                <input class="form-control" type="tel" placeholder="Ваш телефон" name="phone">
+	                            </div>
+	                            <div class="col-md-7">
+	                                <div class="fieldset form-group d-flex align-items-center justify-content-between flex-wrap flex-xl-nowrap">
+	                                    <div class="legend">Дизайн-проект</div>
+	                                    <div class="form-check">
+	                                        <input class="form-check-input" type="radio" id="proekt1" name="project" value="1">
+	                                        <label class="form-check-label" for="proekt1">- Нужен</label>
+	                                    </div>
+	                                    <div class="form-check">
+	                                        <input class="form-check-input" type="radio" id="proekt2" name="project" value="0">
+	                                        <label class="form-check-label" for="proekt2">- Уже есть</label>
+	                                    </div>
+	                                </div>
+	                                <div class="fieldset form-group d-flex align-items-center justify-content-between flex-wrap flex-xl-nowrap">
+	                                    <div class="legend">Контсультация по выбору
+	                                        втраиваемой  техники, мастер-класс</div>
+	                                    <div class="form-check form-check-inline">
+	                                        <input class="form-check-input" type="checkbox" id="tehnika1" name="consult" value="1">
+	                                        <label class="form-check-label" for="tehnika1">- Нужна</label>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="col-12 text-center mb-4 accept">
+	                                <div class="form-group">
+	                                    <div class="form-check">
+	                                        <span class="form-check-wrapper">
+	                                            <input class="form-check-input" type="checkbox" id="agreeClb" name="agreeClb">
+	                                        </span>
+	                                        <label class="form-check-label" for="agreeClb">
+	                                            Я соглашаюсь на обработку персональных даных
+	                                        </label>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="col-12 text-center">
+	                                <button type="submit" class="btn btn-outline-primary">Записаться</button>
+	                            </div>
+	                        </div>
+	                    </form>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	
+	</section>
+
+	<!--SLIDER-->
+	<div class="wr-slider wr-slider__3d">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 text-center mb-5">
+	                <h3 class="title-center">ДОБРО ПОЖАЛОВАТЬ В САЛОН! <br/>ЗДЕСЬ ВЫ СМОЖЕТЕ ПО ДОСТОИНСТВУ ОЦЕНИТЬ КАЧЕСТВО НАШИХ КУХОНЬ.</h3>
+	            </div>
+	            <div class="col-12">
+	                <div class="swiper-container gallery-top">
+	                    <div class="swiper-wrapper">
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/01.jpg)" href="img/slides/01.jpg"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_3.jpg)" href="img/slides/Mask_Group_3.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_4.jpg)" href="img/slides/Mask_Group_4.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_5.jpg)" href="img/slides/Mask_Group_5.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_6.jpg)" href="img/slides/Mask_Group_6.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_7.jpg)" href="img/slides/Mask_Group_7.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_8.jpg)" href="img/slides/Mask_Group_8.jpg" rel="g-slider-bottom"></a>
+	                    </div>
+	                    <!-- Add Pagination -->
+	                    <div class="swiper-pagination"></div>
+	                </div>
+	                <div class="swiper-container gallery-thumbs">
+	                    <div class="swiper-wrapper">
+	                        <div class="swiper-slide" style="background-image:url(img/slides/01.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_3.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_4.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_5.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_6.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_7.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_8.jpg)"></div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<!--MAP-->
+	<div class="wr-map">
+	    <div id="map"></div>
+	    <div class="map__menu">
+	        <h5 class="map__title">График работы:</h5>
+	
+	        <p class="map__text">пн-сб: с 10:00 до 19:00,<br>вс: с 10:00 до 17:00</p>
+	
+	        <h5 class="map__title">Адрес:</h5>
+	
+	        <p class="map__text">г.Ростов-на-Дону,<br>ул.Красноармейска д.103/123</p>
+	
+	        <p class="map__text">Телефон: <a class="map__tel" href="tel:+7(863) 299-44-53"> +7 (863) 299-44-53</a></p>
+	    </div>
+	</div>
+
+	<!--FOOTER-->
+	<footer class="wr-footer">
+	    <div class ="footer">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+	                    <ul class="title pl-2">
+	                        <li><a href="#" class="footer__item">Угловые кухни</a></li>
+	                        <li><a href="#" class="footer__item">Кухня-студия</a></li>
+	                        <li><a href="#" class="footer__item">Белые кухни</a></li>
+	                        <li><a href="#" class="footer__item">Глянцевые кухни</a></li>
+	                        <li><a href="#" class="footer__item">Классические кухни</a></li>
+	                        <li><a href="#" class="footer__item">Современные кухни</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+	                    <ul class="pl-2">
+	                        <li><a href="#" class="footer__item">Кухни без ручек LINE-N</a></li>
+	                        <li><a href="#" class="footer__item">Кухни Лофт</a></li>
+	                        <li><a href="#" class="footer__item">Кухни минимализм</a></li>
+	                        <li><a href="#" class="footer__item">Кухни премиум</a></li>
+	                        <li><a href="#" class="footer__item">Кухни с барной стойкой</a></li>
+	                        <li><a href="#" class="footer__item">Кухни с островом</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+	                    <ul class="title pl-2">
+	                        <li><a href="#" class="footer__item">Nobilia</a></li>
+	                        <li><a href="#" class="footer__item">История компании</a></li>
+	                        <li><a href="#" class="footer__item">Компетенции</a></li>
+	                        <li><a href="#" class="footer__item">Эргономика</a></li>
+	                        <li><a href="#" class="footer__item">Внутренняя фурнитура</a></li>
+	                        <li><a href="#" class="footer__item">Видео коллекция</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+	                    <ul class="pl-2">
+	                        <li><a href="#" class="footer__item">9 ценовых категорий</a></li>
+	                        <li><a href="#" class="footer__item">Sale</a></li>
+	                        <li><a href="#" class="footer__item">Вcтраиваемая техника</a></li>
+	                        <li><a href="#" class="footer__item">Дизайнеры</a></li>
+	                        <li><a href="#" class="footer__item">Доставка и оплата</a></li>
+	                        <li><a href="#" class="footer__item">Контакты</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="footer__copyright text-center">
+	        <p>Nobilia-Rostov &copy; 2018</p>
+	    </div>
+	</footer>
+
+	<!-- scripts -->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- META -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<html lang="en">
+	
+	
+		<!-- FAVICON -->
+		<link rel="icon" type="image/x-icon" href="favicon.ico" >
+		<link rel="icon" type="image/png" href="favicon.png" type="image/x-icon">
+	
+	
+		<!-- SEO -->
+		<meta name="description" content="">
+		<meta name="rating" content="">
+		<meta name="author" content="">
+		<meta name="robots" content="index,follow">
+	
+		<!-- CONFIG -->
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	
+		<!-- Tweeter card -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@site_account">
+		<meta name="twitter:creator" content="@individual_account">
+		<meta name="twitter:url" content="https://example.com/page.html">
+		<meta name="twitter:title" content="Content Title">
+		<meta name="twitter:description" content="Content description less than 200 characters">
+		<meta name="twitter:image" content="https://example.com/image.jpg">
+	
+	
+		<!-- Facebook card -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://example.com/page.html">
+		<meta property="og:title" content="Content Title">
+		<meta property="og:image" content="https://example.com/image.jpg">
+		<meta property="og:description" content="Description Here">
+		<meta property="og:site_name" content="Site Name">
+		<meta property="og:locale" content="en_US">
+	
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/main.css">
+	
+		<title>nobilia</title>
+	
+	
+		<!--JAVASCRIPT-->
+		<script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	
+	</head>
+
+<body>
+	<div id="top-anchor"></div>
+
+	<!--[if lt IE 10]>
+	<p class="browsehappy">Вы используете <strong>УСТАРЕВШИЙ Internet Explorer</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/">обновите ваш Браузер</a> чтобы увидеть больше возможностей на сайтах!</p>
+	<!--<![endif]&ndash;&gt;-->
+
+
+	<section class="wr-header">
+		<div class="container">
+			<!--MENU-->
+			<nav class="navbar navbar-expand-xl bg-white">
+			    <a class="navbar-brand" href="index.html">
+			        <img class="img-fluid" src="img/logo_de.png">
+			    </a>
+			
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Navigation">
+			        <svg width="28" height="28"><use xlink:href="#icon-nav-toggle"></use></svg>
+			    </button>
+			
+			    <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+			        <ul class="navbar-nav">
+			            <li class="nav-item active">
+			                <a class="nav-link" href="index.html">
+			                    <img class="d-none d-xl-block" src="img/icons/icon-home.png" alt="">
+			                    <span class="d-inline-block d-xl-none">Главная</span>
+			                </a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="catalog.html">Каталог</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="tipykuhon.html">Типы кухонь</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="9categories.html">9 ценовых категорий</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="vstraivaemaya-tehnika.html">Встраиваемая техника</a>
+			            </li>
+			            <li class="nav-item dropdown">
+			                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			                    nobilia
+			                </a>
+			                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			                    <a class="dropdown-item" href="nobilia.html">О nobilia</a>
+			                    <a class="dropdown-item" href="#">История компании</a>
+			                    <a class="dropdown-item" href="#">Компетенции и факты</a>
+			                    <a class="dropdown-item" href="napolnenie-shkafov.html">Наполнение шкафов</a>
+			                    <a class="dropdown-item" href="ergonomica.html">Эргономика</a>
+			                    <a class="dropdown-item" href="#">Системы освещения</a>
+			                    <a class="dropdown-item" href="#">Видео коллекция</a>
+			                    <a class="dropdown-item" href="designer.html">Дизайнеры и архитекторы</a>
+			                    <a class="dropdown-item" href="#">Избранное</a>
+			                    <a class="dropdown-item" href="#">Sale</a>
+			                    <a class="dropdown-item" href="#">Контакты</a>
+			                </div>
+			            </li>
+			        </ul>
+			    </div>
+			
+			    <div class="navbar__search">
+			        <a data-toggle="collapse" href="#searchCollapse" role="button" aria-expanded="false" aria-controls="searchCollapse">
+			            <svg width="24" height="24"><use xlink:href="#icon-search"></use></svg>
+			        </a>
+			    </div>
+			
+			    <div class="navbar__contacts">
+			        <a class="navbar__contacts__phone text-dark d-block mb-2" href="tel:+7 (863) 299-44-53">+7 (863) 299-44-53</a>
+			        <span class="navbar__contacts__location small">Красноармейская 103/123</span>
+			    </div>
+			
+			    <div id="searchCollapse" class="collapse navbar-search-collapse">
+			        <div class="container py-4">
+			            <div class="input-group">
+			                <input id="q" name="q" class="form-control" placeholder="Найти...">
+			                <div class="input-group-append">
+			                    <button class="btn btn-sm btn-outline-primary" type="submit">Найти</button>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</nav>
+
+			<div class="breadcrumbs">
+				<a href="/index.html"><img src="img/icons/icon-home-sm.png" alt=""></a>
+				<a class="active" href="">Nobilia</a>
+			</div>
+
+		</div>
+	</section>
+
+	<!--FLYING NAV-->
+	<div id="top-anchor"></div>
+	
+	<aside class="wr-flying-nav">
+	    <div class="wr-flying-nav__links d-flex flex-column">
+	        <a class="icon icon-plan" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Список сравнения"><use xlink:href="#icon-list"></use></svg>
+	        </a>
+	        <a class="icon icon-pin" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Избранное"><use xlink:href="#icon-pin"></use></svg>
+	        </a>
+	        <a class="icon icon_pulse icon-calc" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Заказать просчёт"><use xlink:href="#icon-calc"></use></svg>
+	        </a>
+	    </div>
+	    <div class="wr-flying-nav__gototop">
+	        <a class="icon" href="#top-anchor"><svg width="32" height="32"><use xlink:href="#icon-angle-up"></use></svg></a>
+	    </div>
+	</aside>
+
+
+	<!--NOBILIA TOP INTRO-->
+	<!-- TOP INTRO-->
+	
+	<section class="wr-topintro" style="background-image: url(img/9categories/S30_Laser416_M_13890_CC246_Orange.jpg);">
+	    <div class="container">
+	        <div class="topintro">
+	            <div class="topintro__slogan">
+	                <div class="topintro__header">
+	                    <p>ОТКРЫТИЕ САЛОНА КУХОНЬ NOBILIA В РОСТОВЕ-НА-ДОНУ</p>
+	                </div>
+	                <div class="topintro__text">
+	                    <p>УЗНАЙТЕ ИСТОРИЮ РАЗВИТИЯ БРЕДА</p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+	<!--NOBILIA-CONTENT-->
+	<div class="wr-important text-center">
+	    <div class="important">
+	        <h2 class="title-center">Началось всё 73 года назад</h2>
+	        <p>
+	            Пристегнитесь, мы начинаем путишествие в далёкое прошлое
+	        </p>
+	    </div>
+	</div>
+	
+	
+	<section class="wr-history">
+	
+	    <div class="container">
+	        <div class="row">
+	
+	            <div class="col-12">
+	                <div id="accordion">
+	
+	
+	                    <div class="card card_history">
+	                        <div class="card-header card-header_history" id="headingOne">
+	                            <h5 class="mb-0">
+	                                <button class="btn btn-link btn-link_history history-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	                                  1945
+	                                </button>
+	                            </h5>
+	                        </div>
+	
+	                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+	                            <div class="card-body card-body_history">
+	
+	                                <div class="row">
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/1945.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-center order-xl-2 order-lg-2 order-md-1 order-sm-1 order-1">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_right">
+	                                                1945
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_right">
+	                                                Мастер столярного дела Йоханн Штикинг и специалист по торговле Вилли Штикинг организовали компанию Johann und Willy Stickling OHG.
+	                                                Они производят швейные шкафы и мебель в арендованном зале. К концу года в компании уже работают семь человек.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-end justify-content-lg-end justify-content-center order-3">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_left">
+	                                                1947
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_left">
+	                                                Компания растёт.<br>
+	                                                Уже 25 сотрудников сосредоточены на производстве кухонных буфетов
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-4">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/1947.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-xl-5 order-lg-5 order-md-6 order-sm-6 order-6">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/1949.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-center order-xl-6 order-lg-6 order-md-5 order-sm-5 order-5">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_right">
+	                                                1949
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_right">
+	                                                Смена названия компании
+	                                                С 1 декабря 1949 года компания называется
+	                                                J. and W. Stickling OHG (general partnership).
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div> <!--card_history-->
+	
+	
+	                    <div class="card card_history">
+	                        <div class="card-header card-header_history" id="headingTwo">
+	                            <h5 class="mb-0">
+	                                <button class="btn btn-link btn-link_history history-title" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+	                                    1950 год
+	                                </button>
+	                            </h5>
+	                        </div>
+	
+	                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+	                            <div class="card-body card-body_history">
+	
+	                                <div class="row">
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-end justify-content-lg-end justify-content-center">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_left">
+	                                                1956
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_left">
+	                                                Йоханн Штикинг специализируется на производстве кухонь
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/1956.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div> <!--card_history-->
+	
+	
+	                    <div class="card card_history">
+	                        <div class="card-header card-header_history" id="headingThree">
+	                            <h5 class="mb-0">
+	                                <button class="btn btn-link btn-link_history history-title" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+	                                    1960 год
+	                                </button>
+	                            </h5>
+	                        </div>
+	
+	                        <div id="collapseThree" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+	                            <div class="card-body card-body_history">
+	
+	                                <div class="row">
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/1961.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-center order-xl-2 order-lg-2 order-md-1 order-sm-1 order-1">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_right">
+	                                                1961
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_right">
+	                                                На помощь приходит сын, Хайнц Стиклинг.
+	                                                Присоеденившись к бизнесу он начинает заниматься имеджем компании. Преобретается первый собственный грузовик.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-end justify-content-lg-end justify-content-center order-3">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_left">
+	                                                1967
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_left">
+	                                                Компания  взяла курс на полностью оборудованные кухни.
+	                                                Поле того как компания была преобразована в товарищество с ограниченной ответственностью в 1962 году, оно носило название NOBILIA-Werke J. Stickling KG.
+	                                                Молодой сын Йоханна Штикинга - Вернер Стиклинг - присоединяется к бизнесу. Количество сотрудников увеличивается до 145.
+	                                                За четверть века после его основания nobilia теперь специализируется исключительно на оборудованных кухнях.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-4">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/1967.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div> <!--card_history-->
+	
+	
+	                    <div class="card card_history">
+	                        <div class="card-header card-header_history" id="headingFour">
+	                            <h5 class="mb-0">
+	                                <button class="btn btn-link btn-link_history history-title" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+	                                    1970 год
+	                                </button>
+	                            </h5>
+	                        </div>
+	
+	                        <div id="collapseFour" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+	                            <div class="card-body card-body_history">
+	
+	                                <div class="row">
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/1970.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-center order-xl-2 order-lg-2 order-md-1 order-sm-1 order-1">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_right">
+	                                                1970
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_right">
+	                                                В целях дальнейшего развития производства новый завод с начальной площадью производства 7 000 м² открывается на 51.000 кв.м.
+	                                                в тот момент это первый завод в городе Verl Sürenheide
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-end justify-content-lg-end justify-content-center order-3">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_left">
+	                                                1973
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_left">
+	                                                ПЕРВАЯ ВЫСТАВКА IN-HOUSE.<br>
+	                                                Первая внутренняя выставка проходит на выставочной площади площадью 2000 м².
+	                                                Начинается традиция, которая до сих пор привлекает своей красотой.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-4">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/1973.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-xl-5 order-lg-5 order-md-6 order-sm-6 order-6">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/1976.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-center order-xl-6 order-lg-6 order-md-5 order-sm-5 order-5">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_right">
+	                                                1976
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_right">
+	                                                РАСШИРЕНИЕ.<br>
+	                                                Под именем Dominanta братья-стикеры создают дополнительный завод в Верл-Кауниц.
+	                                                На производственной площади 8 000 м² 80 сотрудников производят широкий выбор модульных систем настенных блоков и надстроек.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div> <!--card_history-->
+	
+	
+	                    <div class="card card_history">
+	                        <div class="card-header card-header_history" id="headingFive">
+	                            <h5 class="mb-0">
+	                                <button class="btn btn-link btn-link_history history-title" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+	                                    1980 год
+	                                </button>
+	                            </h5>
+	                        </div>
+	
+	                        <div id="collapseFive" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+	                            <div class="card-body card-body_history">
+	
+	                                <div class="row">
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-end justify-content-lg-end justify-content-center order-1">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_left">
+	                                                1985
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_left">
+	                                                Старый завод в Авенведе закрывает свои двери.
+	                                                С закрытием все производство кухонной мебели теперь находится исключительно в Верль-Сюренхейде.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-2">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/1985.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-xl-3 order-lg-3 order-md-4 order-sm-4 order-4">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/1989.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-center order-xl-4 order-lg-4 order-md-3 order-sm-3 order-3">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_right">
+	                                                1989
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_right">
+	                                                СОСРЕДОТОЧЬТЕСЬ НА ОБОРУДОВАННОЙ КУХНЕ.<br>
+	                                                Хайнц и Вернер Штиклинг решили остановить производство мебели для гостиной и продать компанию Dominanta.
+	                                                В том же году в Верл-Сюренхейде введена двухсменный график работы.
+	                                                Сейчас nobilia концентрируется исключительно на производстве оборудованных кухонь.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div> <!--card_history-->
+	
+	
+	                    <div class="card card_history">
+	                        <div class="card-header card-header_history" id="headingSix">
+	                            <h5 class="mb-0">
+	                                <button class="btn btn-link btn-link_history history-title" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseOne">
+	                                    1990 год
+	                                </button>
+	                            </h5>
+	                        </div>
+	
+	                        <div id="collapseSix" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+	                            <div class="card-body card-body_history">
+	
+	                                <div class="row">
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-end justify-content-lg-end justify-content-center order-1">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_left">
+	                                                1994
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_left">
+	                                                РЕКОРД: 1000 КУХОНЬ / ДЕНЬ.<br>
+	                                                Около 1300 сотрудников и производственные площади 85 000 м2,
+	                                                достигнут новый рекордный объем продаж составил 680 млн. марок.
+	                                                Около 1000 кухонь покидают завод ежедневно.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-2">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/1994.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-xl-3 order-lg-3 order-md-4 order-sm-4 order-4">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/1995.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-center order-xl-4 order-lg-4 order-md-3 order-sm-3 order-3">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_right">
+	                                                1995
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_right">
+	                                                50 ЛЕТ - 105 000 М².<br>
+	                                                Благодаря вводу в эксплуатацию нового зала производственная площадь в Верль-Сюренхейде увеличивается до 105 000 м².
+	                                                Это также свидетельствует о продолжении инновационного и быстрого роста компании в связи с ее 50-летием.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-end justify-content-lg-end justify-content-center order-5">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_left">
+	                                                1996
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_left">
+	                                                КОНЕЦ ЭПОХИ.<br>
+	                                                Хайнц и Вернер Штиклинг переходят от операционной части бизнеса к вновь созданному совету директоров.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-6">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/1996.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-xl-7 order-lg-7 order-md-8 order-sm-8 order-8">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/1997.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-center order-xl-8 order-lg-8 order-md-7 order-sm-7 order-7">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_right">
+	                                                1997
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_right">
+	                                                СЛЕДУЮЩИЙ УРОВЕНЬ.<br>
+	                                                Создана новая система хранения больших отсеков для фасадов и компонентов каркаса.
+	                                                Пространство для 10 400 поддонов доступно на площади площадью 1800 м².
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-end justify-content-lg-end justify-content-center order-9">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_left">
+	                                                1999
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_left">
+	                                                СМЕНА ЛИДЕРСТВА<br>
+	                                                В круге руководства происходят кадровые изменения. Доктор Гюнтер Шайпермайер занимает пост председателя правления.
+	                                                Несколько месяцев назад - 15 мая 1999 года - Хайнц Штиклинг скончался в результате несчастного случая.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-10">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/1999.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div> <!--card_history-->
+	
+	
+	                    <div class="card card_history">
+	                        <div class="card-header card-header_history" id="headingSeven">
+	                            <h5 class="mb-0">
+	                                <button class="btn btn-link btn-link_history history-title" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseOne">
+	                                    2000 год
+	                                </button>
+	                            </h5>
+	                        </div>
+	
+	                        <div id="collapseSeven" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+	                            <div class="card-body card-body_history">
+	
+	                                <div class="row">
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/2003.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-center order-xl-2 order-lg-2 order-md-1 order-sm-1 order-1">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_right">
+	                                                2003
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_right">
+	                                                ДВИГАЕМСЯ ВВЕРХ ДЛЯ БОЛЬШЕГО ПРОСТРАНСТВА.<br>
+	                                                Запуск/ввод в эксплуатацию высокой системы хранения для столешниц.
+	                                                В зале высотой 23 м, занимающем площадь 1800 м2, имеется 1200 отсеков для хранения примерно 250 различных предметов хранения.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-end justify-content-lg-end justify-content-center order-3">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_left">
+	                                                2004
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_left">
+	                                                ОБШИРНАЯ ПОДГОТОВКА.<br>
+	                                                Собственный учебный цех компании отмечает свое 25-летие. С 1979 года здесь обучено более 200 краснодеревщиков.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-4">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/2004.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-xl-5 order-lg-5 order-md-6 order-sm-6 order-6">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/2006.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-center order-xl-6 order-lg-6 order-md-5 order-sm-5 order-5">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_right">
+	                                                2006
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_right">
+	                                                БОЛЬШЕ МЕСТА, БОЛЬШЕ СОТРУДНИКОВ, БОЛЬШЕ КУХОНЬ.<br>
+	                                                Запуск / ввод в эксплуатацию второго завода в Верль-Каунице с производственной площадью 50 000 м2 в одночасье создает 145 новых рабочих мест.
+	                                                В односменном режиме ежедневно производится 2700 кухонь.
+	                                                В административном здании в Var-Sürenheide, офисные помещения расширены примерно на 2400 м2.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-end justify-content-lg-end justify-content-center order-7">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_left">
+	                                                2007
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_left">
+	                                                СОВЕРШЕНСТВО, КОГДА ДЕЛО ДОХОДИТ ДО ОКРУЖАЮЩЕЙ СРЕДЫ.<br>
+	                                                Впервые система экологического менеджмента компании nobilia сертифицирована
+	                                                в соответствии с DIN / EN ISO 14001 и удостоена Награды
+	                                                "Golden M" от Deutschen Gütegemeinschaft für Möbel e.V. (Немецкая ассоциация контроля качества).
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-8">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/2007.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-xl-9 order-lg-9 order-md-10 order-sm-10 order-10">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/2009.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-center order-xl-10 order-lg-10 order-md-9 order-sm-9 order-9">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_right">
+	                                                2009
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_right">
+	                                                УНИКАЛЬНО В ИНДУСТРИИ МЕБЕЛИ КУХНИ.<br>
+	                                                Испытательная лаборатория-уникальная в индустрии кухонной мебели-открывается по случаю выставки 2009 года.
+	                                                Все новые разработки проходят здесь обширные испытания на 230 м2.
+	                                                Только мебель, которая прошла все квалификационные испытания в испытательной лаборатории nobilia будут допущены в новую коллекцию.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div> <!--card_history-->
+	
+	
+	                    <div class="card card_history">
+	                        <div class="card-header card-header_history" id="headingEight">
+	                            <h5 class="mb-0">
+	                                <button class="btn btn-link btn-link_history history-title" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseOne">
+	                                    2010 год
+	                                </button>
+	                            </h5>
+	                        </div>
+	
+	                        <div id="collapseEight" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+	                            <div class="card-body card-body_history">
+	
+	                                <div class="row">
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-end justify-content-lg-end justify-content-center order-1">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_left">
+	                                                2010
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_left">
+	                                                НА ПУТИ К УСПЕХУ.<br>
+	                                                Во время текущей работы завод I в Верль-Сюренхейде расширяется, и вокруг существующего здания создается новый, более крупный зал.
+	                                                Через четыре года после его строительства завод II в Верл-Каунице включает двухсменную операцию.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-2">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/2010.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-xl-3 order-lg-3 order-md-4 order-sm-4 order-4">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/2011.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-center order-xl-4 order-lg-4 order-md-3 order-sm-3 order-3">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_right">
+	                                                2011
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_right">
+	                                                ДАЛЬНЕЙШИЙ РОСТ.<br>
+	                                                Завод II в Верл-Каунице быстро растет и с помощью около 500 сотрудников производит 9 000 единиц в производственной зоне площадью 110 000 м².
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-end justify-content-lg-end justify-content-center order-5">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_left">
+	                                                2012
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_left">
+	                                                2500 КУХОНЬ В ДЕНЬ.<br>
+	                                                Ежедневно 2500 кухонь покидают производственные цеха площадью 215 000 м2 и доставляются непосредственно клиентам на собственных 135 грузовых автомобилях.
+	                                                Административное здание в Var-Sürenheide занимает второй этаж, а офисные помещения расширены еще на 2500 м2.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-6">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/2012.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-xl-7 order-lg-7 order-md-8 order-sm-8 order-8">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/2014.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-center order-xl-8 order-lg-8 order-md-7 order-sm-7 order-7">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_right">
+	                                                2014
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_right">
+	                                                КРУПНЕЙШИЕ КУХОННЫЕ ПРОИЗВОДСТВА ГЕРМАНИИ.<br>
+	                                                Следующий этап расширения достигается за счет запуска системы хранения с высоким уровнем на заводе II в Кауницце.
+	                                                При ежедневной единичной продукции более 10 000 единиц на производственной площади площадью 115 000 м² завод II стал вторым по
+	                                                величине производственным участком для кухонной мебели в Германии - уступает только заводу nobilia I в Верль-Сюренхейде.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-end justify-content-lg-end justify-content-center order-9">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_left">
+	                                                2015
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_left">
+	                                                70 ЛЕТ НОБИЛИИ.<br>
+	                                                На 70-м году компания nobilia достигла нового рекордного показателя в размере 1 018,4 млн. евро, а также рост в течение 15-ти лет подряд.
+	                                                При этом nobilia продолжает расширятся и укрепляет свои позиции на рынке. В общей сложности два завода производят более 630 000 кухонь.
+	                                                Мощность устройства на Заводе II снова увеличивается до более чем 12 000 единиц в день.
+	                                                Завод I в районе Верль-Сюренхейде производит примерно 16 700 единиц в день.
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-10">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/2015.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div> <!--card_history-->
+	
+	
+	
+	                    <div class="card card_history">
+	                        <div class="card-header card-header_history" id="headingNine">
+	                            <h5 class="mb-0">
+	                                <button class="btn btn-link btn-link_history history-title" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseOne">
+	                                    Сегодня
+	                                </button>
+	                            </h5>
+	                        </div>
+	
+	                        <div id="collapseNine" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+	                            <div class="card-body card-body_history">
+	
+	                                <div class="row">
+	
+	                                    <div class="col-xl-7 col-lg-7 col-12 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2">
+	                                        <div class="history-item-big">
+	                                            <img src="img/history/kot-2246------.png" alt="nobilia доставка">
+	                                        </div>
+	                                    </div>
+	
+	                                    <div class="col-xl-5 col-lg-5 col-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-center order-xl-2 order-lg-2 order-md-1 order-sm-1 order-1">
+	                                        <div class="history-item-small d-flex justify-content-center">
+	                                            <div class="history-item-small__title history-item-small__text_right">
+	                                                2018
+	                                            </div>
+	                                            <div class="history-item-small__text history-item-small__text_right">
+	                                                ОТКРЫТИЕ САЛОНА КУХОНЬ NOBILIA В РОСТОВЕ-НА-ДОНУ<br>
+	                                                Теперь все жители нашего города и близ лежащих городов могут заказывать кухни сделанные на самом крупнейшем и самом высокотехнологичном заводе Европы!
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div> <!--card_history-->
+	
+	
+	
+	                </div> <!--accordion-->
+	            </div> <!--/col-12 -->
+	
+	
+	
+	        </div> <!--/row -->
+	    </div> <!--/container -->
+	
+	</section> <!--/wr-history -->
+	
+	
+	<!--<div class="wr-important text-center">-->
+	    <!--<div class="important">-->
+	        <!--<h2 class="title-center">Награды за качество</h2>-->
+	        <!--<p>Каждая кухня nobilia абсолютно уникальна, спланирована и сделана с максимальной точностью. Более-->
+	            <!--С первого взгляда видно качество nobilia. Наши награды от независимых испытательных институтов-->
+	            <!--являются доказательством.-->
+	        <!--</p>-->
+	    <!--</div>-->
+	<!--</div>-->
+
+	<!--BENEFIT-->
+	<section class="wr-benefit">
+	    <div class="benefit-title">
+	        ВЫГОДА, КОТОРУЮ ВЫ ПОЛУЧАЕТЕ ЗАКАЗАВ КУХНЮ В СТУДИИ <span>NOBILIA</span>
+	    </div>
+	    <div class="container">
+	        <div class="row align-items-stretch">
+	            <div class="col-12 col-md-3 mb-3">
+	                <div class="benefit-item">
+	                    <p class="benefit-item__title">
+	                        Салон вмещает множество кухонь
+	                    </p>
+	                    <p class="benefit-item__text">
+	                        Все популярные механизмы и стили представлены в нашем салоне, всё можно потрагать. Потрясающие механизмы, умная система подсветки, вся техника подключена.
+	                    </p>
+	                </div>
+	            </div>
+	            <div class="col-12 col-md-3 mb-3">
+	                <div class="benefit-item">
+	                    <p class="benefit-item__title">
+	                        Менеджеры и сборщики стажируются в Германии
+	                    </p>
+	                    <p class="benefit-item__text">
+	                        Все наши сотрудники в том числе и сбощики, проходят обучение и стажировку на фабрике nobilia. Вам всегда расскажут о новинках и соберут кухню точно в срок!
+	                    </p>
+	                </div>
+	            </div>
+	            <div class="col-12 col-md-3 mb-3">
+	                <div class="benefit-item">
+	                    <p class="benefit-item__title">
+	                        Идеальная точность исполнения заказа
+	                    </p>
+	                    <p class="benefit-item__text">
+	                        Контроль каждого заказа от его приёма до передачи клиенту. Контроль ведёт не только Ваш дизайнер, консультант, но и технологи фабрики.
+	                    </p>
+	                </div>
+	            </div>
+	            <div class="col-12 col-md-3 mb-3">
+	                <div class="benefit-item">
+	                    <p class="benefit-item__title">
+	                        Максимальные сроки изготовления - 60 дней
+	                    </p>
+	                    <p class="benefit-item__text">
+	                        Фабрика ежедневно производит более 3 000 кухонь. Ваша кухня будет изготовлена всего за 30 минут, далее она пройдет проверку и отправится в Ростов-на-Дону
+	                    </p>
+	                </div>
+	            </div>
+	        </div>
+	    </div> <!--/container -->
+	
+	</section> <!--/wrapper -->
+
+	<!--CALL-FORM-->
+	<div class="call-form-section">
+	    <div class="wrapper">
+	        <div class="container">
+	            <div class="row">
+	                <div class="call-form col">
+	
+	                    <div class="call-form__title">
+	                        ЧТО ДЕЛАТЬ ДАЛЬШЕ?
+	                    </div>
+	
+	                    <form name="call-form" method="post" class="call-form__form">
+	
+	                        <input type="hidden" name="sessid" value="1234567890"/>
+	
+	                        <p class="call-form__form__text">
+	                            Вы можете записаться на замер или назначить встречу в салоне.<br>
+	                            Мы ответим на все вопросы, просто заполните форму и мы Вам перезвоним.
+	                        </p>
+	
+	                        <div class="row">
+	                            <div class="col-lg-6">
+	                                <div class="form-group">
+	                                    <input class="form-control call-form__form__input" type="text" name="name"
+	                                           placeholder="Ваше имя" required>
+	                                </div>
+	                            </div>
+	                            <div class="col-lg-6">
+	                                <input class="form-control call-form__form__input" type="text" name="phone"
+	                                       placeholder="Ваш телефон" required>
+	                            </div>
+	
+	                            <div class="col-lg-12">
+	                                <div class="form-group call-form__form__agree">
+	                                    <span class="call-form__form__agree_wrapper">
+	                                        <input id="agree-clb" class="call-form__form__agree_checkbox"
+	                                               type="checkbox" name="agreeClb"/>
+	                                    </span>
+	                                    <label for="agree-clb" class="call-form__form__agree_label">
+	                                        - Я соглашаюсь на обработку персональных даных</label>
+	                                </div>
+	                            </div>
+	                        </div>
+	
+	
+	                        <button type="submit" name="button" class="btn btn-outline-primary btn-call-form">Перезвонить
+	                            мне
+	                        </button>
+	
+	                    </form>
+	
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<!--CTA-->
+	<section class="wr-cta">
+	
+	    <div class="container">
+	        <h3 class="mb-5">ГОТОВИМ КАК В САЛОНЕ ТЕХНИКИ, ТАК И В САЛОНЕ КУХОНЬ И МОЖЕМ ПРОВЕСТИ МАСТЕР-КЛАСС ДЛЯ ВАС МЫ С УДОВОЛЬСТВИЕМ ПОЗНАКОМИМ ВАС С ФУНКЦИОНАЛОМ СОВРЕМЕННОЙ ТЕХНИКИ И НАСЛАДИМСЯ ПРИГОТОВЛЕННЫМ ШЕДЕВРОМ </h3>
+	        <div class="row mb-5">
+	            <div class="col-md-4 mb-4"><a href="img/news/news-04.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-04.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-05.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-05.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-06.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-06.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-04.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-04.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-05.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-05.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-06.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-06.jpg" alt=""></a></div>
+	        </div>
+	        <button type="button" class="btn btn-outline-primary">Записаться</button>
+	    </div> <!--/wrapper -->
+	
+	</section>
+
+	<!--EVENTS-->
+	<section class="wr-events">
+	
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 mb-3">
+	                <h3 class="title-center">ПРОШЕДШИЕ МЕРОПРИЯТИЯ</h3>
+	            </div>
+	            <div class="col-md-6 mb-4">
+	                <a href="img/news/news-01.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-01.jpg" alt=""></a>
+	            </div>
+	            <div class="col-md-6 mb-4 align-self-center events-text">
+	                <h3>ОТКРЫТИЕ САЛОНА nobilia в РОСТОВЕ-НА-ДОНУ</h3>
+	                <p>Фото и информация с нашего последнего мероприятия. Хотите попасть на следующий мастер-класс?</p>
+	            </div>
+	            <div class="col-md-6 mb-4">
+	                <a href="img/news/news-02.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-02.jpg" alt=""></a>
+	            </div>
+	            <div class="col-md-6 mb-4">
+	                <a href="img/news/news-03.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-03.jpg" alt=""></a>
+	            </div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-04.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-04.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-05.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-05.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-06.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-06.jpg" alt=""></a></div>
+	        </div>
+	
+	    </div> <!--/wrapper -->
+	
+	</section>
+
+	<!--CONTACT FORM-->
+	<section class="wr-cont-form">
+	
+	    <div class="container">
+	        <div class="row justify-content-center">
+	            <div class="col-12 col-md-10">
+	                <div class="cont-form">
+	                    <div class="cont-form__title">ЗАПИШИТЕСЬ НА КОНСУЛЬТАЦИЮ К ДИЗАЙНЕРУ <br/> или получите бесплатный 3D дизайн-проект</div>
+	                    <form class="cont-form__form" action="">
+	                        <div class="row">
+	                            <div class="col-md-5">
+	                                <input class="form-control" type="text" placeholder="Ваше имя" name="name">
+	                                <input class="form-control" type="tel" placeholder="Ваш телефон" name="phone">
+	                            </div>
+	                            <div class="col-md-7">
+	                                <div class="fieldset form-group d-flex align-items-center justify-content-between flex-wrap flex-xl-nowrap">
+	                                    <div class="legend">Дизайн-проект</div>
+	                                    <div class="form-check">
+	                                        <input class="form-check-input" type="radio" id="proekt1" name="project" value="1">
+	                                        <label class="form-check-label" for="proekt1">- Нужен</label>
+	                                    </div>
+	                                    <div class="form-check">
+	                                        <input class="form-check-input" type="radio" id="proekt2" name="project" value="0">
+	                                        <label class="form-check-label" for="proekt2">- Уже есть</label>
+	                                    </div>
+	                                </div>
+	                                <div class="fieldset form-group d-flex align-items-center justify-content-between flex-wrap flex-xl-nowrap">
+	                                    <div class="legend">Контсультация по выбору
+	                                        втраиваемой  техники, мастер-класс</div>
+	                                    <div class="form-check form-check-inline">
+	                                        <input class="form-check-input" type="checkbox" id="tehnika1" name="consult" value="1">
+	                                        <label class="form-check-label" for="tehnika1">- Нужна</label>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="col-12 text-center mb-4 accept">
+	                                <div class="form-group">
+	                                    <div class="form-check">
+	                                        <span class="form-check-wrapper">
+	                                            <input class="form-check-input" type="checkbox" id="agreeClb" name="agreeClb">
+	                                        </span>
+	                                        <label class="form-check-label" for="agreeClb">
+	                                            Я соглашаюсь на обработку персональных даных
+	                                        </label>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="col-12 text-center">
+	                                <button type="submit" class="btn btn-outline-primary">Записаться</button>
+	                            </div>
+	                        </div>
+	                    </form>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	
+	</section>
+
+	<!--SLIDER-->
+	<div class="wr-slider wr-slider__3d">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 text-center mb-5">
+	                <h3 class="title-center">ДОБРО ПОЖАЛОВАТЬ В САЛОН! <br/>ЗДЕСЬ ВЫ СМОЖЕТЕ ПО ДОСТОИНСТВУ ОЦЕНИТЬ КАЧЕСТВО НАШИХ КУХОНЬ.</h3>
+	            </div>
+	            <div class="col-12">
+	                <div class="swiper-container gallery-top">
+	                    <div class="swiper-wrapper">
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/01.jpg)" href="img/slides/01.jpg"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_3.jpg)" href="img/slides/Mask_Group_3.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_4.jpg)" href="img/slides/Mask_Group_4.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_5.jpg)" href="img/slides/Mask_Group_5.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_6.jpg)" href="img/slides/Mask_Group_6.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_7.jpg)" href="img/slides/Mask_Group_7.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_8.jpg)" href="img/slides/Mask_Group_8.jpg" rel="g-slider-bottom"></a>
+	                    </div>
+	                    <!-- Add Pagination -->
+	                    <div class="swiper-pagination"></div>
+	                </div>
+	                <div class="swiper-container gallery-thumbs">
+	                    <div class="swiper-wrapper">
+	                        <div class="swiper-slide" style="background-image:url(img/slides/01.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_3.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_4.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_5.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_6.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_7.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_8.jpg)"></div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<!--MAP-->
+	<div class="wr-map">
+	    <div id="map"></div>
+	    <div class="map__menu">
+	        <h5 class="map__title">График работы:</h5>
+	
+	        <p class="map__text">пн-сб: с 10:00 до 19:00,<br>вс: с 10:00 до 17:00</p>
+	
+	        <h5 class="map__title">Адрес:</h5>
+	
+	        <p class="map__text">г.Ростов-на-Дону,<br>ул.Красноармейска д.103/123</p>
+	
+	        <p class="map__text">Телефон: <a class="map__tel" href="tel:+7(863) 299-44-53"> +7 (863) 299-44-53</a></p>
+	    </div>
+	</div>
+
+	<!--FOOTER-->
+	<footer class="wr-footer">
+	    <div class ="footer">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+	                    <ul class="title pl-2">
+	                        <li><a href="#" class="footer__item">Угловые кухни</a></li>
+	                        <li><a href="#" class="footer__item">Кухня-студия</a></li>
+	                        <li><a href="#" class="footer__item">Белые кухни</a></li>
+	                        <li><a href="#" class="footer__item">Глянцевые кухни</a></li>
+	                        <li><a href="#" class="footer__item">Классические кухни</a></li>
+	                        <li><a href="#" class="footer__item">Современные кухни</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+	                    <ul class="pl-2">
+	                        <li><a href="#" class="footer__item">Кухни без ручек LINE-N</a></li>
+	                        <li><a href="#" class="footer__item">Кухни Лофт</a></li>
+	                        <li><a href="#" class="footer__item">Кухни минимализм</a></li>
+	                        <li><a href="#" class="footer__item">Кухни премиум</a></li>
+	                        <li><a href="#" class="footer__item">Кухни с барной стойкой</a></li>
+	                        <li><a href="#" class="footer__item">Кухни с островом</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+	                    <ul class="title pl-2">
+	                        <li><a href="#" class="footer__item">Nobilia</a></li>
+	                        <li><a href="#" class="footer__item">История компании</a></li>
+	                        <li><a href="#" class="footer__item">Компетенции</a></li>
+	                        <li><a href="#" class="footer__item">Эргономика</a></li>
+	                        <li><a href="#" class="footer__item">Внутренняя фурнитура</a></li>
+	                        <li><a href="#" class="footer__item">Видео коллекция</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+	                    <ul class="pl-2">
+	                        <li><a href="#" class="footer__item">9 ценовых категорий</a></li>
+	                        <li><a href="#" class="footer__item">Sale</a></li>
+	                        <li><a href="#" class="footer__item">Вcтраиваемая техника</a></li>
+	                        <li><a href="#" class="footer__item">Дизайнеры</a></li>
+	                        <li><a href="#" class="footer__item">Доставка и оплата</a></li>
+	                        <li><a href="#" class="footer__item">Контакты</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="footer__copyright text-center">
+	        <p>Nobilia-Rostov &copy; 2018</p>
+	    </div>
+	</footer>
+
+	<!-- scripts -->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
