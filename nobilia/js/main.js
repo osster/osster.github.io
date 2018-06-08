@@ -24429,6 +24429,7 @@ $(document).ready(function () {
         slideToClickedSlide: true,
 
     });
+
     if (galleryFoto.controller && galleryFotoThumbs.controller) {
         galleryFoto.controller.control = galleryFotoThumbs;
         galleryFotoThumbs.controller.control = galleryFoto;
@@ -24444,6 +24445,37 @@ $(document).ready(function () {
         loop: true,
         pagination: {
             el: '.swiper-pagination-1',
+        },
+    });
+
+    // SLIDER Ergonomica 1
+    var swiperNapolnenie = new Swiper('.slider-ergonomica-1', {
+        loop: true,
+        pagination: {
+            el: '.swiper-ergonomica-1',
+        },
+    });
+
+    // SLIDER Ergonomica 2
+    var swiperNapolnenie = new Swiper('.slider-ergonomica-2', {
+        loop: true,
+        pagination: {
+            el: '.swiper-ergonomica-2',
+        },
+    });
+
+    // SLIDER Ergonomica 3
+    var swiperNapolnenie = new Swiper('.slider-ergonomica-3', {
+        loop: true,
+        pagination: {
+            el: '.swiper-ergonomica-3',
+        },
+    });
+    // SLIDER Ergonomica 4
+    var swiperNapolnenie = new Swiper('.slider-ergonomica-4', {
+        loop: true,
+        pagination: {
+            el: '.swiper-ergonomica-4',
         },
     });
 
