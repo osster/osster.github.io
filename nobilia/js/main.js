@@ -24407,6 +24407,47 @@ $(document).ready(function () {
         });
     }
 
+
+
+
+    // FOTO GALLERY
+    var galleryFoto = new Swiper('.gallery-foto', {
+        loop: true,
+        spaceBetween: 8,
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.gallery-foto-next',
+            prevEl: '.gallery-foto-prev',
+        },
+    });
+    var galleryFotoThumbs = new Swiper('.gallery-foto-thumbs', {
+        spaceBetween: 8,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        loop: true,
+        slideToClickedSlide: true,
+
+    });
+    if (galleryFoto.controller && galleryFotoThumbs.controller) {
+        galleryFoto.controller.control = galleryFotoThumbs;
+        galleryFotoThumbs.controller.control = galleryFoto;
+
+        galleryFoto.on('click', function (e) {
+            console.log('galleryTop click', e, galleryFoto.clickedSlide);
+        });
+    }
+
+
+    // SLIDER NAPOLNENIE
+    var swiperNapolnenie = new Swiper('.slider-pagination-1', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination-1',
+        },
+    });
+
+
 ///////////////////////////////////////////////////////////////////////////////
 
     // SELECT STYLISE
@@ -24678,6 +24719,33 @@ $(window).load(function () {
     });
 });
 
+$(window).load(function () {
+    var swiper = new Swiper('.slider-tipykuhon-2', {
+        loop: true,
+        navigation: {
+            nextEl: '.slider-tipykuhon-2__next',
+            prevEl: '.slider-tipykuhon-2__prev'
+        }
+    });
+});
+$(window).load(function () {
+    var swiper = new Swiper('.slider-tipykuhon-3', {
+        loop: true,
+        navigation: {
+            nextEl: '.slider-tipykuhon-3__next',
+            prevEl: '.slider-tipykuhon-3__prev'
+        }
+    });
+});
+$(window).load(function () {
+    var swiper = new Swiper('.slider-tipykuhon-4', {
+        loop: true,
+        navigation: {
+            nextEl: '.slider-tipykuhon-4__next',
+            prevEl: '.slider-tipykuhon-4__prev'
+        }
+    });
+});
 
 $(document).ready(function () {
 
@@ -24721,47 +24789,3 @@ $(document).ready(function () {
         }
     });
 });
-
-
-///////////////////////////////////////////////////////////////////////////////
-
-// // GALLERY FACADE
-// var galleryTopFacade = new Swiper('.gallery-top-facade', {
-//     spaceBetween: 10,
-//     slidesOffsetBefore: -10,
-//     slidesPerView: 4,
-//     loop: true,
-//     slideToClickedSlide: true,
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev'
-//     },
-//     // Responsive breakpoints
-//     breakpoints: {
-//         // when window width is <= 320px
-//         576: {
-//             effect: 'slide',
-//             slidesPerView: 1,
-//             spaceBetween: 0,
-//             loop: true,
-//             slideToClickedSlide: true
-//         },
-//         // when window width is <= 480px
-//         768: {
-//             effect: 'slide',
-//             slidesPerView: 2,
-//             spaceBetween: 10,
-//             loop: true,
-//             slideToClickedSlide: true
-//         },
-//         // when window width is <= 640px
-//         1024: {
-//             effect: 'slide',
-//             slidesPerView: 3,
-//             spaceBetween: 10,
-//             slidesOffsetBefore: 10,
-//             loop: true,
-//             slideToClickedSlide: true
-//         }
-//     }
-// });
