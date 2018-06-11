@@ -24500,8 +24500,13 @@ $(document).ready(function () {
         for (var i = 0; i < numberOfOptions; i++) {
             $('<li />', {
                 text: $this.children('option').eq(i).text(),
-                rel: $this.children('option').eq(i).val()
+                rel: $this.children('option').eq(i).val(),
+                class: ($this.children('option').eq(i).attr('selected') ? 'selected' : '')
             }).appendTo($list);
+
+            if ($this.children('option').eq(i).attr('selected')) {
+                $styledSelect.text($this.children('option').eq(i).text());
+            }
         }
 
         var $listItems = $list.children('li');
@@ -24518,7 +24523,10 @@ $(document).ready(function () {
             e.stopPropagation();
             $styledSelect.text($(this).text()).removeClass('active');
             $this.val($(this).attr('rel'));
+            $(this).parent().children().removeClass('selected');
+            $(this).addClass('selected');
             $list.hide();
+            $this.trigger('changed');
             //console.log($this.val());
         });
 
@@ -24528,6 +24536,18 @@ $(document).ready(function () {
         });
 
     });
+
+
+    // CATALOG FILTER
+    (function () {
+        var $form = $('.catalog__filter form');
+        if ($form.length > 0) {
+            var inputs = $form.find('input, select');
+            inputs.off('changed').on('changed', function () {
+                $(this).parents('form').submit();
+            })
+        }
+    })();
 
 
     //  SCALIZE
@@ -24783,9 +24803,8 @@ $(document).ready(function () {
 
     var swiper = new Swiper('.slider-facade', {
         spaceBetween: 10,
-        slidesOffsetBefore: -20,
+        //slidesOffsetBefore: -20,
         slidesPerView: 4,
-        autoHeight:true,
         loop: true,
         navigation: {
             nextEl: '.slider-facade__next',
@@ -24814,7 +24833,47 @@ $(document).ready(function () {
                 effect: 'slide',
                 slidesPerView: 3,
                 spaceBetween: 10,
-                slidesOffsetBefore: 10,
+                //slidesOffsetBefore: 10,
+                loop: true,
+                slideToClickedSlide: true
+            }
+        }
+    });
+});
+
+$(document).ready(function () {
+
+    var swiper = new Swiper('.slider-video', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        loop: true,
+        navigation: {
+            nextEl: '.slider-video__next',
+            prevEl: '.slider-video__prev'
+        },
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is <= 320px
+            576: {
+                effect: 'slide',
+                slidesPerView: 1,
+                spaceBetween: 0,
+                loop: true,
+                slideToClickedSlide: true
+            },
+            // when window width is <= 480px
+            768: {
+                effect: 'slide',
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: true,
+                slideToClickedSlide: true
+            },
+            // when window width is <= 640px
+            1024: {
+                effect: 'slide',
+                slidesPerView: 2,
+                spaceBetween: 10,
                 loop: true,
                 slideToClickedSlide: true
             }

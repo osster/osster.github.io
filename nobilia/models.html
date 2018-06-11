@@ -159,16 +159,16 @@
 			                </a>
 			                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 			                    <a class="dropdown-item" href="nobilia.html">О nobilia</a>
-			                    <a class="dropdown-item" href="#">История компании</a>
-			                    <a class="dropdown-item" href="#">Компетенции и факты</a>
+			                    <a class="dropdown-item" href="history.html">История компании</a>
+			                    <a class="dropdown-item" href="kompetencyi.html">Компетенции и факты</a>
 			                    <a class="dropdown-item" href="napolnenie-shkafov.html">Наполнение шкафов</a>
 			                    <a class="dropdown-item" href="ergonomica.html">Эргономика</a>
-			                    <a class="dropdown-item" href="#">Системы освещения</a>
-			                    <a class="dropdown-item" href="#">Видео коллекция</a>
-			                    <a class="dropdown-item" href="designer.html">Дизайнеры и архитекторы</a>
+			                    <a class="dropdown-item" href="systema-sveta.html">Системы освещения</a>
+			                    <a class="dropdown-item" href="videocatalog.html">Видео коллекция</a>
+			                    <a class="dropdown-item" href="designers.html">Дизайнеры и архитекторы</a>
 			                    <a class="dropdown-item" href="#">Избранное</a>
 			                    <a class="dropdown-item" href="#">Sale</a>
-			                    <a class="dropdown-item" href="#">Контакты</a>
+			                    <a class="dropdown-item" href="contacts.html">Контакты</a>
 			                </div>
 			            </li>
 			        </ul>
@@ -205,30 +205,50 @@
 		</div>
 	</section>
 
+	<!--FLYING NAV-->
+	<aside class="wr-flying-nav">
+	    <div class="wr-flying-nav__links d-flex flex-column">
+	        <a class="icon icon-plan" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Список сравнения"><use xlink:href="#icon-list"></use></svg>
+	        </a>
+	        <a class="icon icon-pin" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Избранное"><use xlink:href="#icon-pin"></use></svg>
+	        </a>
+	        <a class="icon icon_pulse icon-calc" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Заказать просчёт"><use xlink:href="#icon-calc"></use></svg>
+	        </a>
+	    </div>
+	    <div class="wr-flying-nav__gototop">
+	        <a class="icon" href="#top-anchor"><svg width="32" height="32"><use xlink:href="#icon-angle-up"></use></svg></a>
+	    </div>
+	</aside>
 
 	<!--NOBILIA TOP INTRO-->
-	<!-- TOP INTRO-->
+	<!-- MODELS TOP INTRO-->
 	
 	<section class="wr-topintro" style="background-image: url(img/main-top-01.jpg);">
 	    <div class="container">
 	        <div class="topintro row">
-	            <div class="col-xl-4">
-	                <div class="topintro__order-active">
-	                    <div class="topintro__price-active">
-	                        <p>SPEED от 3 400 &euro;</p>
-	                    </div>
-	                    <div class="topintro__add-active">
-	                        <p>УДАЛИТЬ ИЗ СПИСКА ПОЖЕЛАНИЙ</p>
-	                    </div>
-	                </div>
-	                <button type="button" class="btn btn-outline-primary btn-topintro-order">ЗАКАЗАТЬ</button>
-	            </div>
+	            <!--<div class="col-xl-4">-->
+	                <!--<div class="topintro__order-active">-->
+	                    <!--<div class="topintro__price-active">-->
+	                        <!--<p>SPEED от 3 400 &euro;</p>-->
+	                    <!--</div>-->
+	                    <!--<div class="topintro__add-active">-->
+	                        <!--<p>УДАЛИТЬ ИЗ СПИСКА ПОЖЕЛАНИЙ</p>-->
+	                    <!--</div>-->
+	                <!--</div>-->
+	                <!--<button type="button" class="btn btn-outline-primary btn-topintro-order">ЗАКАЗАТЬ</button>-->
+	            <!--</div>-->
 	            <div class="col-xl-4">
 	                <div class="topintro__order">
 	                    <div class="topintro__price">
 	                        <p>SPEED от 3 400 &euro;</p>
 	                    </div>
 	                    <div class="topintro__add">
+	                        <a class="icon icon-pin" href="#">
+	                            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Избранное"><use xlink:href="#icon-pin"></use></svg>
+	                        </a>
 	                        <p>ДОБАВИТЬ В СПИСОК ПОЖЕЛАНИЙ</p>
 	                    </div>
 	                </div>
@@ -264,9 +284,7 @@
 	                <div class="col-12 text-center">
 	                    <div class="third-page__header__link">
 	                        <div class="know-more">
-	                            <a class="know-more__link" href="#">
-	                                <div class="know-more__link__title more-btn">Узнать больше</div>
-	                            </a>
+	                            <div class="more-btn">Узнать больше</div>
 	                        </div>
 	                    </div>
 	                </div>
@@ -289,144 +307,183 @@
 	    </div>
 	</section>
 	
-	<div class="wr-slider__facade mb-0">
+	<div class="wr-slider__facade">
 	    <div class="container">
 	        <div class="row">
 	            <div class="col-12">
-	                <div class="swiper-container slider-facade">
-	                    <div class="swiper-wrapper">
-	                        <a class="swiper-slide  " style="background-image:url(img/models/f206.png)" href="img/models/f206.png"></a>
-	                        <a class="swiper-slide  " style="background-image:url(img/models/f206.png)" href="img/models/f206.png" ></a>
-	                        <a class="swiper-slide " style="background-image:url(img/models/f206.png)" href="img/models/f206.png" ></a>
-	                        <a class="swiper-slide " style="background-image:url(img/models/f206.png)" href="img/models/f206.png" ></a>
-	                        <a class="swiper-slide " style="background-image:url(img/models/f206.png)" href="img/models/f206.png"></a>
-	                        <a class="swiper-slide  " style="background-image:url(img/models/f206.png)" href="img/models/f206.png" ></a>
-	                        <a class="swiper-slide  " style="background-image:url(img/models/f206.png)" href="img/models/f206.png" ></a>
+	                <div class="slider-w-arrows">
+	                    <div class="swiper-container slider-facade">
+	                        <div class="swiper-wrapper">
+	                            <div class="swiper-slide">
+	                                <a class="slider__link" href="img/models/f206.jpg">
+	                                    <img src="img/models/f206.jpg" alt="" class="card-img-top">
+	                                </a>
+	                                <div class="slider-card">
+	                                    <h5>F206</h5>
+	                                    <p>Слоновая кость</p>
+	                                </div>
+	                            </div>
+	                            <div class="swiper-slide">
+	                                <a class="slider__link" href="img/models/f206.jpg">
+	                                    <img src="img/models/f206.jpg" alt="" class="card-img-top">
+	                                </a>
+	                                <div class="slider-card">
+	                                    <h5>F206</h5>
+	                                    <p>Слоновая кость</p>
+	                                </div>
+	                            </div>
+	                            <div class="swiper-slide">
+	                                <a class="slider__link" href="img/models/f206.jpg">
+	                                    <img src="img/models/f206.jpg" alt="" class="card-img-top">
+	                                </a>
+	                                <div class="slider-card">
+	                                    <h5>F206</h5>
+	                                    <p>Слоновая кость</p>
+	                                </div>
+	                            </div>
+	                            <div class="swiper-slide">
+	                                <a class="slider__link" href="img/models/f206.jpg">
+	                                    <img src="img/models/f206.jpg" alt="" class="card-img-top">
+	                                </a>
+	                                <div class="slider-card">
+	                                    <h5>F206</h5>
+	                                    <p>Слоновая кость</p>
+	                                    <p>Слоновая кость</p>
+	                                </div>
+	                            </div>
+	
+	                        </div>
+	                        <!--ARROWS-->
 	                    </div>
-	                    <!--ARROWS-->
-	                </div>
-	                <div class="slider-facade__arrows slider-facade__prev">
-	                    <svg width="20" height="60">
-	                        <use xlink:href="#slider-arrow"></use>
-	                    </svg>
-	                </div>
-	                <div class="slider-facade__arrows slider-facade__next">
-	                    <svg width="20" height="60">
-	                        <use xlink:href="#slider-arrow"></use>
-	                    </svg>
+	                    <div class="slider__arrows slider__prev slider-facade__prev">
+	                        <svg width="20" height="60">
+	                            <use xlink:href="#slider-arrow"></use>
+	                        </svg>
+	                    </div>
+	                    <div class="slider__arrows slider__next slider-facade__next">
+	                        <svg width="20" height="60">
+	                            <use xlink:href="#slider-arrow"></use>
+	                        </svg>
+	                    </div>
 	                </div>
 	            </div>
 	        </div>
 	    </div>
 	</div>
-	<!--<div class="wr-slider">-->
-	    <!--<div class="container">-->
-	        <!--<div class="row">-->
-	            <!--<div class="col-12">-->
-	                <!--<div class="swiper-container gallery-thumbs">-->
-	                    <!--<div class="swiper-wrapper">-->
-	                        <!--<div class="swiper-slide" style="background-image:url(img/models/f206.png)"></div>-->
-	                        <!--<div class="swiper-slide" style="background-image:url(img/models/f206.png)"></div>-->
-	                        <!--<div class="swiper-slide" style="background-image:url(img/models/f206.png)"></div>-->
-	                        <!--<div class="swiper-slide" style="background-image:url(img/models/f206.png)"></div>-->
-	                        <!--<div class="swiper-slide" style="background-image:url(img/models/f206.png)"></div>-->
-	                        <!--<div class="swiper-slide" style="background-image:url(img/models/f206.png)"></div>-->
-	                        <!--<div class="swiper-slide" style="background-image:url(img/models/f206.png)"></div>-->
-	                        <!--<div class="swiper-slide" style="background-image:url(img/models/f206.png)"></div>-->
-	                        <!--<div class="swiper-slide" style="background-image:url(img/models/f206.png)"></div>-->
-	                    <!--</div>-->
-	                <!--</div>-->
-	            <!--</div>-->
-	        <!--</div>-->
-	    <!--</div>-->
-	<!--</div>-->
 	
-	<section class="wrapper">
-	    <div class="container-fluid">
+	
+	<section class="wr-video">
+	    <div class="container">
 	        <div class="row">
 	            <div class="col-12">
-	                <div class="videBlocks-title">
-	                    ИНОГДА ОДИН ФИЛЬМ ГОВОРИТ БОЛЕЕ 1000 СЛОВ.
-	                </div>
-	                <div class="videBlocks-text">
-	                    Испытайте, что движет нами: и, действуйте! Узнайте о нашей компании и посмотрите видео продукции.
-	                </div>
-	
+	                <h3 class="title">ИНОГДА ОДИН ФИЛЬМ ГОВОРИТ БОЛЕЕ 1000 СЛОВ.</h3>
+	                <p>Испытайте, что движет нами: и, действуйте! Узнайте о нашей компании и посмотрите видео продукции.</p>
 	            </div>
-	            <div class="col-xl-4 col-lg-6 col-12">
-	                <div class="videBlocks-item d-flex align-items-center">
-	                    <div class="videBlocks-item__video">
-	                        <img src="img/models/2018-05-25-19-48-15.png">
+	        </div>
+	
+	        <div class="row">
+	            <div class="col-12">
+	                <div class="slider-w-arrows">
+	                    <div class="swiper-container slider-video">
+	                        <div class="swiper-wrapper ">
+	
+	                            <div class="swiper-slide" href="img/models/2018-05-25-19-48-15.png">
+	                                <a class="slider__link" href="img/models/2018-05-25-19-48-15.png">
+	                                    <img src="img/models/2018-05-25-19-48-15.png" alt="" class="card-img-top">
+	                                </a>
+	                                <div class="slider-card">
+	                                    <h5>Настенные шкафы</h5>
+	                                    <p>Всё работает как часы</p>
+	                                    <p>4:35</p>
+	                                </div>
+	                            </div>
+	
+	                            <div class="swiper-slide" href="img/models/2018-05-25-19-48-15.png">
+	                                <a class="slider__link" href="img/models/2018-05-26-14-09-26.png">
+	                                    <img src="img/models/2018-05-26-14-09-26.png" alt="" class="card-img-top">
+	                                </a>
+	                                <div class="slider-card">
+	                                    <h5>Система организации</h5>
+	                                    <p>Каждая кухня индивидуальна как и её хозяин</p>
+	                                    <p>1:18</p>
+	                                </div>
+	                            </div>
+	
+	                            <div class="swiper-slide" href="img/models/2018-05-25-19-48-15.png">
+	                                <a class="slider__link" href="img/models/2018-05-26-14-14-19.png">
+	                                    <img src="img/models/2018-05-26-14-14-19.png" alt="" class="card-img-top">
+	                                </a>
+	                                <div class="slider-card">
+	                                    <h5>Система удаления отходов</h5>
+	                                    <p>Всё работает как часы</p>
+	                                    <p>6:14</p>
+	                                </div>
+	                            </div>
+	
+	
+	                            <!--<a class="swiper-slide" href="img/models/2018-05-26-14-09-26.png">-->
+	                            <!--<span class="card d-flex align-items-stretch">-->
+	                            <!--<img src="img/models/2018-05-26-14-09-26.png" alt="" class="card-img-top">-->
+	                            <!--<span class="card-body card-body_video d-flex align-items-stretch">-->
+	                            <!--<h5 class="card-title card-title_video">Система организации</h5>-->
+	                            <!--<p class="card-text card-text_video">Каждая кухня индивидуальна как и её хозяин</p>-->
+	                            <!--<p class="card-text card-text_video">1:18</p>-->
+	                            <!--</span>-->
+	                            <!--</span>-->
+	                            <!--</a>-->
+	
+	                            <!--<a class="swiper-slide" href="img/models/2018-05-26-14-14-19.png">-->
+	                            <!--<span class="card">-->
+	                            <!--<img src="img/models/2018-05-26-14-14-19.png" alt="" class="card-img-top">-->
+	                            <!--<span class="card-body card-body_video d-flex align-items-stretch">-->
+	                            <!--<h5 class="card-title card-title_video">Система удаления отходов</h5>-->
+	                            <!--<p class="card-text card-text_video">Всё работает как часы</p>-->
+	                            <!--<p class="card-text card-text_video">6:14</p>-->
+	                            <!--</span>-->
+	                            <!--</span>-->
+	                            <!--</a>-->
+	
+	                        </div>
+	                        <!--ARROWS-->
 	                    </div>
-	                    <div class="videBlocks-item__info">
-	                        <div class="videBlocks-item__info__title">
-	                            Настенные шкафы
-	                        </div>
-	                        <div class="videBlocks-item__info__text videBlocks-item__info__correctMargin">
-	                            Всё работает как часы
-	                        </div>
-	                        <div class="videBlocks-item__info__time">
-	                            4:35
-	                        </div>
+	                    <div class="slider__arrows slider__prev slider-video__prev">
+	                        <svg width="20" height="60">
+	                            <use xlink:href="#slider-arrow"></use>
+	                        </svg>
+	                    </div>
+	                    <div class="slider__arrows slider__next slider-video__next">
+	                        <svg width="20" height="60">
+	                            <use xlink:href="#slider-arrow"></use>
+	                        </svg>
 	                    </div>
 	                </div>
 	            </div>
+	        </div>
 	
-	            <div class="col-xl-4 col-lg-6 col-12">
-	                <div class="videBlocks-item d-flex align-items-center">
-	                    <div class="videBlocks-item__video">
-	                        <img src="img/models/2018-05-26-14-09-26.png">
-	                    </div>
-	                    <div class="videBlocks-item__info">
-	                        <div class="videBlocks-item__info__title">
-	                            Система организации
-	                        </div>
-	                        <div class="videBlocks-item__info__text videBlocks-item__info__correctMargin">
-	                            Каждая кухня индивидуальна как и её хозяин
-	                        </div>
-	                        <div class="videBlocks-item__info__time">
-	                            1:18
-	                        </div>
+	        <div class="row">
+	            <div class="col-12">
+	                <div class="videoGalleryLink">
+	                    <p class="videoGalleryLink__title">
+	                        Откройте для себя мир кухонь nobilia: в нашем видео вы можете узнать о нашей продукции и узнать
+	                        больше о
+	                        компании nobilia.
+	                    </p>
+	                    <div class="videoGalleryLink__link">
+	                        <a href="videocatalog.html" class="videoGalleryLink__link__btn">
+	                            <i class="icon icon-play">
+	                                <svg width="25" height="31" data-toggle="tooltip" data-placement="left"
+	                                     title="Перейти в видео">
+	                                    <use xlink:href="#icon-play"></use>
+	                                </svg>
+	                            </i>
+	                            ПЕРЕЙТЕ В ВИДЕО КОЛЛЕКЦИЮ NOBILIA
+	                        </a>
 	                    </div>
 	                </div>
 	            </div>
-	
-	            <div class="col-xl-4 col-lg-6 col-12">
-	                <div class="videBlocks-item d-flex align-items-center">
-	                    <div class="videBlocks-item__video">
-	                        <img src="img/models/2018-05-26-14-14-19.png">
-	                    </div>
-	                    <div class="videBlocks-item__info">
-	                        <div class="videBlocks-item__info__title">
-	                            Система удаления отходов
-	                        </div>
-	                        <div class="videBlocks-item__info__text videBlocks-item__info__correctMargin">
-	                            Всё работает как часы
-	                        </div>
-	                        <div class="videBlocks-item__info__time">
-	                            6:14
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	
 	        </div>
 	    </div>
 	
-	    <div class="videoGallery">
-	        <a href="#" class="videoGallery__title">
-	            Откройте для себя мир кухонь nobilia: в нашем видео вы можете узнать о нашей продукции и узнать больше о
-	            компании nobilia.
-	        </a>
-	        <div href="#" class="videoGallery__link">
-	            <a href="#" class="videoGallery__link__btn">
-	                <img src="img/nobilia/play.png" alt="video nobilia">
-	            </a>
-	            <a href="#" class="videoGallery__link__text">
-	                ПЕРЕЙТЕ В ВИДЕО КОЛЛЕКЦИЮ NOBILIA
-	            </a>
-	        </div>
-	    </div>
 	</section>
 	
 	
@@ -466,137 +523,95 @@
 	    </div>
 	</div>
 	
-	<div class="third-page">
-	    <div class="third-page__header pb-xl-4">
-	        <div class="container">
-	            <div class="third-page__header__title text-center">Оборудование кухни</div>
-	            <div class="row mb-4">
-	                <div class="offset-xl-1 col-xl-10 col-12">
-	                    <div class="third-page__header__text my-3">
-	                       Узнайте какое наполнение кухни подойдет именно Вам, подберите свою систему освещения.
-	                        Эргономика играет большую роль, а Вы знаете эти секреты? Больше не нужно бегать по разным салонам,
-	                        у нас можно получить профессиональную консультацию и преобрести встраиваемую технику.
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="row mb-5">
-	                <div class="col-12 text-center">
-	                    <div class="third-page__header__link">
-	                        <div class="know-more">
-	                            <a class="know-more__link" href="#">
-	                                <div class="know-more__link__title more-btn">Узнать больше</div>
-	                            </a>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
+	
+	<div class="wr-important text-center">
+	    <div class="important">
+	        <h2 class="title-center">Оборудование кухни</h2>
+	        <p>Узнайте какое наполнение кухни подойдет именно Вам, подберите свою систему освещения.
+	            Эргономика играет большую роль, а Вы знаете эти секреты? Больше не нужно бегать по разным салонам,
+	            у нас можно получить профессиональную консультацию и преобрести встраиваемую технику.
+	        </p>
+	        <a href="" class="more-btn mt-4">Узнать больше</a>
 	    </div>
 	</div>
 	
 	
-	<section class="wrapper">
-	    <div class="container-fluid p-0">
-	        <div class="containerH1-margin-block row d-flex justify-content-center flex-wrap">
-	
-	            <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
-	                <div class="containerH1-itemBig" style="background-image: url(&quot img/main-img/produkte.jpg&quot);
-	                background-size:cover;">
-	                    <div class="containerH1-itemBig__types">
-	                        <a href="#"><h1>Типы кухонь</h1></a>
-	                        <p>Откройте для себя свою коллекцию</p>
-	                        <div class="know-more transform-know-more typesKitchenBottom">
-	                            <a class="know-more__link" href="#">
-	                                <div class="know-more__link__title more-btn">Узнать больше</div>
-	                            </a>
-	                        </div>
-	                    </div>
-	                    <div class="itemBottom itemBottomBG d-flex align-items-center justify-content-start">
-	                        <a href="#" class="itemBottom__link">
-	                            <h1 class="itemBottom__link__title more-btn">Наполнение шкафов</h1>
+	<section class="wr-subcat wr-subcat__main mb-5">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 col-md-8">
+	                <div class="subcat">
+	                    <div class="subcat__item">
+	                        <a class="subcat__item__img" href="napolnenie-shkafov.html"
+	                           style="background-image: url(img/models/qualitaet_funktion.jpg);">
+	                            <span>Наполнение шкафов</span>
 	                        </a>
 	                    </div>
-	                </div>
-	            </div>
-	
-	            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-	                <div class="containerH1-itemSmall" style="background-image: url(&quot img/main-img/lichtsysteme.png&quot);
-	                background-size:cover;">
-	                    <div class="containerH1-itemSmall__types aboutKitchen">
-	                        <h1>О кухнях nobilia</h1>
-	                        <p>Покупатели более 90 стран отдают
-	                            предпочтение кухням nobilia. Объёмы
-	                            производства превысили 3000 кухонь в
-	                            день и каждая индивидуальна как и её
-	                            хозяин! Два крупнейшей завода в Европе
-	                            расположенных в Восточной Вестфалии,
-	                            Германия.</p>
-	                        <a class="know-more transform-know-more-itemSmall aboutKitchenBottom">
-	                            <div class="know-more__link">
-	                                <div class="know-more__link__title more-btn">Узнать больше</div>
-	
-	                            </div>
-	                        </a>
-	                    </div>
-	                    <div class="itemBottom d-flex align-items-center justify-content-start">
-	                        <div href="#" class="itemBottom__link">
-	                            <h1 class="itemBottom__link__title more-btn">Система оповещения</h1>
+	                    <div class="subcat__hover">
+	                        <h3>Наполнение шкафов</h3>
+	                        <div class="subcat__hover__link">
+	                            <a class="more-btn" href="napolnenie-shkafov.html">Узнать больше</a>
 	                        </div>
 	                    </div>
 	                </div>
 	            </div>
 	
-	            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-	                <div class="containerH1-itemSmall" style="background-image: url(&quot img/main-img/electrogeraete.jpg&quot);
-	                background-size:cover;">
-	                    <div class="containerH1-itemSmall__types aboutKitchen">
-	                        <a href="#"><h1>О кухнях nobilia</h1></a>
-	                        <p>Покупатели более 90 стран отдают
-	                            предпочтение кухням nobilia. Объёмы
-	                            производства превысили 3000 кухонь в
-	                            день и каждая индивидуальна как и её
-	                            хозяин! Два крупнейшей завода в Европе
-	                            расположенных в Восточной Вестфалии,
-	                            Германия.
-	                        </p>
-	                        <div class="know-more transform-know-more-itemSmall aboutKitchenBottom">
-	                            <a class="know-more__link" href="#">
-	                                <div class="know-more__link__title more-btn">Узнать больше</div>
-	                            </a>
-	                        </div>
-	                    </div>
-	                    <div class="itemBottom d-flex align-items-center justify-content-start">
-	                        <a href="#" class="itemBottom__link">
-	                            <h1 class="itemBottom__link__title  more-btn">Встраиваемая техника</h1>
+	
+	            <div class="col-12 col-md-4">
+	                <div class="subcat">
+	                    <div class="subcat__item">
+	                        <a class="subcat__item__img" href="tipykuhon-podrazdel.html"
+	                           style="background-image: url(img/models/lichtsysteme.jpg);">
+	                            <span>Система освещения</span>
 	                        </a>
+	                    </div>
+	                    <div class="subcat__hover">
+	                        <h3>Система освещения</h3>
+	                        <div class="subcat__hover__link">
+	                            <a class="more-btn" href="tipykuhon-podrazdel.html">Узнать больше</a>
+	                        </div>
 	                    </div>
 	                </div>
 	            </div>
 	
-	            <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
-	                <div class="containerH1-itemBig" style="background-image: url(&quot img/main-img/services.jpg &quot);
-	                background-size:cover;">
-	                    <div class="containerH1-itemBig__types">
-	                        <a href="#"><h1>Эргономика</h1></a>
-	                        <p>24 различных рабочих высот обеспечивают эргономичный дизайн кухни.</p>
-	                        <div class="know-more transform-know-more ergonomicsBottom">
-	                            <a class="know-more__link" href="#">
-	                                <div class="know-more__link__title more-btn">Узнать больше</div>
-	                            </a>
-	                        </div>
-	                    </div>
-	                    <div class="itemBottom d-flex align-items-center justify-content-start">
-	                        <a href="#" class="itemBottom__link">
-	                            <h1 class="itemBottom__link__title more-btn">Эргономика</h1>
+	            <div class="col-12 col-md-4">
+	                <div class="subcat">
+	                    <div class="subcat__item">
+	                        <a class="subcat__item__img" href="tipykuhon-podrazdel.html"
+	                           style="background-image: url(img/models/electrogeraete.jpg);">
+	                            <span>Встраиваемая техника</span>
 	                        </a>
+	                    </div>
+	                    <div class="subcat__hover">
+	                        <h3>Встраиваемая техника</h3>
+	                        <div class="subcat__hover__link">
+	                            <a class="more-btn" href="tipykuhon-podrazdel.html">Узнать больше</a>
+	                        </div>
 	                    </div>
 	                </div>
 	            </div>
 	
-	        </div> <!--/row -->
-	    </div> <!--/wrapper -->
+	            <div class="col-12 col-md-8">
+	                <div class="subcat">
+	                    <div class="subcat__item">
+	                        <a class="subcat__item__img" href="tipykuhon-podrazdel.html"
+	                           style="background-image: url(img/models/produkte.jpg);">
+	                            <span>Эргономика</span>
+	                        </a>
+	                    </div>
+	                    <div class="subcat__hover">
+	                        <h3 href="tipykuhon-podrazdel.html">Эргономика</h3>
+	                        <div class="subcat__hover__link">
+	                            <a class="more-btn" href="tipykuhon-podrazdel.html">Узнать больше</a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
 	
+	        </div> <!-- end row-->
+	    </div>
 	</section>
+
 
 	<!--BENEFIT-->
 	<section class="wr-benefit">
@@ -863,7 +878,7 @@
 	
 	        <p class="map__text">г.Ростов-на-Дону,<br>ул.Красноармейска д.103/123</p>
 	
-	        <p class="map__text">Телефон: <a class="map__tel" href="tel:+7(863) 299-44-53"> +7 (863) 299-44-53</a></p>
+	        <p class="map__text">Телефон: <a class="map__tel" href="tel:+7(863) 299-44-53" style=" color: #FFFFFF;"> +7 (863) 299-44-53</a></p>
 	    </div>
 	</div>
 
