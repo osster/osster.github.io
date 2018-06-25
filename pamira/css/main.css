@@ -9530,25 +9530,20 @@ footer .footer-copy {
   object-fit: cover;
 }
 
-.main-sections-nav {
-  background-color: #1d1d1d;
-  padding: 100px 0 50px;
-}
-
-.main-sections-nav .container {
+.main__sections-nav .container {
   max-width: 1140px;
 }
 
-.main-sections-nav__level-0 {
+.main__sections-nav__level-0 {
   margin-bottom: 60px;
 }
 
-.main-sections-nav__level-1 {
+.main__sections-nav__level-1 {
   background-color: #232323;
   padding: 60px 0 30px;
 }
 
-.main-sections-nav__card {
+.main__sections-nav__card {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column nowrap;
@@ -9559,21 +9554,21 @@ footer .footer-copy {
   justify-content: center;
 }
 
-.main-sections-nav__card .pic {
+.main__sections-nav__card .pic {
   display: block;
   margin-bottom: 20px;
 }
 
-.main-sections-nav__card .label {
+.main__sections-nav__card .label {
   display: block;
   text-transform: uppercase;
 }
 
-.main-sections-nav__card.active {
+.main__sections-nav__card.active {
   color: #bf000c;
 }
 
-.main-sections-nav__card.active:after {
+.main__sections-nav__card.active:after {
   position: absolute;
   content: '';
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDkiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCA0OSAxOCI+PGRlZnM+PHBhdGggaWQ9Inlmc2VhIiBkPSJNNDQ3LjE4IDEzMjhsMjMuNjYgMTUuNSIvPjxwYXRoIGlkPSJ5ZnNlYiIgZD0iTTQ5NC41IDEzMjhsLTI0LjQyIDE1LjUiLz48L2RlZnM+PGc+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0NiAtMTMyNykiPjx1c2UgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIwIiBzdHJva2U9IiNiZjAwMGMiIHN0cm9rZS1taXRlcmxpbWl0PSI1MCIgc3Ryb2tlLXdpZHRoPSIyIiB4bGluazpocmVmPSIjeWZzZWEiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ0NiAtMTMyNykiPjx1c2UgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIwIiBzdHJva2U9IiNiZjAwMGMiIHN0cm9rZS1taXRlcmxpbWl0PSI1MCIgc3Ryb2tlLXdpZHRoPSIyIiB4bGluazpocmVmPSIjeWZzZWIiLz48L2c+PC9nPjwvc3ZnPg==);
@@ -9582,8 +9577,43 @@ footer .footer-copy {
   bottom: -30px;
 }
 
-.main-sections-nav__level-1 .main-sections-nav__card {
+.main__sections-nav__level-1 .main__sections-nav__card {
   margin-bottom: 30px;
+}
+
+.main__promo {
+  background-color: #ffffff;
+  color: #aaaaaa;
+  padding: 100px 0 50px;
+}
+
+.main__promo .container {
+  max-width: 1140px;
+}
+
+.main__promo_heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.main__promo_heading_title {
+  color: #f0f0f0;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.72px;
+  margin-bottom: 30px;
+}
+
+.main__promo_heading_desc {
+  width: 670px;
+  margin: auto;
+  text-align: left;
+}
+
+.main__promo_dark {
+  background-color: #1d1d1d;
 }
 
 @media (min-width: 576px) {
