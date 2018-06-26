@@ -11,6 +11,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
@@ -21,7 +22,11 @@
               d="M323.1 441l53.9-53.9c9.4-9.4 9.4-24.5 0-33.9L279.8 256l97.2-97.2c9.4-9.4 9.4-24.5 0-33.9L323.1 71c-9.4-9.4-24.5-9.4-33.9 0L192 168.2 94.8 71c-9.4-9.4-24.5-9.4-33.9 0L7 124.9c-9.4 9.4-9.4 24.5 0 33.9l97.2 97.2L7 353.2c-9.4 9.4-9.4 24.5 0 33.9L60.9 441c9.4 9.4 24.5 9.4 33.9 0l97.2-97.2 97.2 97.2c9.3 9.3 24.5 9.3 33.9 0z"
               class=""></path>
     </svg>
-
+    <symbol id="icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="-12885 923 10 15.41">
+        <g transform="translate(-13651 122.41)">
+            <path data-name="Path 1" class="cls-1" fill="currentColor" d="M7.7,10,0,2.3,2.3,0,7.7,5.41,13.115,0l2.3,2.3Z" transform="translate(766 816) rotate(-90)"/>
+        </g>
+    </symbol>
     <symbol id="aksessuary" xmlns="http://www.w3.org/2000/svg" viewBox="-3011 396.175 67.467 51">
         <g transform="translate(281 -1208.825)">
             <path class="a"
@@ -295,71 +300,180 @@
 
     <section class="main__promo main__promo_dark main__sections-nav">
         <div class="container">
-            <div class="row main__sections-nav__level-0">
-                <div class="col-lg-3">
-                    <a class="main__sections-nav__card active" href="#">
+        
+            <ul class="row main__sections-nav__level-0 nav nav-tabs" id="myTab" role="tablist">
+        
+                <li class="col-lg-3 nav-item">
+                    <a class="main__sections-nav__card nav-link active" id="santeh-tab" data-toggle="tab" role="tab"  href="#santeh" aria-controls="santeh" aria-selected="true">
                         <img class="pic" src="img/icons/icon-santehnika.svg">
                         <span class="label">Сантехника</span>
                     </a>
-                </div>
-                <div class="col-lg-3">
-                    <a class="main__sections-nav__card" href="#">
+                </li>
+                <li class="col-lg-3 nav-item">
+                    <a class="main__sections-nav__card nav-link" id="tehniksDlyaKuhni-tab" data-toggle="tab" role="tab" href="#tehniksDlyaKuhni" aria-controls="tehniksDlyaKuhni" aria-selected="false" >
                         <img class="pic" src="img/icons/icon-tehniks-dlya-kuhni.svg">
                         <span class="label">Техника для кухни</span>
                     </a>
-                </div>
-                <div class="col-lg-3">
+                </li>
+                <li class="col-lg-3">
                     <a class="main__sections-nav__card" href="#">
                         <img class="pic" src="img/icons/icon-mbt-i-posuda.svg">
                         <span class="label">МБТ и посуда</span>
                     </a>
-                </div>
-                <div class="col-lg-3">
-                    <a class="main__sections-nav__card" href="#">
+                </li>
+                <li class="col-lg-3 nav-item">
+                    <a class="main__sections-nav__card nav-link" id="uhodZaBelem-tab" data-toggle="tab" role="tab" href="#uhodZaBelem" aria-controls="uhodZaBelem" aria-selected="false" >
                         <img class="pic" src="img/icons/icon-uhod-za-belem.svg">
                         <span class="label">Уход за бельем</span>
                     </a>
+                </li>
+        
+        
+            </ul>
+        
+        
+            <div class="row tab-content" id="myTabContent">
+        
+                <div class="col-12 main__sections-nav__level-1 tab-pane fade show active" id="santeh" role="tabpanel" aria-labelledby="santeh-tab">
+        
+                    <div class="row">
+        
+                        <div class="col-lg-3" >
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-kuhonnye-moiky.svg">
+                                <span class="label">Кухонные мойки</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-izmelchiteli.svg">
+                                <span class="label">Измельчители</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-sortery.svg">
+                                <span class="label">Сортеры</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-aksessuary.svg">
+                                <span class="label">Аксессуары</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-dozatory.svg">
+                                <span class="label">Дозаторы</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-smesiteli.svg">
+                                <span class="label">Смесители</span>
+                            </a>
+                        </div>
+        
+                    </div>
+        
                 </div>
+        
+        
+                <div class="col-12 main__sections-nav__level-1 tab-pane fade" id="tehniksDlyaKuhni" role="tabpanel" aria-labelledby="tehniksDlyaKuhni-tab">
+        
+                    <div class="row">
+        
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-duhovie-shkafi.svg">
+                                <span class="label">Духовые шкафы</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-holodilniki.svg">
+                                <span class="label">Холодильники</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-varochnie-poverhnosti.svg">
+                                <span class="label">Варочные поверхности</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-compaktnie-pribori.svg">
+                                <span class="label">Компактные приборы</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-kith-blocks.svg">
+                                <span class="label">Кухонные блоки</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-vitiazki.svg">
+                                <span class="label">Вытяжки</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-mikrovolnovie-pechi.svg">
+                                <span class="label">Микроволновые печи</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-posudomoechnie-mashini.svg">
+                                <span class="label">Посудомоечные машины</span>
+                            </a>
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+        
+                <div class="col-12 main__sections-nav__level-1 tab-pane fade" id="uhodZaBelem" role="tabpanel" aria-labelledby="uhodZaBelem-tab">
+        
+                    <div class="row">
+        
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-stiralnie-mashini.svg">
+                                <span class="label">Стриральные машины</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-stiralnie-mashini.svg">
+                                <span class="label">Сушильные машины</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-sushilnie-shkafi.svg">
+                                <span class="label">Сушильные шкафы</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="main__sections-nav__card" href="#">
+                                <img class="pic" src="img/icons/icon-aksessuari-uhod-za-beliom.svg">
+                                <span class="label">Аксессуары</span>
+                            </a>
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+        
             </div>
         
-            <div class="row main__sections-nav__level-1">
-                <div class="col-lg-3">
-                    <a class="main__sections-nav__card" href="#">
-                        <img class="pic" src="img/icons/icon-kuhonnye-moiky.svg">
-                        <span class="label">Кухонные мойки</span>
-                    </a>
-                </div>
-                <div class="col-lg-3">
-                    <a class="main__sections-nav__card" href="#">
-                        <img class="pic" src="img/icons/icon-izmelchiteli.svg">
-                        <span class="label">Измельчители</span>
-                    </a>
-                </div>
-                <div class="col-lg-3">
-                    <a class="main__sections-nav__card" href="#">
-                        <img class="pic" src="img/icons/icon-sortery.svg">
-                        <span class="label">Сортеры</span>
-                    </a>
-                </div>
-                <div class="col-lg-3">
-                    <a class="main__sections-nav__card" href="#">
-                        <img class="pic" src="img/icons/icon-aksessuary.svg">
-                        <span class="label">Аксессуары</span>
-                    </a>
-                </div>
-                <div class="col-lg-3">
-                    <a class="main__sections-nav__card" href="#">
-                        <img class="pic" src="img/icons/icon-dozatory.svg">
-                        <span class="label">Дозаторы</span>
-                    </a>
-                </div>
-                <div class="col-lg-3">
-                    <a class="main__sections-nav__card" href="#">
-                        <img class="pic" src="img/icons/icon-smesiteli.svg">
-                        <span class="label">Смесители</span>
-                    </a>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -373,46 +487,52 @@
             </div>
 
             <div class="row">
-                <!--<div class="col-12 px-1">-->
-                    <!--<div class="card-item card-item_full">-->
-                        <!--<div class="card-item_img">-->
-                            <!--<img src="img/cards/main-promo-card-1.jpg" alt="">-->
-                        <!--</div>-->
-                        <!--<div class="card-item_text">-->
-                            <!--<h2>САМЫЙ БОЛЬШОЙ ВЫБОР КУХОННОЙ ТЕХНИКИ</h2>-->
-                            <!--<p>Товары различных брендов на любой вкус и бюджет.</p>-->
-                            <!--<div class="card-item_text_link">-->
-                                <!--<a href="#">Перейти в каталог</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <div class="col-12 px-1">
+                <div class="col-12 px-1 mb-4">
+                    <div class="card-item card-item_full card-item_full_right card-item_full_half">
+                        <div class="card-item_img">
+                            <img src="img/cards/main-promo-card-3.jpg" alt="">
+                        </div>
+                        <div class="card-item_text">
+                            <div class="card-item_text_inner">
+                                <h2>САМЫЙ БОЛЬШОЙ ВЫБОР КУХОННОЙ ТЕХНИКИ</h2>
+                                <p>Товары различных брендов на любой вкус и бюджет.</p>
+                            </div>
+                            <div class="card-item_text_link">
+                                <a class="btn" href="#">Перейти в каталог</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 px-1 mb-4">
                     <div class="card-item card-item_full">
                         <div class="card-item_img">
                             <img src="img/cards/main-promo-card-2.jpg" alt="">
                         </div>
                         <div class="card-item_text">
-                            <h2>ЛУЧШЕЕ ИЗ ЛУЧШЕГО:</h2>
-                            <p>Название модели</p>
+                            <div class="card-item_text_inner">
+                                <h2>ЛУЧШЕЕ ИЗ ЛУЧШЕГО:</h2>
+                                <p>Название модели</p>
                                 <p>Краткое описание</p>
+                            </div>
                             <div class="card-item_text_link">
-                                <a href="#">Подробнее</a>
+                                <a class="btn" href="#">Подробнее</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 px-1">
-                    <div class="card-item card-item_full">
+                <div class="col-12 px-1 mb-4">
+                    <div class="card-item card-item_full card-item_full_right">
                         <div class="card-item_img">
                             <img src="img/cards/main-promo-card-3.jpg" alt="">
                         </div>
                         <div class="card-item_text">
-                            <h2>ЛУЧШЕЕ ИЗ ЛУЧШЕГО:</h2>
-                            <p>Название модели</p>
+                            <div class="card-item_text_inner">
+                                <h2>ЛУЧШЕЕ ИЗ ЛУЧШЕГО:</h2>
+                                <p>Название модели</p>
                                 <p>Краткое описание</p>
+                            </div>
                             <div class="card-item_text_link">
-                                <a href="#">Подробнее</a>
+                                <a class="btn" href="#">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -432,7 +552,7 @@
             </div>
 
             <div class="row">
-                <div class="col-4 px-1 py-4">
+                <div class="col-lg-4 col-12 px-1 mb-4">
                     <div class="card-item">
                         <div class="card-item_img">
                             <img src="/img/cards/main-promo-card-4.jpg" alt="">
@@ -443,11 +563,15 @@
                                 встраиваемой техники Ростова-на-Дону, Ставропольского края и Воронежа. Вот уже без
                                 малого 20 лет мы осуществляем оптовые поставки кухонной техники, а также имеем
                                 собственные розничные магазины в Ростове-на-Дону и Воронеже.</p>
-                                <a href="#">Читать подробнее</a>
                         </div>
+                        <a class="more-btn_down" href="#">
+                            <svg width="10" height="15">
+                                <use xlink:href="#icon-arrow"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="col-4 px-1 py-4">
+                <div class="col-lg-4 col-12 px-1 mb-4">
                     <div class="card-item">
                         <div class="card-item_img">
                             <img src="/img/cards/main-promo-card-5.jpg" alt="">
@@ -457,36 +581,48 @@
                             <p>Послегарантийное обслуживание бытовой техники должно производиться авторизованными
                                 сервисными центрами. Это означает, что по необходимости вы можете принести к нам в
                                 магазин свою технику</p>
-                                <a href="#">Читать подробнее</a>
+
                         </div>
+                        <a class="more-btn_down" href="#">
+                            <svg width="10" height="15">
+                                <use xlink:href="#icon-arrow"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="col-4 px-1 py-4">
+                <div class="col-lg-4 col-12 px-1 mb-4">
                     <div class="card-item">
                         <div class="card-item_img">
                             <img src="/img/cards/main-promo-card-6.jpg" alt="">
                         </div>
                         <div class="card-item_text">
                             <h2>Вам удобно</h2>
-                            <p>Транспортировку из дома и обратно крупногабаритной техники, если вы не против, мы возьмём на себя
+                            <p>Транспортировку из дома и обратно крупногабаритной техники, если вы не против, мы возьмём
+                                на себя
                                 Профессиональная консультация, индивидуальный подход.</p>
-                                <a href="#">Читать подробнее</a>
                         </div>
+                        <a class="more-btn_down" href="#">
+                            <svg width="10" height="15">
+                                <use xlink:href="#icon-arrow"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-12 px-1">
+                <div class="col-12 px-1 mb-4">
                     <div class="card-item card-item_full">
                         <div class="card-item_img">
                             <img src="img/cards/main-promo-card-7.jpg" alt="">
                         </div>
                         <div class="card-item_text">
-                            <h2>Вся техника подключена</h2>
-                            <p>Можно включить и проверить в действии.</p>
+                            <div class="card-item_text_inner">
+                                <h2>Вся техника подключена</h2>
+                                <p>Можно включить и проверить в действии.</p>
+                            </div>
                             <div class="card-item_text_link">
-                                <a href="#">Перейти в каталог</a>
+                                <a class="btn" href="#">Перейти в каталог</a>
                             </div>
                         </div>
                     </div>
@@ -494,7 +630,7 @@
             </div>
 
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6 col-12 mb-4">
                     <div class="card-item">
                         <div class="card-item_text">
                             <h2>Новая серия оборудования AEG для уходя за бельем</h2>
@@ -503,13 +639,17 @@
                         </div>
                         <div class="card-item_img">
                             <div class="card-item_img_link">
-                                <a href="#">Читать подробнее</a>
+                                <a class="btn more-btn" href="#">Читать подробнее
+                                    <svg width="10" height="15">
+                                        <use xlink:href="#icon-arrow"></use>
+                                    </svg>
+                                </a>
                             </div>
                             <img src="/img/cards/main-promo-card-8.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 col-12 mb-4">
                     <div class="card-item">
                         <div class="card-item_text">
                             <h2>Новинки 2017/2018 года</h2>
@@ -517,7 +657,11 @@
                         </div>
                         <div class="card-item_img">
                             <div class="card-item_img_link">
-                                <a href="#">Читать подробнее</a>
+                                <a class="btn more-btn" href="#">Читать подробнее
+                                    <svg width="10" height="15">
+                                        <use xlink:href="#icon-arrow"></use>
+                                    </svg>
+                                </a>
                             </div>
                             <img src="/img/cards/main-promo-card-9.jpg" alt="">
                         </div>
@@ -525,9 +669,334 @@
                 </div>
             </div>
         </div>
-
     </section>
+
+    
+    <div class="wr-brands">
+    
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/brands/faber1.png"></div>
+                <div class="swiper-slide "><img src="img/brands/falmec.png"></div>
+                <div class="swiper-slide "><img src="img/brands/franke.png"></div>
+                <div class="swiper-slide "><img src="img/brands/gorenje.png"></div>
+                <div class="swiper-slide "><img src="img/brands/insinkerator.png"></div>
+                <div class="swiper-slide "><img src="img/brands/kitchen_aid.png"></div>
+                <div class="swiper-slide "><img src="img/brands/kuppersbusch.png"></div>
+                <div class="swiper-slide "><img src="img/brands/teka.png"></div>
+    
+            </div>
+    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+        </div>
+    
+    </div>
+
+    <section class="wr-events">
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <h3 class="title-center">ГОТОВИМ ДЛЯ ВАС</h3>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+    
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <a href="img/events/event-1/events-photo-1.jpg" class="swipebox" rel="g-evt-1"><img src="img/events/event-1/events-photo-1.jpg" alt=""></a>
+                            </div>
+                            <div class="col-md-6 mb-4xt">
+                                <div class="card-item card-item_light">
+                                    <div class="card-item_text">
+                                        <div class="card-item_text_inner">
+                                            <h3>НАЗВАНИЕ МЕРОПРИЯТИЯ</h3>
+                                            <p>Фото и информация с нашего последнего мероприятия. Хотите попасть на
+                                                следующий мастер-класс?</p>
+                                        </div>
+                                        <div class="card-item_text_link">
+                                            <a class="btn" href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <a href="img/events/event-1/events-photo-2.jpg" class="swipebox" rel="g-evt-1"><img src="img/events/event-1/events-photo-2.jpg" alt=""></a>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <a href="img/nevents/event-1/events-photo-3.jpg" class="swipebox" rel="g-evt-1"><img src="img/events/event-1/events-photo-3.jpg" alt=""></a>
+                            </div>
+                            <div class="col-md-4 mb-4"><a href="img/events/event-1/events-photo-4.jpg" class="swipebox" rel="g-evt-1"><img src="img/events/event-1/events-photo-4.jpg" alt=""></a></div>
+                            <div class="col-md-4 mb-4"><a href="img/events/event-1/events-photo-5.jpg" class="swipebox" rel="g-evt-1"><img src="img/events/event-1/events-photo-5.jpg" alt=""></a></div>
+                            <div class="col-md-4 mb-4"><a href="img/events/event-1/events-photo-6.jpg" class="swipebox" rel="g-evt-1"><img src="img/events/event-1/events-photo-6.jpg" alt=""></a></div>
+                        </div>
+                    </div>
+    
+                </div><!-- /slider-slides -->
+    
+            </div> <!--/sliderwrapper -->
+    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+        </div> <!--/slider-container -->
+    
+    </section> <!--/section -->
+    
+    <div class="wr-events-month">
+    
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide events-month active">События июля 2018</div>
+                <div class="swiper-slide events-month">События июня 2018</div>
+                <div class="swiper-slide events-month">События мая 2018</div>
+                <div class="swiper-slide events-month">События апреля 2018</div>
+                <div class="swiper-slide events-month">События марта 2018</div>
+                <div class="swiper-slide events-month">События февраля 2018</div>
+                <div class="swiper-slide events-month">События января 2018</div>
+                <div class="swiper-slide events-month">События декабря 2017</div>
+                <div class="swiper-slide events-month">События ноября 2017</div>
+                <div class="swiper-slide events-month">События октября 2017</div>
+                <div class="swiper-slide events-month">События сентября 2017</div>
+            </div>
+    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+        </div>
+    
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="main__promo_heading">
+                    <div class="main__promo_heading_title">АКТИВНАЯ КУХНЯ</div>
+                    <p class="main__promo_heading_desc main__promo_heading_desc_center">
+                        озяйка может почувствовать себя на своей кухне, понять что нужно, а что нет.
+                        На активной кухне подключены все существующие кухонные приборы.
+                        Приходите и пробуйте!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="wr-slider-narrow">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" ><img src="img/slides/slide-1.jpg"></div>
+                <div class="swiper-slide" ><img src="img/slides/slide-2.jpg"></div>
+                <div class="swiper-slide" ><img src="img/slides/slide-1.jpg"></div>
+                <div class="swiper-slide" ><img src="img/slides/slide-1.jpg"></div>
+                <div class="swiper-slide" ><img src="img/slides/slide-2.jpg"></div>
+                <div class="swiper-slide" ><img src="img/slides/slide-1.jpg"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+        </div>
+    
+    </section>
+
+    <div class="wr-form-news">
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-6">
+                    <div class="sub">
+                        <img class="pic" src="img/icons/icon-mail.svg">
+                        <span>
+                            Подпишитесь! Новинки, скидки, предложения, мероприятия!
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-7">
+                            <input type="email" name="email" class="email" value="Введите e-mail" required>
+                        </div>
+                        <div class="col-5">
+                            <button class="card-item card-item_light p-0">
+                                    <span class="card-item_text p-0">
+                                        <span class="card-item_text_inner">
+                                        </span>
+                                        <span class="card-item_text_link mb-0">
+                                            <a class="btn" href="#">Подписаться</a>
+                                        </span>
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <section class="main__promo main__promo_dark">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 px-1 mb-4">
+                    <div class="card-item card-item_light card-item_full card-item_full_right card-item_full_half">
+                        <div class="card-item_img">
+                            <img src="img/cards/main-promo-card-1.jpg" alt="">
+                        </div>
+                        <div class="card-item_text">
+                            <div class="card-item_text_link">
+                                <a class="btn" href="#">Акции</a>
+                            </div>
+                            <div class="card-item_text_inner">
+                                <p>Изумительные цены на новую технику ELECTROLUX</p>
+                            </div>
+                            <div class="card-item_text_link">
+                                <a class="more-btn more-btn_gray" href="#">Читать подробнее
+                                    <svg width="10" height="15">
+                                        <use xlink:href="#icon-arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-12 mb-4">
+                    <div class="card-item card-item_light">
+                        <div class="card-item_text">
+                            <div class="card-item_text_link">
+                                <a class="btn" href="#">Полезные советы</a>
+                            </div>
+                            <div class="card-item_text_inner">
+                                <p>Как перестать искать и выбрать варочную поверхность за полчаса</p>
+                            </div>
+                        </div>
+                        <div class="card-item_img">
+                            <div class="card-item_img_link">
+                                <a class="btn more-btn" href="#">Читать подробнее
+                                    <svg width="10" height="15">
+                                        <use xlink:href="#icon-arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <img src="/img/cards/main-promo-card-11.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mb-4">
+                    <div class="card-item card-item_light">
+                        <div class="card-item_text">
+                            <div class="card-item_text_link">
+                                <a class="btn" href="#">Распродажи</a>
+                            </div>
+                            <div class="card-item_text_inner">
+                                <p>Изумительные цены на стиральные машины </p>
+                            </div>
+                        </div>
+                        <div class="card-item_img">
+                            <div class="card-item_img_link">
+                                <a class="btn more-btn" href="#">Читать подробнее
+                                    <svg width="10" height="15">
+                                        <use xlink:href="#icon-arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <img src="/img/cards/main-promo-card-12.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 </main>
+
+<div class="wr-map">
+    <div id="map"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-3">
+                <div class="map_menu">
+                    <h2>Где нас найти?</h2>
+                    <div class="map-item">
+                        <h3>Ростов-на-дону</h3>
+                        <div class="map-item_text">
+                            <p>Красноармейская 63/90<br/>
+                                Розничный отдел:</p>
+                            <p class="pl-3"><a href="tel:+7 (863) 302-03-04">+7 (863) 302-03-04</a><br/>
+                                <a href="tel:+7 (919) 888-6-777">+7 (919) 888-6-777</a><br/>
+                                Время работы:<br/>
+                                ПН-СБ 10:00-19:00<br/>
+                                ВС 10:00-16:00<br/>
+                                <a href="mailto:td@pamira.ru">td@pamira.ru</a></p>
+                        </div>
+                        <div class="map-item_text">
+                            <p>Оптовый отдел:</p>
+                            <p class="pl-3"><a href="tel:+7 (863) 302-00-22">+7 (863) 302-00-22</a><br/>
+                                Время работы:<br/>
+                                ПН-ПТ 10:00-19:00<br/>
+                                <a href="mailto:zakaz@pamira.ru">zakaz@pamira.ru</a></p>
+                        </div>
+                        <div class="map-item_text">
+                            <p>Офис:</p>
+                            <p class="pl-3"><a href="tel:+7 (863) 300-52-97">+7 (863) 300-52-97</a><br/>
+                                Троллейбусная 24/2В<br/>
+                                Время работы:<br/>
+                                ПН-ПТ 10:00-18:00</p>
+                        </div>
+                        <div class="map-item_text">
+                            <p>Склад:</p>
+                            <p class="pl-3"><a href="tel:+7 (863) 219-21-39">+7 (863) 219-21-39</a><br/>
+                                50-летия Ростсельмаша, 2-6/22Б<br/>
+                                Время работы:<br/>
+                                ПН-ПТ 9:00-18:00</p>
+                        </div>
+                    </div>
+                    <div class="map-item closed">
+                        <h3>Воронеж</h3>
+                    </div>
+                    <div class="map-item closed">
+                        <h3>Ставрополь, Пятигорск</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
 <footer>
     <div class="container">
         <div class="row footer-top">
@@ -693,7 +1162,7 @@
         </div>
         <div class="row footer-bottom">
             <div class="col-lg-4 footer-bottom__left">
-                <p>ПАМИИРА является официальными партнерами таких ведущих брендов как:</p>
+                <p>ПАМИРА является официальными партнерами таких ведущих брендов как:</p>
                 <p>ELECTROLUX, AEG, GORENJE, ZANUSSI, WHIRLPOOL, FRANKE, FABER, SMEG, ASKO, MIDEA, FALMEC, LIEBHERR,
                     KUPPERSBUSCH, FULGOR, KITCHEN AID</p>
             </div>
@@ -720,6 +1189,7 @@
     </div>
 </footer>
 
+<!--JAVASCRIPT-->
 <script src="js/main.js"></script>
 
 </body>
