@@ -9607,6 +9607,16 @@ a {
   a:hover {
     color: #aaaaaa; }
 
+.btn {
+  background-color: #bf000c;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 35px;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: #1d1d1d;
+    color: #ffffff; }
+
 .more-btn {
   line-height: 1.5;
   text-transform: uppercase;
@@ -9621,7 +9631,8 @@ a {
     margin-left: 15px;
     transition: all 0.3s ease; }
   .more-btn:hover {
-    color: inherit; }
+    color: #cdcbcb;
+    text-decoration: none; }
     .more-btn:hover svg {
       margin-left: 25px; }
   .more-btn_down {
@@ -9907,13 +9918,6 @@ footer {
     .card-item_text_link {
       margin-bottom: 40px;
       display: inline-block; }
-    .card-item_text .btn {
-      background-color: #bf000c;
-      text-align: center;
-      color: #ffffff;
-      padding: 15px 35px; }
-      .card-item_text .btn:hover {
-        background-color: #1d1d1d; }
   .card-item_img {
     height: 100%;
     -ms-flex: 1;
@@ -9929,6 +9933,7 @@ footer {
       left: 0;
       width: 100%; }
       .card-item_img_link .btn {
+        background-color: rgba(107, 101, 101, 0.6);
         padding: 40px 50px;
         width: 100%;
         text-align: left; }
@@ -10000,6 +10005,10 @@ footer {
       color: #f0f0f0; }
     .main__promo_dark .main__promo_heading_title {
       color: #f0f0f0; }
+
+.main_dark {
+  background-color: #1d1d1d;
+  color: #f0f0f0; }
 
 .wr-brands {
   text-align: center;
@@ -10091,29 +10100,54 @@ footer {
           -ms-grid-row-align: center;
           align-self: center; }
 
-.wr-form-news .sub {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 50px;
-  margin-bottom: 125px; }
-  .wr-form-news .sub span {
+.wr-form-news .form-news {
+  max-width: 1200px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto 50px; }
+  .wr-form-news .form-news .sub {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 50px; }
+    @media (max-width: 1199.98px) {
+      .wr-form-news .form-news .sub {
+        margin-bottom: 30px; } }
+    .wr-form-news .form-news .sub span {
+      color: #858585;
+      font-family: "Open Sans", sans-serif;
+      font-size: 16;
+      font-weight: 400;
+      margin-left: 30px; }
+      @media (max-width: 812px) and (max-height: 576px) and (orientation: landscape), (max-width: 576px) and (max-height: 812px) and (orientation: portrait) {
+        .wr-form-news .form-news .sub span {
+          /* mobile-all */
+          font-size: 13 !important; } }
+  .wr-form-news .form-news .email {
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid #494949;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    padding-left: 35px;
     color: #858585;
     font-family: "Open Sans", sans-serif;
     font-size: 16;
-    font-weight: 400;
-    margin-left: 30px;
-    height: 50px; }
-
-.wr-form-news .email {
-  max-width: 400px;
-  width: 100%;
-  min-height: 50px;
-  border: 1px solid #95989a;
-  background-color: rgba(255, 255, 255, 0.99); }
+    font-weight: 400; }
+    @media (max-width: 1199.98px) {
+      .wr-form-news .form-news .email {
+        margin-bottom: 30px; } }
+  .wr-form-news .form-news .btn-form-news {
+    border: 0;
+    text-decoration: none;
+    width: 100%; }
+    .wr-form-news .form-news .btn-form-news a {
+      padding: 12px 35px; }
 
 #map {
   width: 100%;
@@ -10148,3 +10182,29 @@ footer {
         margin-bottom: 0; }
     .wr-map .map_menu .map-item.closed h3 {
       background-color: #606060; }
+
+.wr-flying-nav {
+  position: fixed;
+  width: 0;
+  height: calc(100vh - 100px);
+  top: 45px;
+  right: 115px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  z-index: 1010; }
+  @media (max-width: 812px) and (max-height: 576px) and (orientation: landscape), (max-width: 576px) and (max-height: 812px) and (orientation: portrait) {
+    .wr-flying-nav {
+      /* mobile-all */
+      right: 45px; } }
+  .wr-flying-nav_links_icon {
+    background-color: rgba(240, 240, 240, 0.8);
+    width: 72px;
+    height: 72px;
+    padding: 20px; }
+    .wr-flying-nav_links_icon svg {
+      overflow: visible;
+      width: 100%; }
