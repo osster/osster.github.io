@@ -16298,14 +16298,14 @@ var eventsSlider = new Swiper ('.wr-events .swiper-container', {
     // If we need pagination
     pagination: {
         el: '.wr-events .swiper-pagination',
-        clickable: true
+        //clickable: true
     },
 
     // Navigation arrows
-    navigation: {
-        nextEl: '.wr-events .swiper-button-next',
-        prevEl: '.wr-events .swiper-button-prev'
-    }
+    // navigation: {
+    //     nextEl: '.wr-events .swiper-button-next',
+    //     prevEl: '.wr-events .swiper-button-prev'
+    // }
 });
 
 
@@ -16353,6 +16353,32 @@ var narrowSlider = new Swiper ('.wr-slider-narrow .swiper-container', {
         nextEl: '.wr-slider-narrow .swiper-button-next',
         prevEl: '.wr-slider-narrow .swiper-button-prev'
     }
+});
+
+
+// Переключение событий по месяцам в слайдере "eventsMonthSlider"
+
+$eventsMonth = $('.wr-events-month .events-month');
+$eventSlider = $('.wr-events .swiper-slide');
+
+$eventsMonth.each(function () {
+    var $this = $(this);
+    var $index = $(this).attr('data-swiper-slide-index');
+
+    $this.on('click', function () {
+        $eventsMonth.removeClass('active');
+        $eventSlider.removeClass('swiper-slide-active');
+        $this.toggleClass('active');
+        //eventsMonthSlider.slideTo($index, 500, true);
+
+        eventsSlider.slideTo($index, 500, true);
+        //eventsMonthSlider.slidePrev(500, true);
+        //eventsSlider.slideNext(500, true);
+
+        return false
+
+    });
+
 });
 $(document).ready(function () {
     var catalogBrandSlider = new Swiper('.catalog-brand-slider .swiper-container', {
@@ -18881,6 +18907,86 @@ $(document).ready(function () {
     }());
 
 }));
+$(document).ready(function () {
+
+    var $lev0 = $('.main__sections-nav .main__sections-nav__level-0 .nav-link');
+    var $lev1 = $('.main__sections-nav .main__sections-nav__level-1');
+
+     $lev0.each(function () {
+
+
+
+         $elementClick.on('click',function () {
+
+             var $elementClick = $(this).attr("href");
+             var $destination = $(elementClick).offset().top;
+
+             if ($.browser.safari) {
+                 $('body').animate({ scrollTop: $destination }, 1100); //1100 - скорость прокрутки
+             } else {
+                 $('html').animate({ scrollTop: $destination }, 1100);
+             }
+
+             return false;
+
+        });
+
+     });
+
+});
+
+// $(document).ready(function () {
+//     $('#accordion').on('shown.bs.collapse', function (e) {
+//         var offset = $(this).find('.collapse.show').prev('.card-header');
+//         if (offset) {
+//             $('html,body').animate({
+//                 scrollTop: $(offset).offset().top - 50
+//             }, 500);
+//         }
+//     });
+// });
+
+// $(document).ready(function () {
+//     $("a").click(function () {
+//         var elementClick = $(this).attr("href");
+//         var destination = $(elementClick).offset().top;
+//         if ($.browser.safari) {
+//             $('body').animate({ scrollTop: destination }, 1100); //1100 - скорость прокрутки
+//         } else {
+//             $('html').animate({ scrollTop: destination }, 1100);
+//         }
+//         return false;
+//     });
+// });
+$(document).ready(function () {
+    // var singleSwiper = new Swiper('.single-item_imgs .swiper-container', {
+    //     direction: 'vertical',
+    //     loop: 'true',
+    //     // Navigation arrows
+    //     navigation: {
+    //         nextEl: '.single-item_imgs .swiper-button-next',
+    //         prevEl: '.single-item_imgs .swiper-button-prev',
+    //     },
+    // });
+
+    var singleSwiper = new Swiper('.single-item_imgs_main', {
+        spaceBetween: 20,
+        slidesPerView: '1',
+        loop: 'true'
+    });
+    var singleSwiperThumbs = new Swiper('.single-item_imgs_thumbs', {
+        direction: 'vertical',
+        spaceBetween: 20,
+        loop: 'true',
+        centeredSlides: true,
+        slidesPerView: '3',
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+    });
+    singleSwiper.controller.control = singleSwiperThumbs;
+    singleSwiperThumbs.controller.control = singleSwiper;
+
+});
 
 $(document).ready(function () {
 
