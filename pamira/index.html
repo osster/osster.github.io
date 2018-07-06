@@ -1244,6 +1244,50 @@
             </g>
         </g>
     </symbol>
+    <symbol id="pointer" viewBox="-9541.869 -3071.394 20.212 26.096">
+        <defs>
+            <style>
+                .pointer-1, .pointer-2, .pointer-4 {
+                    fill: none;
+                }
+
+                .pointer-1, .pointer-2 {
+                    stroke: currentColor;
+                }
+
+                .pointer-1 {
+                    stroke-width: 2px;
+                }
+
+                .pointer-3 {
+                    stroke: none;
+                }
+            </style>
+        </defs>
+        <g id="Group_389" data-name="Group 389" transform="translate(-7905 -3281)">
+            <path id="Path_263" data-name="Path 263" class="pointer-1"
+                  d="M-1626.988,234l-5.9-8.6a12.7,12.7,0,0,1-2.453-4.445,10.294,10.294,0,0,1,0-5.748c1.15-2.682,3.219-4.6,8.354-4.6s7.664,1.993,8.89,5.288-.689,7.2-2.376,9.5S-1626.988,234-1626.988,234Z"/>
+            <g id="Ellipse_27" data-name="Ellipse 27" class="pointer-2" transform="translate(-1632 214)">
+                <circle class="pointer-3" cx="5" cy="5" r="5"/>
+                <circle class="pointer-4" cx="5" cy="5" r="4.5"/>
+            </g>
+        </g>
+    </symbol>
+    <symbol id="icon-close" viewBox="-11113.207 -3400.207 31.414 31.414">
+        <defs>
+            <style>
+                .close1 {
+                    fill: none;
+                    stroke: currentColor;
+                    stroke-width: 2px;
+                }
+            </style>
+        </defs>
+        <g id="Group_540" data-name="Group 540" transform="translate(-11386 -3414)">
+            <line id="Line_119" data-name="Line 119" class="close1" x2="30" y2="30" transform="translate(273.5 14.5)"/>
+            <line id="Line_120" data-name="Line 120" class="close1" x1="30" y2="30" transform="translate(273.5 14.5)"/>
+        </g>
+    </symbol>
 </svg>
 
 <!--[if lte IE 9]>
@@ -1252,59 +1296,236 @@
 <![endif]-->
 
 <header class="light-or-dark">
-    <div class="container">
-        <div class="top-row">
-            <div class="top-row__toggle-nav">
-                <a href="#" data-toggle="modal" data-target="#toggleNav"></a>
+    <header class="fixed">
+        <div class="container">
+            <div class="top-row d-flex justify-content-start justify-content-md-between align-items-center">
+    
+                <div class="top-row__toggle-nav">
+                    <a id="showPushNav" href="#"></a>
+                    <!--<a href="#" data-toggle="modal" data-target="#toggleNav"></a>-->
+                </div>
+    
+                <div class="top-row__logo">
+                    <a href="index.html"></a>
+                </div>
+    
+                <div class="top-row__location-switcher">
+    
+                    <div class="locationPicker">
+                        <div class="locationPicker__label">
+                            <div class="locationPicker__label__pointer">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#pointer"></use>
+                                </svg>
+                            </div>
+                            <div class="locationPicker__label__city">
+                                Ростов-на-Дону
+                            </div>
+                            <div class="locationPicker__label__address">
+                                ул. Красноармейская, 63-90
+                            </div>
+                        </div>
+                        <ul class="locationPicker__list">
+                        </ul>
+                    </div>
+    
+                    <ul class="phoneList">
+                    </ul>
+    
+                    <script>
+                        var locations = {
+                            0: {
+                                name: 'Ростов-на-Дону',
+                                addr: 'ул. Красноармейская, 63-90',
+                                phones: [{p: '+7 (863) 302-03-04', l: 'розница'}, {
+                                    p: '+7 (919) 888-6-777',
+                                    l: 'розница'
+                                }, {p: '+7 (863) 302-00-22', l: 'опт'}]
+                            },
+                            1: {
+                                name: 'Воронеж',
+                                addr: 'frankestudio-voronezh@pamira.ru',
+                                phones: [{p: '+7(473)253-30-20', l: 'розница'}, {p: '+7(473)239-05-05', l: 'опт'}]
+                            },
+                            2: {
+                                name: 'Ставрополь, Пятигорск',
+                                addr: 'prodaja@pamira.ru',
+                                phones: [{p: '8-928-378-80-01', l: 'сотовый'}, {p: '3-02-00-22', l: 'опт'}]
+                            }
+                        };
+                    </script>
+                </div>
+    
             </div>
     
-            <div class="top-row__logo">
-                <a href="index.html"></a>
-            </div>
-            <div class="top-row__location-switcher">
-                <div class="top-row__location-switcher_toggle">
-                    <span class="city">Ростов-на-Дону</span>
-                    <span class="address">ул. Красноармейская, 63-90</span>
-                </div>
-            </div>
-            <div class="top-row__phones">
-                <ul class="top-row__phones_list">
-                    <li class="top-row__phones_list_item">
-                        <a class="number" href="tel:+7 (919) 888-6-777">+7 (919) 888-6-777</a>
-                        <span class="label">розница</span>
-                    </li>
-                    <li class="top-row__phones_list_item">
-                        <a class="number" href="tel:+7 (863) 302-03-04">+7 (863) 302-03-04</a>
-                        <span class="label">розница</span>
-                    </li>
-                    <li class="top-row__phones_list_item">
-                        <a class="number" href="tel:+7 (863) 302-00-22">+7 (863) 302-00-22</a>
-                        <span class="label">опт</span>
-                    </li>
-                </ul>
+            <div class="headerBottom">
+                <nav class="nav-menu">
+                    <ul class="nav nav-menu__list">
+                        <li class="nav-item nav-menu__list_item"><a class="nav-link nav-menu__list_item_link active"
+                                                                    href="catalog.html">Каталог</a></li>
+                        <li class="nav-item nav-menu__list_item"><a class="nav-link nav-menu__list_item_link"
+                                                                    href="events.html">Мероприятия</a>
+                        </li>
+                        <li class="nav-item nav-menu__list_item"><a class="nav-link nav-menu__list_item_link"
+                                                                    href="for-client.html">Покупателю</a></li>
+                        <li class="nav-item nav-menu__list_item"><a class="nav-link nav-menu__list_item_link"
+                                                                    href="brands.html">Бренды</a>
+                        </li>
+                        <li class="nav-item nav-menu__list_item"><a class="nav-link nav-menu__list_item_link"
+                                                                    href="about.html">О
+                            компании</a></li>
+                        <li class="nav-item nav-menu__list_item"><a class="nav-link nav-menu__list_item_link"
+                                                                    href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <nav class="nav-menu">
-            <ul class="nav nav-menu__list">
-                <li class="nav-item nav-menu__list_item"><a class="nav-link nav-menu__list_item_link active"
-                                                            href="catalog.html">Каталог</a></li>
-                <li class="nav-item nav-menu__list_item"><a class="nav-link nav-menu__list_item_link" href="events.html">Мероприятия</a>
-                </li>
-                <li class="nav-item nav-menu__list_item"><a class="nav-link nav-menu__list_item_link"
-                                                            href="for-client.html">Покупателю</a></li>
-                <li class="nav-item nav-menu__list_item"><a class="nav-link nav-menu__list_item_link" href="brands.html">Бренды</a>
-                </li>
-                <li class="nav-item nav-menu__list_item"><a class="nav-link nav-menu__list_item_link" href="about.html">О
-                    компании</a></li>
-                <li class="nav-item nav-menu__list_item"><a class="nav-link nav-menu__list_item_link" href="contacts.html">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    </header>
 </header>
+
+<!-- Push-navigation -->
+<nav class="pushNav">
+    <section class="pushNav__header">
+        <ul class="pushNav__header__list">
+            <li>
+                <a class="#">
+                    <svg width="28" height="28">
+                        <use xlink:href="#favorites"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="#">
+                    <svg width="28" height="28">
+                        <use xlink:href="#compare"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="#">
+                    <svg width="28" height="28">
+                        <use xlink:href="#login"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="pushNav__header__close">
+                    <svg width="28" height="28">
+                        <use xlink:href="#icon-close"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="pushNav__filter">
+        <div class="pushNav__filter__label" onclick="$('.pushNav__filter__dropdown').addClass('show'); return false;">
+            <span class="pushNav__filter__label__name">Город</span>
+            <span class="pushNav__filter__label__value">Ростов-на-Дону</span>
+        </div>
+        <ul class="pushNav__filter__dropdown">
+            <li onclick="$('.pushNav__filter__dropdown').removeClass('show'); $('.pushNav__filter__label__value').text($(this).text()); return false;">
+                Ростов-на-Дону
+            </li>
+            <li onclick="$('.pushNav__filter__dropdown').removeClass('show'); $('.pushNav__filter__label__value').text($(this).text()); return false;">
+                Воронеж
+            </li>
+            <li onclick="$('.pushNav__filter__dropdown').removeClass('show'); $('.pushNav__filter__label__value').text($(this).text()); return false;">
+                Ставрополь
+            </li>
+        </ul>
+    </section>
+    <section class="pushNav__content">
+        <div class="pushNav__content__title">Каталог</div>
+
+        <ul class="pushNav__content__nav">
+            <li class="pushNav__content__nav__item">
+                <a href="#">Сантехника</a>
+                <ul>
+                    <li class="">
+                        <a href="#">Кухонные мойки</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Смесители</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Дозаторы</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Измельчители</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Сортеры</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Аксессуары</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="pushNav__content__nav__item">
+                <a href="#">МБТ и Посуда</a>
+            </li>
+            <li class="pushNav__content__nav__item">
+                <a href="#">Техника для кухни</a>
+
+                <ul>
+                    <li class="">
+                        <a href="#">Духовые шкафы</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Кухонные блоки</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Варочные поверхности</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Микроволновые печи</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Компактные приборы</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Вытяжки</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Посудомоечные машины</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Холодильное оборудование</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Техника на заказ PREMIUM</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="pushNav__content__nav__item">
+                <a href="#">Уход за бельём</a>
+
+                <ul>
+                    <li class="">
+                        <a href="#">Стиральные машины</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Сушильные машины</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Сушильные шкафы</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Аксессуары</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="pushNav__content__nav__item">
+                <a href="#">Бренды</a>
+            </li>
+        </ul>
+
+    </section>
+</nav>
+
 <!-- Modal menu -->
-<div class="toggle-nav modal fade" id="toggleNav" tabindex="-1" role="dialog" aria-labelledby="toggleNav"
-     aria-hidden="true">
+<div class="toggle-nav modal fade" id="toggleNav">
     <div class="modal-dialog modal-dialog-centered container" role="document">
         <div class="modal-content">
             <div class="modal-body">
@@ -1633,7 +1854,6 @@
         </div>
     </div>
 </div>
-</div>
 
 <!--FLYING NAV-->
 <aside class="wr-flying-nav">
@@ -1650,7 +1870,7 @@
         </a>
     </div>
     <div class="wr-flying-nav_links d-flex flex-column">
-        <a class="wr-flying-nav_links_icon" href="#">
+        <a class="wr-flying-nav_links_icon" href="#" id="icon-login">
             <svg width="37" height="37" data-toggle="tooltip" data-placement="left" title="Личный кабинет">
                 <use xlink:href="#login"></use>
             </svg>
@@ -1665,14 +1885,14 @@
                 <use xlink:href="#favorites"></use>
             </svg>
         </a>
-        <a class="wr-flying-nav_links_icon" href="#">
+        <a class="wr-flying-nav_links_icon" href="#" id="icon-compare">
             <svg width="37" height="37" data-toggle="tooltip" data-placement="left" title="Сравнение">
                 <use xlink:href="#compare"></use>
             </svg>
         </a>
     </div>
     <div class="wr-flying-nav_links d-flex flex-column">
-        <a class="wr-flying-nav_links_icon" href="#">
+        <a class="wr-flying-nav_links_icon" href="#" id="icon-baloon">
             <svg width="37" height="37" data-toggle="tooltip" data-placement="left" title="Задать вопрос">
                 <use xlink:href="#baloon"></use>
             </svg>
@@ -1681,7 +1901,8 @@
 </aside>
 
 <div class="wr-icon" id="search">
-    <div class="wr-contacts-form wr-contacts-form_search wr-contacts-form_light ">
+    <div class="wr-contacts-form wr-contacts-form_search wr-contacts-form_light">
+        <img src="img/icons/close-red.svg" alt="">
         <form class="search" name="search" method="post">
             <input class="search__input" name="search" type="text" placeholder="Найдется все! Например, варочные панели...">
             <button class="btn btn-primary search__btn">Найти</button>
@@ -1691,6 +1912,7 @@
 
 <div class="wr-icon" id="call">
     <div class="wr-contacts-form wr-contacts-form_light">
+        <img src="img/icons/close-red.svg" alt="">
         <form class="form-questions" name="form-call" method="post">
             <div class="form-questions__title form-questions__title_light">
                 ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК
@@ -1721,6 +1943,8 @@
 
    <div class="basket">
 
+       <img src="img/icons/close-red.svg" alt="">
+
        <div class="basket__title">
            КОРЗИНА
        </div>
@@ -1738,26 +1962,34 @@
            </div>
 
            <div class="basket-calc">
-               20
+               <span class="basket-calc__minus">-</span>
+               <span class="basket-calc__number">1</span>
+               <span class="basket-calc__plus">+</span>
            </div>
+
+           <img src="img/icons/close-white.svg" alt="">
        </div>
 
        <div class="basket__product basket__product_gray">
 
-               <div class="product-name">
-                   Вытяжка Faber Flexa Glass M6 BK A60
-                   Faber Flexa Gl
-               </div>
-               <div class="product-price">
-                   700 390 руб./1 шт
-               </div>
-               <div class="product-info">
-                   А Вы знаете о преимуществах вытяжек Faber?
-               </div>
+           <div class="product-name">
+               Вытяжка Faber Flexa Glass M6 BK A60
+               Faber Flexa Gl
+           </div>
+           <div class="product-price">
+               700 390 руб./1 шт
+           </div>
+           <div class="product-info">
+               А Вы знаете о преимуществах вытяжек Faber?
+           </div>
 
-               <div class="basket-calc">
-                   20
-               </div>
+           <div class="basket-calc">
+               <span class="basket-calc__minus">-</span>
+               <span class="basket-calc__number">1</span>
+               <span class="basket-calc__plus">+</span>
+           </div>
+
+           <img src="img/icons/close-white.svg" alt="">
 
        </div>
 
@@ -1778,6 +2010,8 @@
 <div class="wr-icon wr-icon_basket" id="selected">
     <div class="basket">
 
+        <img src="img/icons/close-red.svg" alt="">
+
         <div class="basket__title">
             ИЗБРАННОЕ
         </div>
@@ -1797,6 +2031,7 @@
             <div class="basket-btns">
                 <button class="btn btn-hover_black" name="form-questions__button">В корзину</button>
             </div>
+            <img src="img/icons/close-white.svg" alt="">
         </div>
 
         <div class="basket__product basket__product_gray">
@@ -1816,6 +2051,7 @@
                 <button class="btn btn-hover_black" name="form-questions__button">В корзину</button>
             </div>
 
+            <img src="img/icons/close-white.svg" alt="">
         </div>
 
     </div>
