@@ -16234,6 +16234,7 @@ var topSlider = new Swiper ('.top-slider .swiper-container', {
     // If we need pagination
     pagination: {
         el: '.top-slider .swiper-pagination',
+        clickable: true
     },
 
     // Navigation arrows
@@ -16522,6 +16523,24 @@ function init() {
 //     myMap.geoObjects.add(myPlacemark02);
 //     myMap.geoObjects.add(myPlacemark03);
 // }
+(function () {
+    $(document).ready(function () {
+        var $body = $('body');
+        var $mapmenuTree = $body.find('.menu-item');
+        var $mapmenuTreeItems = $mapmenuTree.find('.menu-item h3');
+
+        $mapmenuTreeItems.off('click').on('click', function (e) {
+            var isLink = (e.target.tagName === 'A');
+
+            if (!isLink) {
+                $(this).toggleClass('closed');
+            }
+
+            return isLink;
+        });
+
+    });
+})();
 $(document).ready(function () {
 
 });
@@ -19116,7 +19135,7 @@ $(document).ready(function () {
         $numberPlus = $plus + 1;
         $(this).prev().text($numberPlus);
 
-        return false;
+        return false
     });
 
     $numberProductMinus.on('click', function () {
@@ -19131,20 +19150,36 @@ $(document).ready(function () {
             $(this).next().text($numberMinus);
         }
 
-        return false;
+        return false
+    });
+
+
+    //HIDE PRODUTS
+
+    var $hideProduct = $('.basket__title');
+
+    $hideProduct.on('click', function () {
+
+        if ($(this).hasClass('direction-arrow')){
+
+            $(this).toggleClass('direction-arrow');
+            $(this).siblings().toggleClass('hide-products');
+        }
+        else {
+
+            //$(this).animate({'margin-top':0},500);
+            $(this).addClass('title-margin');
+            $(this).toggleClass('direction-arrow');
+            $(this).siblings().toggleClass('hide-products');
+        }
+
+        //$(this).toggleClass('direction-arrow').delay(1000).siblings().toggleClass('hide-products');
+
+        return false
     });
 
 });
 $(document).ready(function () {
-    // var singleSwiper = new Swiper('.single-item_imgs .swiper-container', {
-    //     direction: 'vertical',
-    //     loop: 'true',
-    //     // Navigation arrows
-    //     navigation: {
-    //         nextEl: '.single-item_imgs .swiper-button-next',
-    //         prevEl: '.single-item_imgs .swiper-button-prev',
-    //     },
-    // });
 
     var singleSwiper = new Swiper('.single-item_imgs_main', {
         spaceBetween: 20,
@@ -19160,9 +19195,15 @@ $(document).ready(function () {
         touchRatio: 0.2,
         slideToClickedSlide: true,
     });
-    singleSwiper.controller.control = singleSwiperThumbs;
-    singleSwiperThumbs.controller.control = singleSwiper;
 
+    if (singleSwiper.controller && singleSwiperThumbs.controller) {
+        singleSwiper.controller.control = singleSwiperThumbs;
+        singleSwiperThumbs.controller.control = singleSwiper;
+
+        singleSwiper.on('click', function (e) {
+            console.log('galleryTop click', e, singleSwiper.clickedSlide);
+        });
+    }
 });
 (function () {
     var $lp = $('.locationPicker');
@@ -19262,7 +19303,7 @@ $(document).ready(function () {
     $(document).ready(function () {
         var $body = $('body');
         var $pNav = $('.pushNav');
-        var $gNav = $('#toggleNav');
+        var $gNav = $('.toggle-nav');
         var $closeBtn = $('.pushNav__header__close');
         var $showPushNav = $('#showPushNav');
         var $menuTree = $pNav.find('.pushNav__content__nav');
@@ -19275,8 +19316,7 @@ $(document).ready(function () {
                 } else {
                     $body.removeClass('g-menu-opened');
                 }
-
-                console.log('hasClass(show)', ($gNav.hasClass('show') || $pNav.hasClass('show')));
+                //console.log('hasClass(show)', ($gNav.hasClass('show') || $pNav.hasClass('show')));
             }, 300);
         };
 
@@ -19288,10 +19328,13 @@ $(document).ready(function () {
             return false;
         });
 
-        $gNav.on('click', function () {
-            $gNav.toggleClass('show');
-            toggleBodyScrolling();
-            return false;
+        $gNav.on('click', function (e) {
+            if ($gNav.get(0).id === e.target.id) {
+                $gNav.toggleClass('show');
+                toggleBodyScrolling();
+                return false;
+            }
+            //console.log('elem', e);
         });
 
         $showPushNav.off('click').on('click', function (e) {
