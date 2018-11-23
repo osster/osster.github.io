@@ -1,0 +1,213 @@
+<!-- Updated Mixit Up JS -->
+<script>
+  const initMixer = (conf) => {
+    var containerEl1 = document.querySelector('[data-ref="container-1"]');
+    var containerEl2 = document.querySelector('[data-ref="container-2"]');
+    var checkboxGroup1 = document.querySelector('.controls1');
+    var checkboxGroup2 = document.querySelector('.controls2');
+    var checkboxes_1 = checkboxGroup1.querySelectorAll('input[type="checkbox"]');
+    var checkboxes_2 = checkboxGroup2.querySelectorAll('input[type="checkbox"]');
+    var allButton1 = checkboxGroup1.querySelector('#reset1');
+    var allButton2 = checkboxGroup2.querySelector('#reset2');
+
+    // Updated default cinfig
+    var config = {
+      controls: {
+        scope: 'local',
+        toggleLogic: 'or'
+      },
+      animation: {
+        enable: true,
+        duration: 250,
+        effectsIn: 'fade scale',
+        effectsOut: 'fade scale'
+      },
+      load: {
+        filter: 'all'
+      }
+    };
+
+    // Apply config
+    if (typeof conf === 'object') {
+      config = Object.assign(config, conf);
+    }
+
+    var mixer1 = mixitup(containerEl1, config);
+    var mixer2 = mixitup(containerEl2, config);
+
+    checkboxGroup1.addEventListener('change', function (e) {
+      let selectors = [];
+
+      for (let i = 0; i < checkboxes_1.length; i++) {
+        let checkbox = checkboxes_1[i];
+
+        if (checkbox.checked) {
+          // we need to remove starting dot for AND logic
+          if (selectors.length > 0) {
+            selectors.push(checkbox.value.slice(1));
+          } else {
+            selectors.push(checkbox.value);
+          }
+        }
+      }
+
+      // Alex Osster Update - comma for or logic added
+      let selectorString1 = selectors.length > 0 ?
+        selectors.join(',.') : // or '.' for AND logic
+        'all';
+
+      mixer1.configure({
+        controls: {
+          scope: 'local',
+          toggleLogic: 'or'
+        }
+      });
+
+      // Updated filter section
+      mixer1.filter('', true, () => {
+        mixer1.filter(selectorString1, true);
+      });
+    });
+
+    checkboxGroup2.addEventListener('change', function (e) {
+      let selectors = [];
+
+      for (let i = 0; i < checkboxes_2.length; i++) {
+        let checkbox = checkboxes_2[i];
+
+        if (checkbox.checked) {
+          // we need to remove starting dot for AND logic
+          if (selectors.length > 0) {
+            selectors.push(checkbox.value.slice(1));
+          } else {
+            selectors.push(checkbox.value);
+          }
+        }
+      }
+
+      // Alex Osster Update - comma for or logic added
+      let selectorString2 = selectors.length > 0 ?
+        selectors.join(',.') : // or '.' for AND logic
+        'all';
+
+      // Updated filter section
+      mixer2.filter('', true, () => {
+        mixer2.filter(selectorString2, true);
+      });
+    });
+
+    allButton1.addEventListener('click', e => {
+      for (let i = 0;
+           i < checkboxes_1.length;
+           i++
+      ) {
+        let checkbox = checkboxes_1[i];
+        checkbox.checked = false;
+      }
+
+      // Updated filter section
+      mixer1.filter('', true, () => {
+        mixer1.filter('all', true);
+      });
+    });
+
+    allButton2.addEventListener('click', e => {
+      for (let i = 0;
+           i < checkboxes_2.length;
+           i++
+      ) {
+        let checkbox = checkboxes_2[i];
+        checkbox.checked = false;
+      }
+
+      // Updated filter section
+      mixer2.filter('', true, () => {
+        mixer2.filter('all', true);
+      });
+    });
+  };
+  initMixer();
+</script>
+<!-- End of Updated Mixit Up JS -->
+
+<!-- Checkboxes -->
+<style>
+  .checkbox {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+  }
+
+  .checkbox > .checkbox-icon {
+    background-color: transparent;
+    border: 1px solid #dadada;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    left: -4px;
+    top: 2px;
+    margin-right: 0px;
+    border-radius: 4px;
+    transition: background-color 0.25s ease;
+  }
+
+  .checkbox > .checkbox-icon::after {
+    content: '';
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border: 3px solid #fcfff4;
+    border-top-color: rgb(252, 255, 244);
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-right-color: rgb(252, 255, 244);
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+
+  }
+
+  .checkbox > input[type="checkbox"] {
+    position: absolute;
+    left: -10000px;
+  }
+
+  .checkbox > input[type="checkbox"]:checked + .checkbox-icon {
+    background-color: #00b0ff;
+    border-color: #0086c7;
+  }
+
+  .checkbox > input[type="checkbox"]:checked + .checkbox-icon::after {
+    opacity: 1;
+  }
+
+  .checkbox > label {
+    white-space: nowrap;
+  }
+</style>
+<script>
+  (function () {
+    let checkboxes = document.querySelectorAll('.checkbox > input[type="checkbox"]');
+    if (checkboxes.length > 0) {
+      for (let i = 0; i < checkboxes.length; i++) {
+        let checkbox = checkboxes[i];
+        let parent = checkbox.parentNode;
+        let label = checkbox.nextSibling;
+        let icon = document.createElement('label');
+        icon.setAttribute('for', checkbox.id);
+        icon.setAttribute('class', 'checkbox-icon');
+        parent.insertBefore(icon, label);
+      }
+    }
+  })();
+</script>
+<!-- End of Checkboxes -->
