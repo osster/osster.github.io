@@ -736,26 +736,6 @@
 
     var mixer1 = mixitup(containerEl1, config);
     var mixer2 = mixitup(containerEl2, config);
-    var reanimateItems = function () {
-      let delay = 100; // milliseconds
-      let targets = document.querySelectorAll('.targets .mix');
-      if (targets.length > 0) {
-        for (let i = 0; i < targets.length; i++) {
-          let target = targets[i];
-          target.classList.add('reanimate');
-          //target.style = '';
-          setTimeout(() => {
-            target.classList.add('in');
-            setTimeout(() => {
-              target.classList.remove('in');
-              setTimeout(() => {
-                target.classList.remove('reanimate');
-              }, delay * 4);
-            }, delay * 4);
-          }, delay * i);
-        }
-      }
-    };
 
 
     checkboxGroup1.addEventListener('change', function (e) {
@@ -787,9 +767,7 @@
       });
 
       mixer1.filter('', true, () => {
-        mixer1.filter(selectorString1, true, () => {
-          // reanimateItems();
-        });
+        mixer1.filter(selectorString1, true);
       });
     });
 
@@ -815,9 +793,7 @@
         'all';
 
       mixer2.filter('', true, () => {
-        mixer2.filter(selectorString2, true, () => {
-          // reanimateItems();
-        });
+        mixer2.filter(selectorString2, true);
       });
     });
 
@@ -831,9 +807,7 @@
       }
 
       mixer1.filter('', true, () => {
-        mixer1.filter('all', true, () => {
-          // reanimateItems();
-        });
+        mixer1.filter('all', true);
       });
     });
 
@@ -847,9 +821,7 @@
       }
 
       mixer2.filter('', true, () => {
-        mixer2.filter('all', true, () => {
-          // reanimateItems();
-        });
+        mixer2.filter('all', true);
       });
     });
   };
@@ -933,16 +905,6 @@
 
   .checkbox > label {
     white-space: nowrap;
-  }
-
-  .cd-gallery .targets .mix.reanimate {
-    transition: all 0.2s ease !important;
-  }
-
-  .cd-gallery .targets .mix.reanimate.in {
-    transform: scaleX(1.025) !important;
-    /* background-color: rgba(196, 238, 255, 0.25) !important; */
-    /* background: radial-gradient(rgba(196, 238, 255, 0.25), transparent); */
   }
 </style>
 <script>
