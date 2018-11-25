@@ -199,18 +199,26 @@
   var UC = function (v) {
     return v.toUpperCase();
   };
-  var getPageHeadData = function (url) {
-    $.ajax({
-      type: 'HEAD',
+  var getPageHeadData = function (url, cb) {
+    var pageTitle = '';
+      $.ajax({
+      type: 'GET',
       url,
-      complete: function (xhr) {
-        console.log('getPageHeadData', url, xhr);
-        //var contentLength = xhr.getResponseHeader('Content-Length');
+      complete: function (data) {
+        pageTitle = $(data).find('head > title').text();
+      },
+      finally: function() {
+        if (typeof cb === 'function')
+        {
+          cb(pageTitle);
+        }
       }
     });
   };
 
-  getPageHeadData('https://osster.github.io/geekwrapped.com/outdoors/top-ultra-light-sleeping-bags');
+  getPageHeadData('https://osster.github.io/geekwrapped.com/outdoors/top-ultra-light-sleeping-bags', function (pageTitle) {
+    console.log('getPageHeadData', pageTitle);
+  });
 
 
   var domain = location.protocol + '//' + location.hostname + '/';
