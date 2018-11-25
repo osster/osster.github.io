@@ -229,16 +229,18 @@
     success: function (data) {
       var urls = $(data).find('loc').map((i, e) => e.textContent.replace(domain, '/')).get();
       $.each(urls, function (i, v) {
+        var pageTitle = v.replace(/-/g, ' ').replace(/\b([a-z])/g, UC);
+        $('#toc').append(`<li><a class="bodylink" data-maplink="${i}" href="${v}">${pageTitle}</a></li>`);
+        // Parse Remote Page Title
         getPageTitle(v, function (pageTitle) {
-          pageTitle = (pageTitle !== '')
-            ? pageTitle
-            : v.replace(/-/g, ' ').replace(/\b([a-z])/g, UC);
-          $('#toc').append(`<li><a class="bodylink" href="${v}">${pageTitle}</a></li>`);
+          if (pageTitle) {
+            $(`#toc [data-maplink="${i}"]`).text(pageTitle);
+          }
         });
       });
     },
     error: function (xhr, status) {
-      console.log("error", xhr);
+      //console.log("error", xhr);
     },
   });
 </script>
