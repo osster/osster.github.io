@@ -211,6 +211,9 @@
       type: 'GET',
       url,
       complete: function (data) {
+        if (data.responseText.match('/<title>([^<]*)<\/title>/', mch)) {
+          console.log('getPageTitle match', mch);
+        }
         var doc = $(data.responseText);
         pageTitle = doc.find('title').text();
         console.log('getPageTitle', doc.find('title'), doc.attr('title'), doc);
