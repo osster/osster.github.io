@@ -201,17 +201,15 @@
   };
   var getPageHeadData = function (url, cb) {
     var pageTitle = '';
-      $.ajax({
+    $.ajax({
       type: 'GET',
       url,
       complete: function (data) {
         pageTitle = $(data).find('head > title').text();
-      },
-      finally: function() {
-        if (typeof cb === 'function')
-        {
-          cb(pageTitle);
-        }
+      }
+    }).always(function () {
+      if (typeof cb === 'function') {
+        cb(pageTitle);
       }
     });
   };
@@ -244,7 +242,7 @@
   .bodylink {
     margin-top: 50px;
     margin-bottom: 0;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #0288d1 !important;
   }
 </style>
