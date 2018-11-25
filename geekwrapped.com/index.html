@@ -214,7 +214,8 @@
       type: 'GET',
       url,
       complete: function (data) {
-        pageTitle = $(data).find('head > title').text();
+        pageTitle = $(data).find('title').text();
+        console.log('getPageHeadData', data, pageTitle);
       }
     }).always(function () {
       if (typeof cb === 'function') {
@@ -224,7 +225,7 @@
   };
 
   getPageHeadData('https://osster.github.io/geekwrapped.com/outdoors/top-ultra-light-sleeping-bags', function (pageTitle) {
-    console.log('getPageHeadData', pageTitle);
+    console.log('pageTitle', pageTitle);
   });
 
 
