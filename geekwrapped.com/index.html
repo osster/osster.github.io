@@ -59,7 +59,6 @@
       src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=809fccb0-45a6-41fd-b9a3-e31d5b117cea"></script>
 
   <style>
-
     ::-moz-selection { /* Firefox */
       color: #FFFFFF;
       background: #34a853;
@@ -69,7 +68,9 @@
       color: #FFFFFF;
       background: #34a853;
     }
+  </style>
 
+  <style>
     .bodylink {
       color: #0288d1 !important;
     }
@@ -130,7 +131,6 @@
 </div>
 <div>
   <div class="w-container">
-    <a class="bodylink" href="#">Link</a>
     <div class="toc">
       <ul id="toc" class="unordered-list w-list-unstyled"></ul>
     </div>
@@ -217,15 +217,9 @@
         if (typeof cb === 'function') {
           cb(pageTitle);
         }
-        console.log('getPageTitle complete', pageTitle);
       }
-    }).always(function () {});
+    });
   };
-
-  getPageTitle('https://osster.github.io/geekwrapped.com/outdoors/top-ultra-light-sleeping-bags', function (pageTitle) {
-    console.log('pageTitle', pageTitle);
-  });
-
 
   var domain = location.protocol + '//' + location.hostname + '/';
   $.ajax({
@@ -233,15 +227,13 @@
     type: 'GET',
     crossDomain: true,
     success: function (data) {
-      var html = '';
       var urls = $(data).find('loc').map((i, e) => e.textContent.replace(domain, '/')).get();
-      var list = [];
       $.each(urls, function (i, v) {
         getPageTitle(v, function (pageTitle) {
           pageTitle = (pageTitle !== '')
             ? pageTitle
             : v.replace(/-/g, ' ').replace(/\b([a-z])/g, UC);
-          $('#toc').append(`<li><a class=”bodylink” href="${v}">${pageTitle}</a></li>`);
+          $('#toc').append(`<li><a class="bodylink" href="${v}">${pageTitle}</a></li>`);
         });
       });
     },
