@@ -211,9 +211,9 @@
       type: 'GET',
       url,
       complete: function (data) {
-        var doc = $(data);
+        var doc = $(data.responseText);
         pageTitle = doc.find('title').text();
-        console.log('getPageHeadData', doc, pageTitle);
+        console.log('getPageTitle', doc.find('title'), doc.attr('title'), doc);
       }
     }).always(function () {
       if (typeof cb === 'function') {
