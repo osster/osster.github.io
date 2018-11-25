@@ -261,6 +261,8 @@
               setToStorage(v, pageTitle);
             }
           });
+        } else {
+          $(`#toc [data-maplink="${i}"]`).html(pageTitle);
         }
       });
     },
