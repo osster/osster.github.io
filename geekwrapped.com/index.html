@@ -69,9 +69,7 @@
       color: #FFFFFF;
       background: #34a853;
     }
-  </style>
 
-  <style>
     .bodylink {
       color: #0288d1 !important;
     }
@@ -132,6 +130,7 @@
 </div>
 <div>
   <div class="w-container">
+    <a class="bodylink" href="#">Link</a>
     <div class="toc">
       <ul id="toc" class="unordered-list w-list-unstyled"></ul>
     </div>
@@ -236,6 +235,7 @@
     success: function (data) {
       var html = '';
       var urls = $(data).find('loc').map((i, e) => e.textContent.replace(domain, '/')).get();
+      var list = [];
       $.each(urls, function (i, v) {
         getPageTitle(v, function (pageTitle) {
           pageTitle = (pageTitle !== '')
