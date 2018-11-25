@@ -211,13 +211,12 @@
       type: 'GET',
       url,
       complete: function (data) {
-        let mch;
-        if (mch = data.responseText.match('/<title>([^<]*)<\/title>/')) {
+        let mch = data.responseText.match('/<title>([^<]*)<\/title>/g');
+        if (mch) {
           console.log('getPageTitle match', mch);
-          pageTitle = mch[1];
+          pageTitle = mch[0];
         }
-        var doc = $(data.responseText);
-        console.log('getPageTitle', doc.find('title'), doc.attr('title'), doc);
+        console.log('getPageTitle', mch);
       }
     }).always(function () {
       if (typeof cb === 'function') {
