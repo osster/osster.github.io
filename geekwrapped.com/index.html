@@ -211,8 +211,9 @@
       type: 'GET',
       url,
       complete: function (data) {
-        pageTitle = $(data).find('title').text();
-        console.log('getPageHeadData', data, pageTitle);
+        var doc = $(data);
+        pageTitle = doc.find('title').text();
+        console.log('getPageHeadData', doc, pageTitle);
       }
     }).always(function () {
       if (typeof cb === 'function') {
@@ -236,7 +237,9 @@
       var urls = $(data).find('loc').map((i, e) => e.textContent.replace(domain, '')).get();
       $.each(urls, function (i, v) {
         getPageTitle(v, function (pageTitle) {
-          pageTitle = (pageTitle != '') ? pageTitle : v.replace(/-/g, ' ').replace(/\b([a-z])/g, UC);
+          pageTitle = (pageTitle !== '')
+            ? pageTitle
+            : v.replace(/-/g, ' ').replace(/\b([a-z])/g, UC);
           $('#toc').append(`<li><a class=”bodylink” href="${v}">${pageTitle}</a></li>`);
         });
       });
