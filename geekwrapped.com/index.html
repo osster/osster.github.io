@@ -71,11 +71,8 @@
     }
   </style>
 
-  <style type="text/css">
+  <style>
     .bodylink {
-      margin-top: 50px;
-      margin-bottom: 0;
-      font-family: 'Open Sans', sans-serif;
       color: #0288d1 !important;
     }
   </style>
@@ -208,7 +205,7 @@
   var UC = function (v) {
     return v.toUpperCase();
   };
-  var getPageHeadData = function (url, cb) {
+  var getPageTitle = function (url, cb) {
     var pageTitle = '';
     $.ajax({
       type: 'GET',
@@ -224,7 +221,7 @@
     });
   };
 
-  getPageHeadData('https://osster.github.io/geekwrapped.com/outdoors/top-ultra-light-sleeping-bags', function (pageTitle) {
+  getPageTitle('https://osster.github.io/geekwrapped.com/outdoors/top-ultra-light-sleeping-bags', function (pageTitle) {
     console.log('pageTitle', pageTitle);
   });
 
@@ -238,10 +235,11 @@
       var html = '';
       var urls = $(data).find('loc').map((i, e) => e.textContent.replace(domain, '')).get();
       $.each(urls, function (i, v) {
-        getPageHeadData(v);
-        html += `<li><a class=”bodylink” href="${v}">${v.replace(/-/g, ' ').replace(/\b([a-z])/g, UC)}</a></li>`;
+        getPageTitle(v, function (pageTitle) {
+          pageTitle = (pageTitle != '') ? pageTitle : v.replace(/-/g, ' ').replace(/\b([a-z])/g, UC);
+          $('#toc').append(`<li><a class=”bodylink” href="${v}">${pageTitle}</a></li>`);
+        });
       });
-      $('#toc').append(html);
     },
     error: function (xhr, status) {
       console.log("error", xhr);
