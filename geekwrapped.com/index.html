@@ -213,16 +213,14 @@
       complete: function (data) {
         let mch = data.responseText.match(/<title>([^<]*?)<\/title>/i);
         if (mch) {
-          console.log('getPageTitle match', mch);
           pageTitle = mch[1];
         }
-        console.log('getPageTitle', mch);
+        if (typeof cb === 'function') {
+          cb(pageTitle);
+        }
+        console.log('getPageTitle complete', pageTitle);
       }
-    }).always(function () {
-      if (typeof cb === 'function') {
-        cb(pageTitle);
-      }
-    });
+    }).always(function () {});
   };
 
   getPageTitle('https://osster.github.io/geekwrapped.com/outdoors/top-ultra-light-sleeping-bags', function (pageTitle) {
@@ -237,7 +235,7 @@
     crossDomain: true,
     success: function (data) {
       var html = '';
-      var urls = $(data).find('loc').map((i, e) => e.textContent.replace(domain, '')).get();
+      var urls = $(data).find('loc').map((i, e) => e.textContent.replace(domain, '/')).get();
       $.each(urls, function (i, v) {
         getPageTitle(v, function (pageTitle) {
           pageTitle = (pageTitle !== '')
