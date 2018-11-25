@@ -200,32 +200,14 @@
     return v.toUpperCase();
   };
   var getPageHeadData = function (url) {
-    var httpReq = new XMLHttpRequest();
-    httpReq.open('GET', url, true);
-    console.log('good');
-
-    httpReq.setRequestHeader('Access-Control-Allow-Headers', '*');
-    httpReq.setRequestHeader('Access-Control-Allow-Origin', '*');
-    console.log('ok');
-
-    httpReq.onreadystatechange = function () {
-      console.log('test');
-      if (httpReq.readyState === 4 && httpReq.status === 'success') {
-        console.log('test');
-        alert(httpReq.responseText);
+    $.ajax({
+      type: 'HEAD',
+      url,
+      complete: function (xhr) {
+        console.log('getPageHeadData', url, xhr);
+        //var contentLength = xhr.getResponseHeader('Content-Length');
       }
-    };
-
-    httpReq.send();
-
-//    $.ajax({
-//      type: 'HEAD',
-//      url,
-//      complete: function (xhr) {
-//        console.log('getPageHeadData', url, xhr);
-//        //var contentLength = xhr.getResponseHeader('Content-Length');
-//      }
-//    });
+    });
   };
 
   //getPageHeadData('https://www.geekwrapped.com/outdoors/top-ultra-light-sleeping-bags');
@@ -241,8 +223,8 @@
       console.log('sitemap', data);
       var urls = $(data).find('loc').map((i, e) => e.textContent.replace(domain, '')).get();
       $.each(urls, function (i, v) {
-        //getPageHeadData(v);
-        html += `<li><a class=”postlink” href="${v}">${v.replace(/-/g, ' ').replace(/\b([a-z])/g, UC)}</a></li>`;
+        getPageHeadData(v);
+        html += `<li><a class=”bodylink” href="${v}">${v.replace(/-/g, ' ').replace(/\b([a-z])/g, UC)}</a></li>`;
       });
       $('#toc').append(html);
     },
@@ -251,5 +233,13 @@
     },
   });
 </script>
+<style>
+  .bodylink {
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-family: 'Open Sans',sans-serif;
+    color: #0288d1;
+  }
+</style>
 </body>
 </html>
