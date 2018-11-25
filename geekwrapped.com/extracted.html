@@ -1,0 +1,50 @@
+<style>
+  .bodylink {
+    color: #0288d1 !important;
+  }
+</style>
+
+<script>
+  var UC = function (v) {
+    return v.toUpperCase();
+  };
+  // Function to get title
+  var getPageTitle = function (url, cb) {
+    var pageTitle = '';
+    $.ajax({
+      type: 'GET',
+      url,
+      complete: function (data) {
+        let mch = data.responseText.match(/<title>([^<]*?)<\/title>/i);
+        if (mch) {
+          pageTitle = mch[1];
+        }
+        if (typeof cb === 'function') {
+          cb(pageTitle);
+        }
+      }
+    });
+  };
+  var domain = location.protocol + '//' + location.hostname + '/';
+  $.ajax({
+    url: 'sitemap.xml',
+    type: 'GET',
+    crossDomain: true,
+    success: function (data) {
+      var urls = $(data).find('loc').map((i, e) => e.textContent.replace(domain, '/')).get();
+      $.each(urls, function (i, v) {
+        var pageTitle = v.replace(/-/g, ' ').replace(/\b([a-z])/g, UC);
+        $('#toc').append(`<li><a class="bodylink" data-maplink="${i}" href="${v}">${pageTitle}</a></li>`);
+        // Parse Remote Page Title
+        getPageTitle(v, function (pageTitle) {
+          if (pageTitle) {
+            $(`#toc [data-maplink="${i}"]`).text(pageTitle);
+          }
+        });
+      });
+    },
+    error: function (xhr, status) {
+      //console.log("error", xhr);
+    },
+  });
+</script>
