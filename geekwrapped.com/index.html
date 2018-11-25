@@ -210,7 +210,7 @@
     });
   };
 
-  //getPageHeadData('https://www.geekwrapped.com/outdoors/top-ultra-light-sleeping-bags');
+  getPageHeadData('https://osster.github.io/geekwrapped.com/outdoors/top-ultra-light-sleeping-bags');
 
 
   var domain = location.protocol + '//' + location.hostname + '/';
@@ -220,7 +220,6 @@
     crossDomain: true,
     success: function (data) {
       var html = '';
-      console.log('sitemap', data);
       var urls = $(data).find('loc').map((i, e) => e.textContent.replace(domain, '')).get();
       $.each(urls, function (i, v) {
         getPageHeadData(v);
@@ -233,12 +232,12 @@
     },
   });
 </script>
-<style>
+<style type="text/css">
   .bodylink {
     margin-top: 50px;
     margin-bottom: 0;
     font-family: 'Open Sans',sans-serif;
-    color: #0288d1;
+    color: #0288d1 !important;
   }
 </style>
 </body>
