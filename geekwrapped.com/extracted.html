@@ -57,13 +57,15 @@
         $('#toc').append(`<li><a class="bodylink" data-maplink="${i}" href="${v}">${pageTitle}</a></li>`);
         // Parse Remote Page Title
         pageTitle = getFromStorage(v);
-        if (pageTitle === '') {
+        if (pageTitle === '' || pageTitle === null) {
           getPageTitle(v, function (pageTitle) {
             if (pageTitle) {
               $(`#toc [data-maplink="${i}"]`).html(pageTitle);
               setToStorage(v, pageTitle);
             }
           });
+        } else {
+          $(`#toc [data-maplink="${i}"]`).html(pageTitle);
         }
       });
     },
