@@ -211,10 +211,10 @@
       type: 'GET',
       url,
       complete: function (data) {
-        let mch = data.responseText.match('/<title>([^<]*)<\/title>/g');
+        let mch = data.responseText.match(/<title>([^<]*?)<\/title>/i);
         if (mch) {
           console.log('getPageTitle match', mch);
-          pageTitle = mch[0];
+          pageTitle = mch[1];
         }
         console.log('getPageTitle', mch);
       }
