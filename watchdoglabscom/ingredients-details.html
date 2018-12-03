@@ -124,10 +124,38 @@
 
     <div class="ingredientquality igd">Controversial Ingredient</div>
 
-    <a data-tippy="Watchdog Labs ranks ingredients based on three categories: good, neutral, or controversial." href="#"
-       class="tooltiplink ingredientnewtip w-inline-block">
-      <img src="https://uploads-ssl.webflow.com/5bd47a70584df183d874a7f2/5bd4d670f29044412ca555b6_Tooltip.svg" alt=""/>
-    </a>
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 360px; margin: auto;">
+
+      <a data-tippy="Watchdog Labs ranks ingredients based on three categories: good, neutral, or controversial."
+         data-tippy-placement="left"
+         href="#"
+         class="tooltiplink ingredientnewtip w-inline-block">
+        <img src="https://uploads-ssl.webflow.com/5bd47a70584df183d874a7f2/5bd4d670f29044412ca555b6_Tooltip.svg" alt=""/> left
+      </a>
+
+      <a data-tippy="Watchdog Labs ranks ingredients based on three categories: good, neutral, or controversial."
+         data-tippy-placement="top"
+         href="#"
+         class="tooltiplink ingredientnewtip w-inline-block">
+        <img src="https://uploads-ssl.webflow.com/5bd47a70584df183d874a7f2/5bd4d670f29044412ca555b6_Tooltip.svg" alt=""/> top
+      </a>
+
+      <a data-tippy="Watchdog Labs ranks ingredients based on three categories: good, neutral, or controversial."
+         data-tippy-placement="bottom"
+         href="#"
+         class="tooltiplink ingredientnewtip w-inline-block">
+        <img src="https://uploads-ssl.webflow.com/5bd47a70584df183d874a7f2/5bd4d670f29044412ca555b6_Tooltip.svg" alt=""/> bottom
+      </a>
+
+      <a data-tippy="Watchdog Labs ranks ingredients based on three categories: good, neutral, or controversial."
+         data-tippy-placement="right"
+         href="#"
+         class="tooltiplink ingredientnewtip w-inline-block">
+        <img src="https://uploads-ssl.webflow.com/5bd47a70584df183d874a7f2/5bd4d670f29044412ca555b6_Tooltip.svg" alt=""/> right
+      </a>
+
+    </div>
+
     <a href="/ingredients" class="ctabutton productbutton ingredientbutton w-button">See All Ingredients</a>
   </div>
 </div>
@@ -233,85 +261,6 @@
 
 
 <style>
-  .tooltipster-sidetip.tooltipster-borderless .tooltipster-box {
-    border: none;
-    background: #00B0FF;
-    background: rgba(0, 176, 255, 1)
-  }
-
-  .tooltipster-sidetip.tooltipster-borderless.tooltipster-bottom .tooltipster-box {
-    margin-top: 8px;
-  }
-
-  .tooltipster-sidetip.tooltipster-borderless.tooltipster-left .tooltipster-box {
-    margin-right: 8px;
-  }
-
-  .tooltipster-sidetip.tooltipster-borderless.tooltipster-right .tooltipster-box {
-    margin-left: 8px;
-  }
-
-  .tooltipster-sidetip.tooltipster-borderless.tooltipster-top .tooltipster-box {
-    margin-bottom: 8px;
-  }
-
-  .tooltipster-sidetip.tooltipster-borderless .tooltipster-arrow {
-    height: 8px;
-    margin-left: -8px;
-    width: 16px;
-  }
-
-  .tooltipster-sidetip.tooltipster-borderless.tooltipster-left .tooltipster-arrow,
-  .tooltipster-sidetip.tooltipster-borderless.tooltipster-right .tooltipster-arrow {
-    height: 16px;
-    margin-left: 0;
-    margin-top: -8px;
-    width: 8px;
-  }
-
-  .tooltipster-sidetip.tooltipster-borderless .tooltipster-arrow-background {
-    display: none;
-  }
-
-  .tooltipster-sidetip.tooltipster-borderless .tooltipster-arrow-border {
-    border: 8px solid transparent;
-  }
-
-  .tooltipster-sidetip.tooltipster-borderless.tooltipster-bottom .tooltipster-arrow-border {
-    border-bottom-color: #00B0FF;
-    border-bottom-color: rgba(0, 176, 255, 1);;
-  }
-
-  .tooltipster-sidetip.tooltipster-borderless.tooltipster-left .tooltipster-arrow-border {
-    border-left-color: #00B0FF;
-    border-left-color: rgba(0, 176, 255, 1);;
-  }
-
-  .tooltipster-sidetip.tooltipster-borderless.tooltipster-right .tooltipster-arrow-border {
-    border-right-color: #00B0FF;
-    border-right-color: rgba(0, 176, 255, 1);;
-  }
-
-  .tooltipster-sidetip.tooltipster-borderless.tooltipster-top .tooltipster-arrow-border {
-    border-top-color: #00B0FF;
-    border-top-color: rgba(0, 176, 255, 1);;
-  }
-
-  .tooltipster-sidetip.tooltipster-borderless.tooltipster-bottom .tooltipster-arrow-uncropped {
-    top: -8px;
-  }
-
-  .tooltipster-sidetip.tooltipster-borderless.tooltipster-right .tooltipster-arrow-uncropped {
-    left: -8px;
-  }
-
-  .tooltipster-sidetip .tooltipster-content {
-    color: #ffffff;
-    line-height: 18px;
-    padding: 6px 6px;
-    text-align: center;
-  }
-
   /* If `animateFill: true` (default) */
   .tippy-tooltip.watchdoglabscom-theme .tippy-backdrop {
     background-color: #00B0FF;
@@ -347,25 +296,15 @@
 </style>
 
 <script>
-//  $(document).ready(function () {
-//    $('[tooltipster="top"]').tooltipster({
-//      //trigger: 'ontouchstart' in window || navigator.maxTouchPoints ? 'click' : 'hover',
-//      hideOnClick: false,
-//      animation: 'fade',
-//      delay: 20,
-//      speed: 150,
-//      maxWidth: 300,
-//      theme: 'tooltipster-borderless'
-//    });
-//  });
-</script>
-
-<script>
   tippy.setDefaults({
     arrow: true,
-    delay: 40,
-    theme: 'watchdoglabscom'
-  })
+    delay: 250,
+    duration: 250,
+    theme: 'watchdoglabscom',
+    arrowType: 'round',
+    animation: 'perspective',
+  });
+
 </script>
 </body>
 </html>
