@@ -1,103 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Alex Osster - Web Developer Page</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<html>
+  <head>
+    <title><%= productName %></title>
 
-</head>
-<body>
+    <meta charset="utf-8">
+    <meta name="description" content="<%= productDescription %>">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width<% if (ctx.mode.cordova || ctx.mode.capacitor) { %>, viewport-fit=cover<% } %>">
 
-<div style="min-height: 100vh" class="d-flex flex-column justify-content-between">
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between w-100">
-                <a class="navbar-brand" href="/">Alex Osster<span class="d-none d-lg-inline"> - Web Developer Page</span></a>
-                <!--
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                -->
-
-                <div class="right-nav my-2">
-                    <a href="ru-index.html">Говорите по-русски пжст!</a>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img src="src/avatar.jpg" class="card-img-top" alt="Alex Osster">
-                        <div class="card-body">
-                            <h5 class="card-title">Alex Osster</h5>
-                            <p class="card-text">Full-Stack Web Dev (PHP, JS, CSS, HTML etc.)</p>
-                            <p class="small">Laravel, Bitrix, Joomla, Vue, Webpack, Gulp, jQuery, JS, Bootstrap, SCSS,
-                                Less ...</p>
-                            <p class="small">Project Management, Team Lead, Freelancer, ...</p>
-                            <p class="lead">10 years expirience ...</p>
-                            <a href="https://www.facebook.com/alex.osster">That is not new universe, what you can do?</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <h1 class="display-4 mt-3 mt-lg-0">Hello There!</h1>
-                    <p class="lead">Check some of my jobs...</p>
-                    <hr class="my-4">
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="https://osster.github.io/raumplus/">RAUMPLUS HTML TEMPLATE</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="https://osster.github.io/pamira/">PAMIRA HTML TEMPLATE</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="https://osster.github.io/sacura/">ROSTOW-SACURA HTML TEMPLATE</a>
-                            <a href="http://rostov-sakura.ru/" class="text-danger font-weight-bold" target="_blank">[visit
-                                site]</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="https://osster.github.io/nobilia/">NOBILIA HTML TEMPLATE</a>
-                            <a href="http://nobilia-rostov.ru/" class="text-danger font-weight-bold" target="_blank">[visit
-                                site]</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="https://osster.github.io/diskremont/">DISKREMONT HTML TEMPLATE</a>
-                            <a href="http://diskremont.ru/" class="text-danger font-weight-bold" target="_blank">[сайт]</a>
-                        </li>
-                    </ul>
-                    <hr class="my-4">
-                    <p class="text-right">Contact me if you have any questions.</p>
-                    <p class="lead text-right">
-                        <a class="btn btn-primary btn-lg" href="mailto:alex.osster.web@gmail.com" role="button">Send
-                            m@il</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-secondary py-3 text-white">
-        <div class="container">
-            <span>&copy; 2018 - Made For Fun Only</span>
-        </div>
-    </footer>
-</div>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</body>
+    <link rel="icon" type="image/png" sizes="128x128" href="icons/favicon-128x128.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+  </head>
+  <body>
+    <!-- quasar:entry-point -->
+  </body>
 </html>
