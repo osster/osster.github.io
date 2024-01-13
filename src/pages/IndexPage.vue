@@ -74,6 +74,30 @@
             </div>
           </div>
 
+          <q-separator/>
+
+          <div class="row q-pa-md">
+            <div class="col">
+              <div class="text-h6 q-pl-md">
+                {{ $t('cv.downloadsLabel') }}
+              </div>
+
+
+              <q-list v-if="data" class="q-mt-sm">
+                <q-item>
+                  <q-item-section v-for="(item, i) in data.downloads" :key="i">
+                    <q-item-label overline>
+                      <a :href="item.url" target="_blank">
+                        {{ item.label }}
+                      </a>
+                    </q-item-label>
+                  </q-item-section>
+
+                </q-item>
+              </q-list>
+            </div>
+          </div>
+
         </div>
         <div class="col-12 col-md-8">
           <div class="q-pa-lg">

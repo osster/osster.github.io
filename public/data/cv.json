@@ -150,5 +150,11 @@
       "location": "Minsk, Belarus",
       "range": ["1991-09-01","2000-05-30"]
     }
+  ],
+  "downloads": [
+    {
+      "label": "Download CV",
+      "url": "Aleksandr-Komar-CV-en.pdf"
+    }
   ]
 }

@@ -6,4 +6,5 @@ export default {
   summaryLabel: 'Summary',
   experienceLabel: 'Experience',
   educationLabel: 'Education',
+  downloadsLabel: 'Downloads',
 };
