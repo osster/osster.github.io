@@ -42,9 +42,9 @@ import quasarUserOptions from './quasar-user-options.js'
 
 
 
+import { addPreFetchHooks } from './client-prefetch.js'
 
 
-console.info('[Quasar] Running SPA.')
 
 
 const publicPath = `/`
@@ -118,6 +118,8 @@ async function start ({
 
   
 
+    
+    addPreFetchHooks({ router, store })
     
 
     

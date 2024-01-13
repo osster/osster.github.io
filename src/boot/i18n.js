@@ -1,6 +1,5 @@
 import { boot } from 'quasar/wrappers';
 import { createI18n } from 'vue-i18n';
-// eslint-disable-next-line import/no-unresolved
 import messages from 'src/i18n';
 
 export default boot(({ app }) => {

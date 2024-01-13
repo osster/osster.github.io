@@ -4,7 +4,7 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'airbnb-base',
+    'prettier',
     'plugin:vue/vue3-essential',
   ],
   overrides: [
@@ -28,5 +28,18 @@ module.exports = {
     'vue',
   ],
   rules: {
+  },
+  // Using the accepted answer
+  settings: {
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+        extensions: ['.js', '.jsx', '.ts', '.d.ts', '.tsx'],
+      },
+      alias: {
+        map: [['~', './src']],
+        extensions: ['.js', '.vue'],
+      },
+    },
   },
 };
