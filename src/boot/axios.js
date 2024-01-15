@@ -7,7 +7,10 @@ import axios from 'axios';
 // good idea to move this instance creation inside of the
 // "export default () => {}" function below (which runs individually
 // for each client)
-const api = axios.create({ baseURL: `${process.env.API_URL}/` });
+const api = axios.create({ baseURL: `${process.env.API_URL}/`, withCredentials: true });
+const chatApi = axios.create({ baseURL: `${process.env.CHAT_URL}/`, withCredentials: true });
+
+// axios.defaults.withCredentials = true;
 
 export default boot(({ app }) => {
   // for use inside Vue files (Options API) through this.$axios and this.$api
@@ -19,8 +22,10 @@ export default boot(({ app }) => {
 
   // eslint-disable-next-line no-param-reassign
   app.config.globalProperties.$api = api;
+  app.config.globalProperties.$chatApi = chatApi;
   // ^ ^ ^ this will allow you to use this.$api (for Vue Options API form)
   //       so you can easily perform requests against your app's API
 });
 
-export { api };
+
+export { api, chatApi };

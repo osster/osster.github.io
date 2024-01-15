@@ -69,6 +69,7 @@ module.exports = configure((ctx) => ({
     // analyze: true,
     env: {
       API_URL: ctx.dev ? 'http://localhost:9000' : 'https://osster.github.io',
+      CHAT_URL: ctx.dev ? 'http://localhost:3000' : 'https://heroku',
     },
     // rawDefine: {}
     // ignorePublicFolder: true,
