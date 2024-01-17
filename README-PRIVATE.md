@@ -1,6 +1,3 @@
-### GPT key for testing
-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
-
 # Manual
 Adding a chatbot based on GPT-3.5 to your website and deploying it on Heroku involves several steps. Here's a general guide to help you get started:
 
