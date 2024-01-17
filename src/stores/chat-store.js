@@ -11,33 +11,40 @@ function nl2br (str, is_xhtml) {
 
 export const useChatStore = defineStore('chat', {
   state: () => ({
+    total: 0,
     messages: []
   }),
   getters: {
+    messagesTotal: (state) => state.total,
     messagesCount: (state) => state.messages.length,
     messageList: (state) => state.messages,
   },
   actions: {
-    async send(message) {
+    attachMessage(message) {
       const _this = this;
       _this.messages.push({
         role: 'user',
         content: message
       });
+    },
+    async send(message) {
+      const _this = this;
       await chatApi.get(`chat?q=${message}`).then((responce) => {
-        _this.messages = responce.data.map((m) => {
+        _this.total = responce.data.total;
+        _this.messages = responce.data.messages.map((m) => {
           m.content = nl2br(m?.content[0]?.text?.value);
           return m;
-        }).reverse()
+        }).reverse();
       })
     },
     async loadMessages() {
       const _this = this;
       await chatApi.get('history').then((responce) => {
-        _this.messages = responce.data.map((m) => {
+        _this.total = responce.data.total;
+        _this.messages = responce.data.messages.map((m) => {
           m.content = nl2br(m?.content[0]?.text?.value);
           return m;
-        }).reverse()
+        }).reverse();
       })
     },
   },

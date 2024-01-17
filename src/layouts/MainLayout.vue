@@ -19,6 +19,8 @@
       <router-view/>
     </q-page-container>
 
+    <assistant-chat />
+
     <q-footer elevated className="bg-grey-8 text-white text-center">
       <q-toolbar>
         <q-toolbar-title>
@@ -34,8 +36,10 @@
 
 <script>
 import { ref } from 'vue';
+import AssistantChat from 'components/AssistantChat.vue'
 
 export default {
+  components: { AssistantChat },
   setup() {
     const year = ref(new Date().getFullYear());
 

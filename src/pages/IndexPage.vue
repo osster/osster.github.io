@@ -99,16 +99,6 @@
           </div>
           <q-separator/>
 
-          <div class="row q-pa-md">
-            <div class="col">
-              <div class="text-h6 q-pl-md">
-                {{ $t('cv.chatLabel') }}
-              </div>
-
-              <assistant-chat />
-            </div>
-          </div>
-
         </div>
         <div class="col-12 col-md-8">
           <div class="q-pa-lg">
@@ -189,11 +179,10 @@
 import { defineComponent, ref } from 'vue';
 import { useQuasar } from 'quasar';
 import { api } from 'boot/axios';
-import AssistantChat from 'components/AssistantChat.vue'
 
 export default defineComponent({
   name: 'IndexPage',
-  components: { AssistantChat },
+  components: { },
   setup() {
     console.log('SETUP');
     const $q = useQuasar();

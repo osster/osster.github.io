@@ -1,30 +1,78 @@
 <template>
   <div>
-    AssistantChat {{ messagesCount }}
-    <q-scroll-area
-        v-if="messages"
-        class="flex column reverse"
-        style="height: 300px;"
-        ref="scrollAreaRef"
-    >
-      <q-chat-message
-          v-for="(msg, i) in messages"
-          :key="i"
-          :text="[msg.content]"
-          text-html
-          :name="msg.role"
-          :sent="msg.role === 'user'"
-      />
-    </q-scroll-area>
-    <q-input filled v-model="message" label="Message" :disable="loading" />
-    <q-btn @click="onSend" :disable="loading">
-      <q-spinner
-          v-if="loading"
-          class="q-ml-sm"
-          color="primary"
-      />
-      <span v-else>Send</span>
-    </q-btn>
+    <q-card class="my-card" style="width: 300px; position: fixed; right: 20px; bottom: 20px;">
+      <q-card-section class="bg-cyan-8 text-white">
+        <div class="text-h6">{{ $t('chat.label') }}</div>
+        <div class="text-subtitle2">
+          {{ $t('chat.messagesCount', { count: messagesCount }) }}
+        </div>
+      </q-card-section>
+
+      <q-separator />
+
+      <div
+          ref="scrollTargetRef"
+          class="scroll q-px-md"
+          style="max-height: 400px"
+      >
+        <q-infinite-scroll
+            @load="onLoad"
+            :scroll-target="scrollTargetRef"
+            :offset="250"
+            reverse
+            ref="scrollList"
+        >
+          <q-chat-message
+              v-for="(msg, i) in messages"
+              :key="i"
+              :text="[msg.content]"
+              text-html
+              :name="msg.role === 'user' ? 'You' : 'Assistant'"
+              :sent="msg.role === 'user'"
+          />
+          <template v-slot:loading>
+            <div class="row justify-center q-my-md">
+              <q-spinner-dots color="primary" />
+            </div>
+          </template>
+        </q-infinite-scroll>
+      </div>
+
+      <q-card-actions style="max-height: 160px;">
+
+        <q-input
+            outlined
+            bottom-slots
+            autogrow
+            counter
+            dense
+            borderless
+            v-model="message"
+            type="textarea"
+            maxlength="100"
+            class="col-12"
+        >
+
+          <template v-slot:append>
+            <q-icon v-if="message !== ''" name="close" @click="message = ''" class="cursor-pointer" />
+          </template>
+
+          <template v-slot:hint>
+            {{ $t('chat.messageLength') }}
+          </template>
+
+          <template v-slot:after>
+            <q-spinner
+                v-if="loading"
+                class="q-ml-sm"
+                color="primary"
+            />
+            <q-btn v-else @click="onSend" round dense flat icon="send" />
+          </template>
+        </q-input>
+      </q-card-actions>
+    </q-card>
+
   </div>
 </template>
 
@@ -38,52 +86,96 @@ export default defineComponent({
   setup () {
     const store = useChatStore();
     const messages = computed(() => store.messageList);
+    const messagesTotal = computed(() => store.messagesTotal);
     const messagesCount = computed(() => store.messagesCount);
+    const attachMessage = async (msg) => await store.attachMessage(msg);
     const sendMessage = async (msg) => await store.send(msg);
     const loadMessages = async () => await store.loadMessages();
     const message = ref('');
     const loading = ref(false);
-    const scrollAreaRef = ref(null);
+    const scrollTargetRef = ref(null)
+    const scrollList = ref(null)
 
-    watch(messagesCount, (n) => {
-      // this.scrollBottom();
-      scrollAreaRef.value?.setScrollPercentage('vertical', 1.0);
-      console.log('messagesCount', n, scrollAreaRef.value?.getScrollPercentage());
-      // scrollAreaRef.value.setScrollPosition('vertical', scrollAreaRef.value.scrollHeight);
-    });
     return {
       message,
       loading,
-      scrollAreaRef,
+      scrollTargetRef,
+      scrollList,
       store,
       messages,
       messagesCount,
+      messagesTotal,
+      attachMessage,
       sendMessage,
       loadMessages,
     }
   },
   mounted () {
+    watch(this.messagesCount, (n) => {
+      this.scrollDown();
+    });
+
     this.loadMessages();
+    this.$forceUpdate();
+    this.$nextTick(() => {
+      this.scrollDown();
+      // this.scrollList.stop();
+    })
   },
   methods: {
     async onSend () {
-      this.loading = true;
-      this.sendMessage(this.message)
-        .then(() => {
-          this.$forceUpdate();
-        })
-        .finally(() => {
-          this.loading = false;
-        });
-      this.message = '';
+      this.attachMessage(this.message);
+      this.$forceUpdate();
+      this.scrollDown();
+      this.$nextTick(() => {
+        this.loading = true;
+        this.sendMessage(this.message)
+            .then(() => {
+              this.$forceUpdate();
+            })
+            .finally(() => {
+              this.loading = false;
+              this.scrollDown();
+            });
+        this.message = '';
+      })
     },
     async onUpdate () {
       this.loading = true;
       await this.loadMessages();
       this.loading = false;
-      this.scrollAreaRef.value.setScrollPercentage('vertical', 1.0);
       this.$forceUpdate();
+    },
+    async onLoad (index, done) {
+      console.log('onLoad', index)
+      // if (this.messagesTotal > 0 && this.messagesTotal > this.messagesCount) {
+      //   if (index > 1) {
+      //     await this.loadMessages();
+      //     done();
+      //   } else {
+      //     done();
+      //   }
+      // } else {
+      //   done();
+      // }
+      // this.scrollDown();
+      done();
+    },
+    scrollDown () {
+      this.$nextTick(() => {
+        const scroll = document.querySelector('.scroll');
+        if (scroll) {
+          scroll.scrollTop = scroll.scrollHeight
+        }
+      });
     }
   }
 });
 </script>
+
+
+<style>
+textarea.q-field__native  {
+  max-height: 120px;
+}
+</style>
