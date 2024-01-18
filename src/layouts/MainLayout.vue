@@ -21,6 +21,7 @@
 
     <assistant-chat />
 
+    <!--
     <q-footer elevated className="bg-grey-8 text-white text-center">
       <q-toolbar>
         <q-toolbar-title>
@@ -30,6 +31,7 @@
         </q-toolbar-title>
       </q-toolbar>
     </q-footer>
+    -->
 
   </q-layout>
 </template>
