@@ -1,0 +1,160 @@
+{
+  "name": "Alex Osster",
+  "role": "Full Stack Engineer",
+  "contacts": {
+    "email": "alex.osster.web@gmail.com",
+    "linkedin": {
+      "label": "linkedin.com/in/alex-osster",
+      "url": "https://www.linkedin.com/in/alex-osster"
+    }
+  },
+  "topSkills": [
+    "Software Development",
+    "Project Management",
+    "Laravel",
+    "Vue.js"
+  ],
+  "summary": [
+    "I was trained to be a programmer-economist, and my first experience was precisely in that field. It involved an accounting desktop product with a vast number of relations, reports, and complex SQL queries.",
+    "When I hit the ceiling, a hobby emerged in the form of website development, which smoothly turned into a 24/7 occupation. Since then, I've been in the web.",
+    "Over the past decade, I've worked on quite a large number of projects in various capacities and roles.",
+    "I enjoy challenges, so I've been focused on startups that help create new opportunities for people. Each challenge involves a number of related technologies, and it's very fulfilling when I'm able to use new stacks to grow and improve the product I'm working on. That's why my new hobby is exploring new opportunities.",
+    "More details over a cup of coffee."
+  ],
+  "experience": [
+    {
+      "title": "BitMobi",
+      "role": "Software Developer",
+      "range": ["2021-04-01"],
+      "location": "London, England, United Kingdom",
+      "skills": [
+        "Software Development",
+        "Laravel",
+        "Vue.js",
+        "MySQL",
+        "MongoDB",
+        "Soketi",
+        "SCSS",
+        "Git",
+        "Kubernetes"
+      ],
+      "description": "Social media back office development.",
+      "icon": "/data/logos/bitmobi.jpeg"
+    },
+    {
+      "title": "Private Unitary Enterprise \"Applar\"",
+      "role": "Full Stack Engineer",
+      "range": ["2019-03-01", "2020-11-01"],
+      "location": "Minsk, Belarus",
+      "skills": [
+        "Software Development",
+        "Laravel",
+        "Vue.js",
+        "MySQL",
+        "MongoDB",
+        "Soket.io",
+        "SCSS",
+        "Git",
+        "Docker"
+      ],
+      "description": "SAAS application for management and accounting of a cargo companies.",
+      "icon": ""
+    },
+    {
+      "title": "LLC \"Agency of Event Projects Alter Ego Group\"",
+      "role": "Head of Development Department",
+      "range": ["2018-03-01", "2019-01-01"],
+      "location": "Minsk, Belarus",
+      "skills": [
+        "Team Building",
+        "Project Management",
+        "Software Development"
+      ],
+      "description": "Creation of a new department, interview with the crew, etc.",
+      "icon": ""
+    },
+    {
+      "title": "Web Creator Studio",
+      "role": "Individual entrepreneur",
+      "range": ["2014-01-01", "2018-02-01"],
+      "location": "Minsk, Belarus",
+      "skills": [
+        "Project Management",
+        "Software Development",
+        "Bitrix",
+        "Joomla",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Laravel",
+        "Vue.js"
+      ],
+      "description": "<b>Project management</b> and <b>full stack website development</b>. Mostly PHP CMS Joomla (few projects using Laravel & CodeIgniter), Mysql, bootstrap, CSS, SCSS, jQuery. SEO optimisation and basic SEO support.",
+      "icon": ""
+    },
+    {
+      "title": "Web Developer",
+      "role": "Freelancer",
+      "range": ["2009-01-01", "2014-01-01"],
+      "location": "Moscow, Russia",
+      "skills": [
+        "Software Development",
+        "Joomla",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "jQuery"
+      ],
+      "description": "<b>Full stack website development</b>. Mostly PHP CMS Joomla, Mysql, bootstrap, CSS, SCSS, jQuery.",
+      "icon": ""
+    },
+    {
+      "title": "GIVC \"Ministry of Agriculture and Food\"",
+      "role": "Software Engineer",
+      "range": ["2005-10-01", "2009-04-01"],
+      "location": "Minsk, Belarus",
+      "skills": [
+        "Software Development",
+        "Visual Basic",
+        "Firebird",
+        "InterBase",
+        "Active Reports"
+      ],
+      "description": "Development, integration and implementation of accounting and reporting system in agriculture.",
+      "icon": ""
+    }
+  ],
+  "education": [
+    {
+      "title": "IIT BSUIR",
+      "degree": "Engineer-programmer-economist, Information systems and technologies (in economics)",
+      "location": "Minsk, Belarus",
+      "range": ["2005-09-01","2010-06-30"]
+    },
+    {
+      "title": "Minsk State Higher Radio Engineering College",
+      "degree": "Electronics technician, Electronic computing facilities",
+      "location": "Minsk, Belarus",
+      "range": ["2001-09-01","2005-06-30"]
+    },
+    {
+      "title": "Gymnasium No. 21",
+      "degree": "",
+      "location": "Minsk, Belarus",
+      "range": ["2000-09-01","2001-05-30"]
+    },
+    {
+      "title": "Secondary school No. 173",
+      "degree": "",
+      "location": "Minsk, Belarus",
+      "range": ["1991-09-01","2000-05-30"]
+    }
+  ],
+  "downloads": [
+    {
+      "label": "Download CV",
+      "url": "Aleksandr-Komar-CV-en.pdf"
+    }
+  ]
+}
