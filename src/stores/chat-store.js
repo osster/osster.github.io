@@ -44,8 +44,9 @@ export const useChatStore = defineStore('chat', {
       const _this = this;
       await chatApi.post('history', {}, {
         withCredentials: true,
-        crossDomain: true
+        crossDomain: true,
       }).then((responce) => {
+        // document.cookie = "connect.sid=" + (responce.data?.sId || "") + "; path=/";
         _this.total = responce.data.total;
         _this.messages = responce.data.messages.map((m) => {
           m.content = nl2br(m?.content[0]?.text?.value);
