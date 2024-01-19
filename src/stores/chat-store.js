@@ -29,7 +29,7 @@ export const useChatStore = defineStore('chat', {
     },
     async send(message) {
       const _this = this;
-      await chatApi.get(`chat?q=${message}`).then((responce) => {
+      await chatApi.post(`chat?q=${message}`).then((responce) => {
         _this.total = responce.data.total;
         _this.messages = responce.data.messages.map((m) => {
           m.content = nl2br(m?.content[0]?.text?.value);
@@ -39,7 +39,7 @@ export const useChatStore = defineStore('chat', {
     },
     async loadMessages() {
       const _this = this;
-      await chatApi.get('history').then((responce) => {
+      await chatApi.post('history').then((responce) => {
         _this.total = responce.data.total;
         _this.messages = responce.data.messages.map((m) => {
           m.content = nl2br(m?.content[0]?.text?.value);
