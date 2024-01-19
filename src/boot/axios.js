@@ -8,7 +8,11 @@ import axios from 'axios';
 // "export default () => {}" function below (which runs individually
 // for each client)
 const api = axios.create({ baseURL: `${process.env.API_URL}/`, withCredentials: true });
-const chatApi = axios.create({ baseURL: `${process.env.CHAT_URL}/`, withCredentials: true });
+const chatApi = axios.create({
+  baseURL: `${process.env.CHAT_URL}/`,
+  withCredentials: true,
+  crossDomain: true,
+});
 
 // axios.defaults.withCredentials = true;
 
