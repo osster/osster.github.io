@@ -11,6 +11,7 @@ function nl2br (str, is_xhtml) {
 
 export const useChatStore = defineStore('chat', {
   state: () => ({
+    chatState: false,
     total: 0,
     messages: []
   }),
@@ -20,6 +21,16 @@ export const useChatStore = defineStore('chat', {
     messageList: (state) => state.messages,
   },
   actions: {
+    hide() {
+      const _this = this;
+      _this.chatState = false;
+      console.log('chatState', _this.chatState)
+    },
+    show() {
+      const _this = this;
+      _this.chatState = true;
+      console.log('chatState', _this.chatState)
+    },
     attachMessage(message) {
       const _this = this;
       _this.messages.push({
@@ -46,12 +57,14 @@ export const useChatStore = defineStore('chat', {
         withCredentials: true,
         crossDomain: true,
       }).then((responce) => {
-        // document.cookie = "connect.sid=" + (responce.data?.sId || "") + "; path=/";
         _this.total = responce.data.total;
         _this.messages = responce.data.messages.map((m) => {
           m.content = nl2br(m?.content[0]?.text?.value);
           return m;
         }).reverse();
+        if (_this.messages.length > 0) {
+          _this.chatState = true;
+        }
       })
     },
   },

@@ -15,7 +15,7 @@
             </div>
           </div>
           <div class="col-auto">
-            <q-btn dense flat @click="() => { state = false }">
+            <q-btn dense flat @click="hide">
               <q-icon name="close"/>
             </q-btn>
           </div>
@@ -93,7 +93,7 @@
         style="position: fixed; right: 20px; bottom: 20px;"
         color="cyan"
         size="lg"
-        @click="() => { state = true }"
+        @click="show"
     >
       <q-icon name="chat_bubble" />
     </q-btn>
@@ -109,11 +109,14 @@ import { useChatStore } from 'stores/chat-store';
 export default defineComponent({
   name: 'AssistantChat',
   setup () {
-    const state = ref(false)
+    // const state = ref(false)
     const store = useChatStore();
     const messages = computed(() => store.messageList);
     const messagesTotal = computed(() => store.messagesTotal);
     const messagesCount = computed(() => store.messagesCount);
+    const state = computed(() => store.chatState);
+    const hide = async () => store.hide();
+    const show = async () => store.show();
     const attachMessage = async (msg) => await store.attachMessage(msg);
     const sendMessage = async (msg) => await store.send(msg);
     const loadMessages = async () => await store.loadMessages();
@@ -132,6 +135,8 @@ export default defineComponent({
       messages,
       messagesCount,
       messagesTotal,
+      hide,
+      show,
       attachMessage,
       sendMessage,
       loadMessages,
