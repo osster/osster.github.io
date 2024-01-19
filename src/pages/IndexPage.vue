@@ -101,7 +101,9 @@
 
         </div>
         <div class="col-12 col-md-8">
-          <div class="q-pa-lg">
+          <div
+              :class="{ 'q-pa-lg': !$q.platform.is.mobile }"
+          >
             <div class="text-h3 q-mx-lg q-mt-lg">{{ $t('cv.summaryLabel') }}</div>
             <div v-if="data" class="q-ma-lg text-body1 text-weight-regular">
               <p v-for="(p, i) in data.summary" :key="i" v-html="p" />
@@ -184,7 +186,6 @@ export default defineComponent({
   name: 'IndexPage',
   components: { },
   setup() {
-    console.log('SETUP');
     const $q = useQuasar();
     const data = ref(null);
 
@@ -206,10 +207,7 @@ export default defineComponent({
     };
   },
 
-  mounted() {
-    // const $q = useQuasar();
-    console.log('MOUNTED');
-  },
+  mounted() {},
 
   methods: {
     stringifyRange(rangeArray = []) {

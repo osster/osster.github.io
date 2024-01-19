@@ -1,10 +1,24 @@
 <template>
   <div>
-    <q-card class="my-card" style="width: 300px; position: fixed; right: 20px; bottom: 20px;">
+    <q-card
+        v-if="state"
+        class="my-card"
+        style="position: fixed; right: 20px; bottom: 20px;"
+        :style="!$q.platform.is.mobile ? 'width: 300px;' : 'width: calc(100vw - 40px);'"
+    >
       <q-card-section class="bg-cyan-8 text-white">
-        <div class="text-h6">{{ $t('chat.label') }}</div>
-        <div class="text-subtitle2">
-          {{ $t('chat.messagesCount', { count: messagesCount }) }}
+        <div class="row">
+          <div class="col">
+            <div class="text-h6">{{ $t('chat.label') }}</div>
+            <div class="text-subtitle2">
+              {{ $t('chat.messagesCount', { count: messagesCount }) }}
+            </div>
+          </div>
+          <div class="col-auto">
+            <q-btn dense flat @click="() => { state = false }">
+              <q-icon name="close"/>
+            </q-btn>
+          </div>
         </div>
       </q-card-section>
 
@@ -72,11 +86,22 @@
         </q-input>
       </q-card-actions>
     </q-card>
-
+    <q-btn
+        v-else
+        round
+        class="animate__animated animate__infinite animate__pulse"
+        style="position: fixed; right: 20px; bottom: 20px;"
+        color="cyan"
+        size="lg"
+        @click="() => { state = true }"
+    >
+      <q-icon name="chat_bubble" />
+    </q-btn>
   </div>
 </template>
 
 <script>
+import 'animate.css';
 import { defineComponent, ref, computed, watch } from 'vue';
 import { useChatStore } from 'stores/chat-store';
 // import { storeToRefs } from 'pinia';
@@ -84,6 +109,7 @@ import { useChatStore } from 'stores/chat-store';
 export default defineComponent({
   name: 'AssistantChat',
   setup () {
+    const state = ref(false)
     const store = useChatStore();
     const messages = computed(() => store.messageList);
     const messagesTotal = computed(() => store.messagesTotal);
@@ -97,6 +123,7 @@ export default defineComponent({
     const scrollList = ref(null)
 
     return {
+      state,
       message,
       loading,
       scrollTargetRef,
@@ -121,6 +148,9 @@ export default defineComponent({
       this.scrollDown();
       // this.scrollList.stop();
     })
+    setInterval(() => {
+      this.loadMessages();
+    }, 300000)
   },
   methods: {
     async onSend () {
@@ -147,18 +177,6 @@ export default defineComponent({
       this.$forceUpdate();
     },
     async onLoad (index, done) {
-      console.log('onLoad', index)
-      // if (this.messagesTotal > 0 && this.messagesTotal > this.messagesCount) {
-      //   if (index > 1) {
-      //     await this.loadMessages();
-      //     done();
-      //   } else {
-      //     done();
-      //   }
-      // } else {
-      //   done();
-      // }
-      // this.scrollDown();
       done();
     },
     scrollDown () {
