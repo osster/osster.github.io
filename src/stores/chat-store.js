@@ -30,6 +30,7 @@ export const useChatStore = defineStore('chat', {
     async send(message) {
       const _this = this;
       await chatApi.post(`chat?q=${message}`, {}, {
+        withCredentials: true,
         crossDomain: true
       }).then((responce) => {
         _this.total = responce.data.total;
@@ -42,6 +43,7 @@ export const useChatStore = defineStore('chat', {
     async loadMessages() {
       const _this = this;
       await chatApi.post('history', {}, {
+        withCredentials: true,
         crossDomain: true
       }).then((responce) => {
         _this.total = responce.data.total;
